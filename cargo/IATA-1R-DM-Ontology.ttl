@@ -62,7 +62,7 @@
 <https://onerecord.iata.org/> rdf:type owl:Ontology ;
                           rdfs:label "IATA ONE Record Ontology"@en ;
                           rdfs:isDefinedBy "https://www.iata.org/one-record/"^^xsd:anyURI ;
-                          dc:description "The IATA ONE Record vocabulary, described using W3C RDF Schema and the Web Ontology Language."@en ;
+                          dc:description "The IATA ONE Record ontology, described using W3C RDF Schema and the Web Ontology Language."@en ;
                           dc:title "IATA ONE Record Ontology"@en ;
                           terms:title "IATA ONE Record Ontology"@en ;
                           terms:modified "15-09-2020" ;

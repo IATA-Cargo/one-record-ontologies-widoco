@@ -1,0 +1,38 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "base:Waybill" "base:ProductDg" "base:Event" "base:DgProductRadioactive" "base:TransportMeans" "base:LogisticsObject" "base:TransportSegment" "base:Item" "base:PackagingType" "base:DgDeclaration" "base:Sensor" "base:CarrierProduct" "base:CustomsInfo" "base:Routing" "base:Shipment" "base:DgRadioactiveIsotope" "base:ServiceRequest" "base:EventUld" "base:CO2CalcMethod" "base:Piece" "base:Product" "base:Booking" "base:Characteristics" "base:ItemDg" "base:ULD" "base:Insurance" "base:SecurityDeclaration" "base:Ranges" "base:Price" "base:ConnectedDevice" "base:Ratings" "base:Request" "base:PieceDg" "base:SpecialHandling" ; /*classes style*/
+	"base:Price" -> "base:LogisticsObject" [ label = "rdfs:subClassOf" ];
+	"base:DgRadioactiveIsotope" -> "base:LogisticsObject" [ label = "rdfs:subClassOf" ];
+	"base:ConnectedDevice" -> "base:LogisticsObject" [ label = "rdfs:subClassOf" ];
+	"base:ItemDg" -> "base:Item" [ label = "rdfs:subClassOf" ];
+	"base:Product" -> "base:LogisticsObject" [ label = "rdfs:subClassOf" ];
+	"base:Ranges" -> "base:LogisticsObject" [ label = "rdfs:subClassOf" ];
+	"base:CO2CalcMethod" -> "base:LogisticsObject" [ label = "rdfs:subClassOf" ];
+	"base:Piece" -> "base:LogisticsObject" [ label = "rdfs:subClassOf" ];
+	"base:PackagingType" -> "base:LogisticsObject" [ label = "rdfs:subClassOf" ];
+	"base:Characteristics" -> "base:LogisticsObject" [ label = "rdfs:subClassOf" ];
+	"base:Waybill" -> "base:LogisticsObject" [ label = "rdfs:subClassOf" ];
+	"base:Sensor" -> "base:LogisticsObject" [ label = "rdfs:subClassOf" ];
+	"base:SpecialHandling" -> "base:LogisticsObject" [ label = "rdfs:subClassOf" ];
+	"base:Insurance" -> "base:LogisticsObject" [ label = "rdfs:subClassOf" ];
+	"base:DgProductRadioactive" -> "base:LogisticsObject" [ label = "rdfs:subClassOf" ];
+	"base:DgDeclaration" -> "base:LogisticsObject" [ label = "rdfs:subClassOf" ];
+	"base:ULD" -> "base:LogisticsObject" [ label = "rdfs:subClassOf" ];
+	"base:PieceDg" -> "base:Piece" [ label = "rdfs:subClassOf" ];
+	"base:Shipment" -> "base:LogisticsObject" [ label = "rdfs:subClassOf" ];
+	"base:ProductDg" -> "base:Product" [ label = "rdfs:subClassOf" ];
+	"base:Request" -> "base:LogisticsObject" [ label = "rdfs:subClassOf" ];
+	"base:TransportSegment" -> "base:LogisticsObject" [ label = "rdfs:subClassOf" ];
+	"base:SecurityDeclaration" -> "base:LogisticsObject" [ label = "rdfs:subClassOf" ];
+	"base:EventUld" -> "base:Event" [ label = "rdfs:subClassOf" ];
+	"base:Item" -> "base:LogisticsObject" [ label = "rdfs:subClassOf" ];
+	"base:CustomsInfo" -> "base:LogisticsObject" [ label = "rdfs:subClassOf" ];
+	"base:ServiceRequest" -> "base:LogisticsObject" [ label = "rdfs:subClassOf" ];
+	"base:TransportMeans" -> "base:LogisticsObject" [ label = "rdfs:subClassOf" ];
+	"base:Ratings" -> "base:LogisticsObject" [ label = "rdfs:subClassOf" ];
+	"base:Booking" -> "base:LogisticsObject" [ label = "rdfs:subClassOf" ];
+	"base:Routing" -> "base:LogisticsObject" [ label = "rdfs:subClassOf" ];
+	"base:CarrierProduct" -> "base:LogisticsObject" [ label = "rdfs:subClassOf" ];
+
+}

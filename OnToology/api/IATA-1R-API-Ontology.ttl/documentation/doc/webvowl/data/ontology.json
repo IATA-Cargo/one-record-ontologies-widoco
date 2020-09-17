@@ -1,0 +1,3480 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "https://onerecord.iata.org/PatchRequest", "https://onerecord.iata.org/CompanyInformation", "http://www.w3.org/1999/02/22-rdf-syntax-ns", "https://onerecord.iata.org/Create", "https://onerecord.iata.org/OperationObject", "https://onerecord.iata.org/Subscription", "https://onerecord.iata.org/ChangeRequest", "http://www.w3.org/2001/XMLSchema", "https://onerecord.iata.org/Notification", "https://onerecord.iata.org", "https://onerecord.iata.org/Memento", "https://onerecord.iata.org/Error", "https://onerecord.iata.org/Mementos", "https://onerecord.iata.org/Operation", "https://onerecord.iata.org/MementoEntry", "https://onerecord.iata.org/DelegationRequest", "http://www.w3.org/2000/01/rdf-schema", "https://onerecord.iata.org/AuditTrail", "https://onerecord.iata.org/Details", "https://onerecord.iata.org/MementoList", "https://onerecord.iata.org/Timemap" ],
+    "title" : {
+      "en" : "IATA ONE Record API vocabulary"
+    },
+    "iri" : "https://onerecord.iata.org/",
+    "version" : "1.0",
+    "description" : {
+      "en" : "The IATA ONE Record vocabulary, described using W3C RDF Schema and the Web Ontology Language."
+    },
+    "other" : {
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "08-2020",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "1.0",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "IATA ONE Record API vocabulary",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "1",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "4",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "5",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "6",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "7",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "8",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "15",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "18",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "22",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "28",
+    "type" : "owl:Class"
+  }, {
+    "id" : "27",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "30",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
+    "type" : "owl:Class"
+  }, {
+    "id" : "39",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "36",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "42",
+    "type" : "owl:Class"
+  }, {
+    "id" : "47",
+    "type" : "owl:Class"
+  }, {
+    "id" : "57",
+    "type" : "owl:Class"
+  }, {
+    "id" : "56",
+    "type" : "owl:Class"
+  }, {
+    "id" : "68",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "69",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "50",
+    "type" : "owl:Class"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  }, {
+    "id" : "59",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "14",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "73",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "74",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "51",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "75",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "76",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "38",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "77",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "80",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "11",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "85",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "65",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "86",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "87",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "79",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "44",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "90",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "71",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "62",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "54",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "46",
+    "type" : "owl:Class"
+  }, {
+    "id" : "91",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "97",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "20",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "67",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "33",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "98",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "99",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "100",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "83",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "101",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "96",
+    "type" : "owl:Class"
+  }, {
+    "id" : "102",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "103",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "82",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "61",
+    "type" : "owl:Class"
+  }, {
+    "id" : "107",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "108",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "89",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "109",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "115",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "118",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "117",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "121",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "53",
+    "type" : "owl:Class"
+  }, {
+    "id" : "126",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "130",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "129",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "133",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "136",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "143",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "145",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "148",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "151",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "155",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "161",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "163",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "165",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "167",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "169",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "171",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "173",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "114",
+    "type" : "owl:Class"
+  }, {
+    "id" : "179",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "182",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "186",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "187",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "190",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "138",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "194",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "199",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "198",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "204",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "211",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "214",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "217",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "220",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "222",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "226",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "225",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "230",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "235",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "237",
+    "type" : "rdfs:Datatype"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "0",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "1",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://onerecord.iata.org/LogisticsObject",
+    "baseIri" : "https://onerecord.iata.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LogisticsObject"
+    },
+    "id" : "2"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "3",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "4",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "5",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "6",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "7",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "8",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "15",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://onerecord.iata.org/Mementos",
+    "baseIri" : "https://onerecord.iata.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Mementos",
+      "en" : "Mementos"
+    },
+    "comment" : {
+      "en" : "Memento list model"
+    },
+    "id" : "16"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "17",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "18",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "22",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://onerecord.iata.org/Details",
+    "baseIri" : "https://onerecord.iata.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Details",
+      "en" : "Details"
+    },
+    "comment" : {
+      "en" : "Error details"
+    },
+    "id" : "28"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "27",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "30",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://onerecord.iata.org/Timemap",
+    "baseIri" : "https://onerecord.iata.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Timemap",
+      "en" : "Timemap"
+    },
+    "comment" : {
+      "en" : "Timemap of a Logistics Object containing mementos and timegate URI"
+    },
+    "id" : "13"
+  }, {
+    "iri" : "https://onerecord.iata.org/ChangeRequest",
+    "baseIri" : "https://onerecord.iata.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ChangeRequest",
+      "en" : "ChangeRequest"
+    },
+    "comment" : {
+      "en" : "Change Request for the audit trail"
+    },
+    "id" : "34"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "39",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "36",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://onerecord.iata.org/MementoList",
+    "baseIri" : "https://onerecord.iata.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MementoList",
+      "en" : "MementoList"
+    },
+    "comment" : {
+      "en" : "Memento list model"
+    },
+    "id" : "42"
+  }, {
+    "iri" : "https://onerecord.iata.org/Company",
+    "baseIri" : "https://onerecord.iata.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Company"
+    },
+    "id" : "47"
+  }, {
+    "iri" : "https://onerecord.iata.org/MementoEntry",
+    "baseIri" : "https://onerecord.iata.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MementoEntry",
+      "en" : "MementoEntry"
+    },
+    "comment" : {
+      "en" : "Memento entry from the time map"
+    },
+    "id" : "57"
+  }, {
+    "iri" : "https://onerecord.iata.org/CompanyInformation",
+    "baseIri" : "https://onerecord.iata.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CompanyInformation",
+      "en" : "CompanyInformation"
+    },
+    "comment" : {
+      "en" : "Company information in the Internet of Logistics"
+    },
+    "id" : "56"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "68",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "69",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "https://onerecord.iata.org/Operation",
+    "baseIri" : "https://onerecord.iata.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Operation",
+      "en" : "Operation"
+    },
+    "comment" : {
+      "en" : "Operation Request contained in the PATCH body"
+    },
+    "id" : "50"
+  }, {
+    "iri" : "https://onerecord.iata.org/Notification",
+    "baseIri" : "https://onerecord.iata.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Notification",
+      "en" : "Notification"
+    },
+    "comment" : {
+      "en" : "Notification sent by the publisher to the subscriber"
+    },
+    "id" : "32"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "59",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "14",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "73",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "74",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "51",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "75",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "76",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "38",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "77",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "80",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "11",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "85",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "65",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "86",
+    "label" : {
+      "IRI-based" : "nonNegativeInteger"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "87",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "79",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "44",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "90",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "71",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "62",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "54",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://onerecord.iata.org/AuditTrail",
+    "baseIri" : "https://onerecord.iata.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AuditTrail",
+      "en" : "AuditTrail"
+    },
+    "comment" : {
+      "en" : "Audit trail of a Logistics Object"
+    },
+    "id" : "46"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "91",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "97",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "20",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "67",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "33",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "98",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "99",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "100",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "83",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "101",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://onerecord.iata.org/Create",
+    "baseIri" : "https://onerecord.iata.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Create",
+      "en" : "Create"
+    },
+    "comment" : {
+      "en" : "Create model for the audit trail"
+    },
+    "id" : "96"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "102",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "103",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://onerecord.iata.org/Memento",
+    "baseIri" : "https://onerecord.iata.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Memento",
+      "en" : "Memento"
+    },
+    "comment" : {
+      "en" : "Version of a Logistics Object"
+    },
+    "id" : "82"
+  }, {
+    "iri" : "https://onerecord.iata.org/Error",
+    "baseIri" : "https://onerecord.iata.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Error",
+      "en" : "Error"
+    },
+    "comment" : {
+      "en" : "Error model"
+    },
+    "id" : "24"
+  }, {
+    "iri" : "https://onerecord.iata.org/OperationObject",
+    "baseIri" : "https://onerecord.iata.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "OperationObject",
+      "en" : "OperationObject"
+    },
+    "comment" : {
+      "en" : "Object to modify in the PATCH request"
+    },
+    "id" : "61"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "107",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "108",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "89",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "109",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "115",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "118",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "117",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "121",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://onerecord.iata.org/PatchRequest",
+    "baseIri" : "https://onerecord.iata.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PatchRequest",
+      "en" : "PatchRequest"
+    },
+    "comment" : {
+      "en" : "PATCH Request body containing updates on a Logistics Object"
+    },
+    "id" : "53"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "126",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "130",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "129",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "133",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "136",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "143",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "145",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "148",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "151",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "155",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://onerecord.iata.org/Subscription",
+    "baseIri" : "https://onerecord.iata.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Subscription",
+      "en" : "Subscription"
+    },
+    "comment" : {
+      "en" : "Subscription information sent to the publisher"
+    },
+    "id" : "10"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "161",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "163",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "165",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "167",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "169",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "171",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "173",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://onerecord.iata.org/DelegationRequest",
+    "baseIri" : "https://onerecord.iata.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DelegationRequest",
+      "en" : "DelegationRequest"
+    },
+    "comment" : {
+      "en" : "Delegation Request to 3rd parties"
+    },
+    "id" : "114"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "179",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "182",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "186",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "187",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "190",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "138",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "194",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "199",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "198",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "204",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "211",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "214",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "217",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "220",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "222",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "226",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "225",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "230",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "235",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "237",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  } ],
+  "property" : [ {
+    "id" : "9",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "12",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "19",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "21",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "23",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "25",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "26",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "29",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "31",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "35",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "37",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "40",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "41",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "43",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "45",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "48",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "49",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "52",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "55",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "58",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "60",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "63",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "64",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "66",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "70",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "72",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "78",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "81",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "84",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "88",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "92",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "93",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "94",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "95",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "104",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "105",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "106",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "110",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "111",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "112",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "113",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "116",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "119",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "120",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "122",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "123",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "124",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "125",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "127",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "128",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "131",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "132",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "134",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "135",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "137",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "139",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "140",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "141",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "142",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "144",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "146",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "147",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "149",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "150",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "152",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "153",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "154",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "156",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "157",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "158",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "159",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "160",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "162",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "164",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "166",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "168",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "170",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "172",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "174",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "175",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "176",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "177",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "178",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "180",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "181",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "183",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "184",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "185",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "188",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "189",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "191",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "192",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "193",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "195",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "196",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "197",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "200",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "201",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "202",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "203",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "205",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "206",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "207",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "208",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "209",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "210",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "212",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "213",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "215",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "216",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "218",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "219",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "221",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "223",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "224",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "227",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "228",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "229",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "231",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "232",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "233",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "234",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "236",
+    "type" : "owl:allValuesFrom"
+  }, {
+    "id" : "238",
+    "type" : "owl:allValuesFrom"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "https://onerecord.iata.org/Subscription#subscribedTo",
+    "baseIri" : "https://onerecord.iata.org/Subscription",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "subscribedTo",
+      "en" : "subscription:subscribedTo"
+    },
+    "maxCardinality" : "1",
+    "minCardinality" : "1",
+    "domain" : "10",
+    "comment" : {
+      "en" : "Company Identifier of the company the subscriber wants to subscribe to (delegation scenario)."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "9"
+  }, {
+    "iri" : "https://onerecord.iata.org/Timemap#original",
+    "baseIri" : "https://onerecord.iata.org/Timemap",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "original",
+      "en" : "timemap:original"
+    },
+    "maxCardinality" : "1",
+    "minCardinality" : "1",
+    "domain" : "13",
+    "comment" : {
+      "en" : "Link to the initial version of the Logistics Object"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "12"
+  }, {
+    "iri" : "https://onerecord.iata.org/Mementos#firstMemento",
+    "baseIri" : "https://onerecord.iata.org/Mementos",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "firstMemento",
+      "en" : "mementos:firstMemento"
+    },
+    "maxCardinality" : "1",
+    "minCardinality" : "1",
+    "domain" : "16",
+    "comment" : {
+      "en" : "First memento of the Logistics Object"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "19"
+  }, {
+    "iri" : "https://onerecord.iata.org/Subscription#contentType",
+    "baseIri" : "https://onerecord.iata.org/Subscription",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "contentType",
+      "en" : "subscription:contentType"
+    },
+    "domain" : "10",
+    "comment" : {
+      "en" : "Content type that the subscriber wants to receive in the notifications"
+    },
+    "attributes" : [ "datatype", "allValues" ],
+    "id" : "21"
+  }, {
+    "iri" : "https://onerecord.iata.org/Subscription#error",
+    "baseIri" : "https://onerecord.iata.org/Subscription",
+    "range" : "24",
+    "label" : {
+      "IRI-based" : "error",
+      "en" : "subscription:error"
+    },
+    "domain" : "10",
+    "comment" : {
+      "en" : "Non mandatory error details"
+    },
+    "attributes" : [ "object", "allValues" ],
+    "id" : "23"
+  }, {
+    "iri" : "https://onerecord.iata.org/Timemap#mementos",
+    "baseIri" : "https://onerecord.iata.org/Timemap",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "mementos",
+      "en" : "timemap:mementos"
+    },
+    "domain" : "13",
+    "comment" : {
+      "en" : "List of mementos of a Logistics Object"
+    },
+    "attributes" : [ "object", "allValues" ],
+    "id" : "25"
+  }, {
+    "iri" : "https://onerecord.iata.org/Timemap#original",
+    "baseIri" : "https://onerecord.iata.org/Timemap",
+    "range" : "27",
+    "label" : {
+      "IRI-based" : "original",
+      "en" : "timemap:original"
+    },
+    "domain" : "13",
+    "comment" : {
+      "en" : "Link to the initial version of the Logistics Object"
+    },
+    "attributes" : [ "datatype", "allValues" ],
+    "id" : "26"
+  }, {
+    "iri" : "https://onerecord.iata.org/Timemap#timegate",
+    "baseIri" : "https://onerecord.iata.org/Timemap",
+    "range" : "30",
+    "label" : {
+      "IRI-based" : "timegate",
+      "en" : "timemap:timegate"
+    },
+    "domain" : "13",
+    "comment" : {
+      "en" : "Link to the time gate of the Logistics Object, if applicable"
+    },
+    "attributes" : [ "datatype", "allValues" ],
+    "id" : "29"
+  }, {
+    "iri" : "https://onerecord.iata.org/Notification#logisticsObjectRef",
+    "baseIri" : "https://onerecord.iata.org/Notification",
+    "range" : "33",
+    "label" : {
+      "IRI-based" : "logisticsObjectRef",
+      "en" : "notification:logisticsObjectRef"
+    },
+    "maxCardinality" : "1",
+    "minCardinality" : "1",
+    "domain" : "32",
+    "comment" : {
+      "en" : "Logistics Object reference for which the notification is sent"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "31"
+  }, {
+    "iri" : "https://onerecord.iata.org/Subscription#subscribedTo",
+    "baseIri" : "https://onerecord.iata.org/Subscription",
+    "range" : "36",
+    "label" : {
+      "IRI-based" : "subscribedTo",
+      "en" : "subscription:subscribedTo"
+    },
+    "domain" : "10",
+    "comment" : {
+      "en" : "Company Identifier of the company the subscriber wants to subscribe to (delegation scenario)."
+    },
+    "attributes" : [ "datatype", "allValues" ],
+    "id" : "35"
+  }, {
+    "iri" : "https://onerecord.iata.org/Subscription#secret",
+    "baseIri" : "https://onerecord.iata.org/Subscription",
+    "range" : "38",
+    "label" : {
+      "IRI-based" : "secret",
+      "en" : "subscription:secret"
+    },
+    "maxCardinality" : "1",
+    "domain" : "10",
+    "comment" : {
+      "en" : "Either a secret or API Key that ensures that only companies with this subscription information can POST to the subscriber callback endpoint"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "37"
+  }, {
+    "iri" : "https://onerecord.iata.org/Subscription#callbackUrl",
+    "baseIri" : "https://onerecord.iata.org/Subscription",
+    "range" : "18",
+    "label" : {
+      "IRI-based" : "callbackUrl",
+      "en" : "subscription:callbackUrl"
+    },
+    "domain" : "10",
+    "comment" : {
+      "en" : "Callback URL of the Client Subscription API where the subscriber receives Logistics Objects"
+    },
+    "attributes" : [ "datatype", "allValues" ],
+    "id" : "40"
+  }, {
+    "iri" : "https://onerecord.iata.org/Timemap#mementos",
+    "baseIri" : "https://onerecord.iata.org/Timemap",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "mementos",
+      "en" : "timemap:mementos"
+    },
+    "maxCardinality" : "1",
+    "minCardinality" : "1",
+    "domain" : "13",
+    "comment" : {
+      "en" : "List of mementos of a Logistics Object"
+    },
+    "attributes" : [ "object" ],
+    "id" : "41"
+  }, {
+    "iri" : "https://onerecord.iata.org/Notification#topic",
+    "baseIri" : "https://onerecord.iata.org/Notification",
+    "range" : "44",
+    "label" : {
+      "IRI-based" : "topic",
+      "en" : "notification:topic"
+    },
+    "maxCardinality" : "1",
+    "minCardinality" : "1",
+    "domain" : "32",
+    "comment" : {
+      "en" : "Type of Logistics Object"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "43"
+  }, {
+    "iri" : "https://onerecord.iata.org/AuditTrail#logisticsObjectRef",
+    "baseIri" : "https://onerecord.iata.org/AuditTrail",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "logisticsObjectRef",
+      "en" : "auditTrail:logisticsObjectRef"
+    },
+    "maxCardinality" : "1",
+    "minCardinality" : "1",
+    "domain" : "46",
+    "comment" : {
+      "en" : "Logistics Object Reference for which the audit trail applies"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "45"
+  }, {
+    "iri" : "https://onerecord.iata.org/ChangeRequest#timestamp",
+    "baseIri" : "https://onerecord.iata.org/ChangeRequest",
+    "range" : "0",
+    "label" : {
+      "IRI-based" : "timestamp",
+      "en" : "changeRequests:timestamp"
+    },
+    "maxCardinality" : "1",
+    "minCardinality" : "1",
+    "domain" : "34",
+    "comment" : {
+      "en" : "Timestamp of the change request"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "48"
+  }, {
+    "iri" : "https://onerecord.iata.org/Operation#op",
+    "baseIri" : "https://onerecord.iata.org/Operation",
+    "range" : "51",
+    "label" : {
+      "IRI-based" : "op",
+      "en" : "operation:op"
+    },
+    "maxCardinality" : "1",
+    "minCardinality" : "1",
+    "domain" : "50",
+    "comment" : {
+      "en" : "Operation objects must have exactly one op (operation) member; this value indicates which operation is to be performed. The value must be one of add or del; all other values result in an error"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "49"
+  }, {
+    "iri" : "https://onerecord.iata.org/PatchRequest#description",
+    "baseIri" : "https://onerecord.iata.org/PatchRequest",
+    "range" : "54",
+    "label" : {
+      "IRI-based" : "description",
+      "en" : "patchRequest:description"
+    },
+    "maxCardinality" : "1",
+    "domain" : "53",
+    "comment" : {
+      "en" : "Reason for the change (optional)"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "52"
+  }, {
+    "iri" : "https://onerecord.iata.org/CompanyInformation#supportedLogisticsObjects",
+    "baseIri" : "https://onerecord.iata.org/CompanyInformation",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "supportedLogisticsObjects",
+      "en" : "companyInformation:supportedLogisticsObjects"
+    },
+    "minCardinality" : "1",
+    "domain" : "56",
+    "comment" : {
+      "en" : "Supported logistics object types on the server"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "55"
+  }, {
+    "iri" : "https://onerecord.iata.org/Subscription#topic",
+    "baseIri" : "https://onerecord.iata.org/Subscription",
+    "range" : "59",
+    "label" : {
+      "IRI-based" : "topic",
+      "en" : "subscription:topic"
+    },
+    "maxCardinality" : "1",
+    "minCardinality" : "1",
+    "domain" : "10",
+    "comment" : {
+      "en" : "The Logistics Object type to which the subscriber wants subscribe to"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "58"
+  }, {
+    "iri" : "https://onerecord.iata.org/OperationObject#value",
+    "baseIri" : "https://onerecord.iata.org/OperationObject",
+    "range" : "62",
+    "label" : {
+      "IRI-based" : "value",
+      "en" : "operationObject:value"
+    },
+    "maxCardinality" : "1",
+    "minCardinality" : "1",
+    "domain" : "61",
+    "comment" : {
+      "en" : "Value to update"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "60"
+  }, {
+    "iri" : "https://onerecord.iata.org/AuditTrail#changeRequests",
+    "baseIri" : "https://onerecord.iata.org/AuditTrail",
+    "range" : "34",
+    "label" : {
+      "IRI-based" : "changeRequests",
+      "en" : "auditTrail:changeRequests"
+    },
+    "minCardinality" : "1",
+    "domain" : "46",
+    "comment" : {
+      "en" : "List of change requests that were sent as PATCH on for a Logitstics Object"
+    },
+    "attributes" : [ "object" ],
+    "id" : "63"
+  }, {
+    "iri" : "https://onerecord.iata.org/PatchRequest#revision",
+    "baseIri" : "https://onerecord.iata.org/PatchRequest",
+    "range" : "65",
+    "label" : {
+      "IRI-based" : "revision",
+      "en" : "patchRequest:revision"
+    },
+    "maxCardinality" : "1",
+    "minCardinality" : "1",
+    "domain" : "53",
+    "comment" : {
+      "en" : "Revision number of the Logistics Object"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "64"
+  }, {
+    "iri" : "https://onerecord.iata.org/Mementos#lastMemento",
+    "baseIri" : "https://onerecord.iata.org/Mementos",
+    "range" : "67",
+    "label" : {
+      "IRI-based" : "lastMemento",
+      "en" : "mementos:lastMemento"
+    },
+    "maxCardinality" : "1",
+    "minCardinality" : "1",
+    "domain" : "16",
+    "comment" : {
+      "en" : "Last memento of the Logistics Object"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "66"
+  }, {
+    "iri" : "https://onerecord.iata.org/OperationObject#datatype",
+    "baseIri" : "https://onerecord.iata.org/OperationObject",
+    "range" : "71",
+    "label" : {
+      "IRI-based" : "datatype",
+      "en" : "operationObject:datatype"
+    },
+    "maxCardinality" : "1",
+    "minCardinality" : "1",
+    "domain" : "61",
+    "comment" : {
+      "en" : "Data type of the field to update"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "70"
+  }, {
+    "iri" : "https://onerecord.iata.org/PatchRequest#operations",
+    "baseIri" : "https://onerecord.iata.org/PatchRequest",
+    "range" : "50",
+    "label" : {
+      "IRI-based" : "operations",
+      "en" : "patchRequest:operations"
+    },
+    "minCardinality" : "1",
+    "domain" : "53",
+    "comment" : {
+      "en" : "List of operations to apply as PATCH on a Logistics Object"
+    },
+    "attributes" : [ "object" ],
+    "id" : "72"
+  }, {
+    "iri" : "https://onerecord.iata.org/Subscription#contentType",
+    "baseIri" : "https://onerecord.iata.org/Subscription",
+    "range" : "79",
+    "label" : {
+      "IRI-based" : "contentType",
+      "en" : "subscription:contentType"
+    },
+    "domain" : "10",
+    "comment" : {
+      "en" : "Content type that the subscriber wants to receive in the notifications"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "78"
+  }, {
+    "iri" : "https://onerecord.iata.org/Memento#label",
+    "baseIri" : "https://onerecord.iata.org/Memento",
+    "range" : "83",
+    "label" : {
+      "IRI-based" : "label",
+      "en" : "memento:label"
+    },
+    "maxCardinality" : "1",
+    "domain" : "82",
+    "comment" : {
+      "en" : "Label of the memento"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "81"
+  }, {
+    "iri" : "https://onerecord.iata.org/CompanyInformation#company",
+    "baseIri" : "https://onerecord.iata.org/CompanyInformation",
+    "range" : "47",
+    "label" : {
+      "IRI-based" : "company",
+      "en" : "companyInformation:company"
+    },
+    "maxCardinality" : "1",
+    "minCardinality" : "1",
+    "domain" : "56",
+    "comment" : {
+      "en" : "Company details"
+    },
+    "attributes" : [ "object" ],
+    "id" : "84"
+  }, {
+    "iri" : "https://onerecord.iata.org/Details#resource",
+    "baseIri" : "https://onerecord.iata.org/Details",
+    "range" : "89",
+    "label" : {
+      "IRI-based" : "resource",
+      "en" : "details:resource"
+    },
+    "maxCardinality" : "1",
+    "domain" : "28",
+    "comment" : {
+      "en" : "Object for which the error applies"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "88"
+  }, {
+    "iri" : "https://onerecord.iata.org/Timemap#timegate",
+    "baseIri" : "https://onerecord.iata.org/Timemap",
+    "range" : "73",
+    "label" : {
+      "IRI-based" : "timegate",
+      "en" : "timemap:timegate"
+    },
+    "maxCardinality" : "1",
+    "domain" : "13",
+    "comment" : {
+      "en" : "Link to the time gate of the Logistics Object, if applicable"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "92"
+  }, {
+    "iri" : "https://onerecord.iata.org/MementoList#mementoEntry",
+    "baseIri" : "https://onerecord.iata.org/MementoList",
+    "range" : "57",
+    "label" : {
+      "IRI-based" : "mementoEntry",
+      "en" : "mementoList:mementoEntry"
+    },
+    "minCardinality" : "1",
+    "domain" : "42",
+    "comment" : {
+      "en" : "List of mementos of a Logistics Object"
+    },
+    "attributes" : [ "object" ],
+    "id" : "93"
+  }, {
+    "iri" : "https://onerecord.iata.org/Details#attribute",
+    "baseIri" : "https://onerecord.iata.org/Details",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "attribute",
+      "en" : "details:attribute"
+    },
+    "maxCardinality" : "1",
+    "domain" : "28",
+    "comment" : {
+      "en" : "Field of the object for which the error applies"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "94"
+  }, {
+    "iri" : "https://onerecord.iata.org/AuditTrail#create",
+    "baseIri" : "https://onerecord.iata.org/AuditTrail",
+    "range" : "96",
+    "label" : {
+      "IRI-based" : "create",
+      "en" : "auditTrail:create"
+    },
+    "maxCardinality" : "1",
+    "minCardinality" : "1",
+    "domain" : "46",
+    "comment" : {
+      "en" : "Initial content of the Logistics Object at the creation moment"
+    },
+    "attributes" : [ "object" ],
+    "id" : "95"
+  }, {
+    "iri" : "https://onerecord.iata.org/Subscription#callbackUrl",
+    "baseIri" : "https://onerecord.iata.org/Subscription",
+    "range" : "87",
+    "label" : {
+      "IRI-based" : "callbackUrl",
+      "en" : "subscription:callbackUrl"
+    },
+    "maxCardinality" : "1",
+    "minCardinality" : "1",
+    "domain" : "10",
+    "comment" : {
+      "en" : "Callback URL of the Client Subscription API where the subscriber receives Logistics Objects"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "104"
+  }, {
+    "iri" : "https://onerecord.iata.org/PatchRequest#logisticsObjectRef",
+    "baseIri" : "https://onerecord.iata.org/PatchRequest",
+    "range" : "91",
+    "label" : {
+      "IRI-based" : "logisticsObjectRef",
+      "en" : "patchRequest:logisticsObjectRef"
+    },
+    "maxCardinality" : "1",
+    "minCardinality" : "1",
+    "domain" : "53",
+    "comment" : {
+      "en" : "Reference of the Logistics Object to which te change request is applied to"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "105"
+  }, {
+    "iri" : "https://onerecord.iata.org/ChangeRequest#status",
+    "baseIri" : "https://onerecord.iata.org/ChangeRequest",
+    "range" : "69",
+    "label" : {
+      "IRI-based" : "status",
+      "en" : "changeRequests:status"
+    },
+    "maxCardinality" : "1",
+    "minCardinality" : "1",
+    "domain" : "34",
+    "comment" : {
+      "en" : "ACCEPTED or REJECTED"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "106"
+  }, {
+    "iri" : "https://onerecord.iata.org/Mementos#list",
+    "baseIri" : "https://onerecord.iata.org/Mementos",
+    "range" : "42",
+    "label" : {
+      "IRI-based" : "list",
+      "en" : "mementos:list"
+    },
+    "maxCardinality" : "1",
+    "minCardinality" : "1",
+    "domain" : "16",
+    "comment" : {
+      "en" : "List of mementos of a Logistics Object"
+    },
+    "attributes" : [ "object" ],
+    "id" : "110"
+  }, {
+    "iri" : "https://onerecord.iata.org/Details#message",
+    "baseIri" : "https://onerecord.iata.org/Details",
+    "range" : "108",
+    "label" : {
+      "IRI-based" : "message",
+      "en" : "details:message"
+    },
+    "maxCardinality" : "1",
+    "domain" : "28",
+    "comment" : {
+      "en" : "Message of the error"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "111"
+  }, {
+    "iri" : "https://onerecord.iata.org/PatchRequest#requestorCompanyIdentifier",
+    "baseIri" : "https://onerecord.iata.org/PatchRequest",
+    "range" : "85",
+    "label" : {
+      "IRI-based" : "requestorCompanyIdentifier",
+      "en" : "patchRequest:requestorCompanyIdentifier"
+    },
+    "maxCardinality" : "1",
+    "minCardinality" : "1",
+    "domain" : "53",
+    "comment" : {
+      "en" : "The company identifier of the entity that is requesting the change request"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "112"
+  }, {
+    "iri" : "https://onerecord.iata.org/DelegationRequest#operations",
+    "baseIri" : "https://onerecord.iata.org/DelegationRequest",
+    "range" : "109",
+    "label" : {
+      "IRI-based" : "operations",
+      "en" : "delegationRequest:operations"
+    },
+    "domain" : "114",
+    "comment" : {
+      "en" : "GET or PATCH"
+    },
+    "attributes" : [ "datatype", "allValues" ],
+    "id" : "113"
+  }, {
+    "iri" : "https://onerecord.iata.org/DelegationRequest#targetLogisticsObject",
+    "baseIri" : "https://onerecord.iata.org/DelegationRequest",
+    "range" : "117",
+    "label" : {
+      "IRI-based" : "targetLogisticsObject",
+      "en" : "delegationRequest:targetLogisticsObject"
+    },
+    "domain" : "114",
+    "comment" : {
+      "en" : "Identifier of the logistics object to which the access is requested"
+    },
+    "attributes" : [ "datatype", "allValues" ],
+    "id" : "116"
+  }, {
+    "iri" : "https://onerecord.iata.org/DelegationRequest#targetCompany",
+    "baseIri" : "https://onerecord.iata.org/DelegationRequest",
+    "range" : "115",
+    "label" : {
+      "IRI-based" : "targetCompany",
+      "en" : "delegationRequest:targetCompany"
+    },
+    "domain" : "114",
+    "comment" : {
+      "en" : "Party that receives the delegated rights"
+    },
+    "attributes" : [ "datatype", "allValues" ],
+    "id" : "119"
+  }, {
+    "iri" : "https://onerecord.iata.org/CompanyInformation#company",
+    "baseIri" : "https://onerecord.iata.org/CompanyInformation",
+    "range" : "47",
+    "label" : {
+      "IRI-based" : "company",
+      "en" : "companyInformation:company"
+    },
+    "domain" : "56",
+    "comment" : {
+      "en" : "Company details"
+    },
+    "attributes" : [ "object", "allValues" ],
+    "id" : "120"
+  }, {
+    "iri" : "https://onerecord.iata.org/DelegationRequest#action",
+    "baseIri" : "https://onerecord.iata.org/DelegationRequest",
+    "range" : "118",
+    "label" : {
+      "IRI-based" : "action",
+      "en" : "delegationRequest:action"
+    },
+    "domain" : "114",
+    "comment" : {
+      "en" : "REVOKE or DELEGATE"
+    },
+    "attributes" : [ "datatype", "allValues" ],
+    "id" : "122"
+  }, {
+    "iri" : "https://onerecord.iata.org/Create#lo",
+    "baseIri" : "https://onerecord.iata.org/Create",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "lo",
+      "en" : "create:lo"
+    },
+    "domain" : "96",
+    "comment" : {
+      "en" : "Content of a Logistics Object"
+    },
+    "attributes" : [ "object", "allValues" ],
+    "id" : "123"
+  }, {
+    "iri" : "https://onerecord.iata.org/CompanyInformation#companyId",
+    "baseIri" : "https://onerecord.iata.org/CompanyInformation",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "companyId",
+      "en" : "companyInformation:companyId"
+    },
+    "maxCardinality" : "1",
+    "minCardinality" : "1",
+    "domain" : "56",
+    "comment" : {
+      "en" : "Company Id, for example airline code."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "124"
+  }, {
+    "iri" : "https://onerecord.iata.org/CompanyInformation#error",
+    "baseIri" : "https://onerecord.iata.org/CompanyInformation",
+    "range" : "24",
+    "label" : {
+      "IRI-based" : "error",
+      "en" : "companyInformation:error"
+    },
+    "domain" : "56",
+    "comment" : {
+      "en" : "Non mandatory error details"
+    },
+    "attributes" : [ "object", "allValues" ],
+    "id" : "125"
+  }, {
+    "iri" : "https://onerecord.iata.org/CompanyInformation#supportedContentTypes",
+    "baseIri" : "https://onerecord.iata.org/CompanyInformation",
+    "range" : "121",
+    "label" : {
+      "IRI-based" : "supportedContentTypes",
+      "en" : "companyInformation:supportedContentTypes"
+    },
+    "domain" : "56",
+    "comment" : {
+      "en" : "Supported content types of the server"
+    },
+    "attributes" : [ "datatype", "allValues" ],
+    "id" : "127"
+  }, {
+    "iri" : "https://onerecord.iata.org/CompanyInformation#serverEndpoint",
+    "baseIri" : "https://onerecord.iata.org/CompanyInformation",
+    "range" : "129",
+    "label" : {
+      "IRI-based" : "serverEndpoint",
+      "en" : "companyInformation:serverEndpoint"
+    },
+    "domain" : "56",
+    "comment" : {
+      "en" : "Endpoint of the company in the Internet of Logistics"
+    },
+    "attributes" : [ "datatype", "allValues" ],
+    "id" : "128"
+  }, {
+    "iri" : "https://onerecord.iata.org/CompanyInformation#supportedLogisticsObjects",
+    "baseIri" : "https://onerecord.iata.org/CompanyInformation",
+    "range" : "126",
+    "label" : {
+      "IRI-based" : "supportedLogisticsObjects",
+      "en" : "companyInformation:supportedLogisticsObjects"
+    },
+    "domain" : "56",
+    "comment" : {
+      "en" : "Supported logistics object types on the server"
+    },
+    "attributes" : [ "datatype", "allValues" ],
+    "id" : "131"
+  }, {
+    "iri" : "https://onerecord.iata.org/ChangeRequest#status",
+    "baseIri" : "https://onerecord.iata.org/ChangeRequest",
+    "range" : "133",
+    "label" : {
+      "IRI-based" : "status",
+      "en" : "changeRequests:status"
+    },
+    "domain" : "34",
+    "comment" : {
+      "en" : "ACCEPTED or REJECTED"
+    },
+    "attributes" : [ "datatype", "allValues" ],
+    "id" : "132"
+  }, {
+    "iri" : "https://onerecord.iata.org/CompanyInformation#companyId",
+    "baseIri" : "https://onerecord.iata.org/CompanyInformation",
+    "range" : "130",
+    "label" : {
+      "IRI-based" : "companyId",
+      "en" : "companyInformation:companyId"
+    },
+    "domain" : "56",
+    "comment" : {
+      "en" : "Company Id, for example airline code."
+    },
+    "attributes" : [ "datatype", "allValues" ],
+    "id" : "134"
+  }, {
+    "iri" : "https://onerecord.iata.org/MementoEntry#label",
+    "baseIri" : "https://onerecord.iata.org/MementoEntry",
+    "range" : "136",
+    "label" : {
+      "IRI-based" : "label",
+      "en" : "mementoEntry:label"
+    },
+    "domain" : "57",
+    "comment" : {
+      "en" : "Non mandatory label of the memento"
+    },
+    "attributes" : [ "datatype", "allValues" ],
+    "id" : "135"
+  }, {
+    "iri" : "https://onerecord.iata.org/MementoEntry#datetime",
+    "baseIri" : "https://onerecord.iata.org/MementoEntry",
+    "range" : "138",
+    "label" : {
+      "IRI-based" : "datetime",
+      "en" : "mementoEntry:datetime"
+    },
+    "domain" : "57",
+    "comment" : {
+      "en" : "Creation date of the memento"
+    },
+    "attributes" : [ "datatype", "allValues" ],
+    "id" : "137"
+  }, {
+    "iri" : "https://onerecord.iata.org/Notification#eventType",
+    "baseIri" : "https://onerecord.iata.org/Notification",
+    "range" : "74",
+    "label" : {
+      "IRI-based" : "eventType",
+      "en" : "notification:eventType"
+    },
+    "maxCardinality" : "1",
+    "minCardinality" : "1",
+    "domain" : "32",
+    "comment" : {
+      "en" : "OBJECT_CREATED or OBJECT_UPDATED"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "139"
+  }, {
+    "iri" : "https://onerecord.iata.org/Memento#original",
+    "baseIri" : "https://onerecord.iata.org/Memento",
+    "range" : "101",
+    "label" : {
+      "IRI-based" : "original",
+      "en" : "memento:original"
+    },
+    "maxCardinality" : "1",
+    "minCardinality" : "1",
+    "domain" : "82",
+    "comment" : {
+      "en" : "First version of the Logistics Object"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "140"
+  }, {
+    "iri" : "https://onerecord.iata.org/MementoEntry#label",
+    "baseIri" : "https://onerecord.iata.org/MementoEntry",
+    "range" : "103",
+    "label" : {
+      "IRI-based" : "label",
+      "en" : "mementoEntry:label"
+    },
+    "maxCardinality" : "1",
+    "domain" : "57",
+    "comment" : {
+      "en" : "Non mandatory label of the memento"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "141"
+  }, {
+    "iri" : "https://onerecord.iata.org/Memento#createdBy",
+    "baseIri" : "https://onerecord.iata.org/Memento",
+    "range" : "100",
+    "label" : {
+      "IRI-based" : "createdBy",
+      "en" : "memento:createdBy"
+    },
+    "maxCardinality" : "1",
+    "minCardinality" : "1",
+    "domain" : "82",
+    "comment" : {
+      "en" : "Name of the memento creator"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "142"
+  }, {
+    "iri" : "https://onerecord.iata.org/Memento#original",
+    "baseIri" : "https://onerecord.iata.org/Memento",
+    "range" : "143",
+    "label" : {
+      "IRI-based" : "original",
+      "en" : "memento:original"
+    },
+    "domain" : "82",
+    "comment" : {
+      "en" : "First version of the Logistics Object"
+    },
+    "attributes" : [ "datatype", "allValues" ],
+    "id" : "144"
+  }, {
+    "iri" : "https://onerecord.iata.org/Memento#createdBy",
+    "baseIri" : "https://onerecord.iata.org/Memento",
+    "range" : "145",
+    "label" : {
+      "IRI-based" : "createdBy",
+      "en" : "memento:createdBy"
+    },
+    "domain" : "82",
+    "comment" : {
+      "en" : "Name of the memento creator"
+    },
+    "attributes" : [ "datatype", "allValues" ],
+    "id" : "146"
+  }, {
+    "iri" : "https://onerecord.iata.org/Subscription#cacheFor",
+    "baseIri" : "https://onerecord.iata.org/Subscription",
+    "range" : "86",
+    "label" : {
+      "IRI-based" : "cacheFor",
+      "en" : "subscription:cacheFor"
+    },
+    "maxCardinality" : "1",
+    "domain" : "10",
+    "comment" : {
+      "en" : "Duration of the period to cache the subscription information in seconds"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "147"
+  }, {
+    "iri" : "https://onerecord.iata.org/Subscription#myCompanyIdentifier",
+    "baseIri" : "https://onerecord.iata.org/Subscription",
+    "range" : "76",
+    "label" : {
+      "IRI-based" : "myCompanyIdentifier",
+      "en" : "subscription:myCompanyIdentifier"
+    },
+    "maxCardinality" : "1",
+    "minCardinality" : "1",
+    "domain" : "10",
+    "comment" : {
+      "en" : "The company identifier from the Internet of Logistics of my company."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "149"
+  }, {
+    "iri" : "https://onerecord.iata.org/Memento#label",
+    "baseIri" : "https://onerecord.iata.org/Memento",
+    "range" : "148",
+    "label" : {
+      "IRI-based" : "label",
+      "en" : "memento:label"
+    },
+    "domain" : "82",
+    "comment" : {
+      "en" : "Label of the memento"
+    },
+    "attributes" : [ "datatype", "allValues" ],
+    "id" : "150"
+  }, {
+    "iri" : "https://onerecord.iata.org/Memento#created",
+    "baseIri" : "https://onerecord.iata.org/Memento",
+    "range" : "151",
+    "label" : {
+      "IRI-based" : "created",
+      "en" : "memento:created"
+    },
+    "domain" : "82",
+    "comment" : {
+      "en" : "Date and time of the memento creation"
+    },
+    "attributes" : [ "datatype", "allValues" ],
+    "id" : "152"
+  }, {
+    "iri" : "https://onerecord.iata.org/DelegationRequest#operations",
+    "baseIri" : "https://onerecord.iata.org/DelegationRequest",
+    "range" : "75",
+    "label" : {
+      "IRI-based" : "operations",
+      "en" : "delegationRequest:operations"
+    },
+    "minCardinality" : "1",
+    "domain" : "114",
+    "comment" : {
+      "en" : "GET or PATCH"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "153"
+  }, {
+    "iri" : "https://onerecord.iata.org/Create#lo",
+    "baseIri" : "https://onerecord.iata.org/Create",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "lo",
+      "en" : "create:lo"
+    },
+    "maxCardinality" : "1",
+    "minCardinality" : "1",
+    "domain" : "96",
+    "comment" : {
+      "en" : "Content of a Logistics Object"
+    },
+    "attributes" : [ "object" ],
+    "id" : "154"
+  }, {
+    "iri" : "https://onerecord.iata.org/Error#title",
+    "baseIri" : "https://onerecord.iata.org/Error",
+    "range" : "155",
+    "label" : {
+      "IRI-based" : "title",
+      "en" : "error:title"
+    },
+    "domain" : "24",
+    "comment" : {
+      "en" : "Brief description of the error"
+    },
+    "attributes" : [ "datatype", "allValues" ],
+    "id" : "156"
+  }, {
+    "iri" : "https://onerecord.iata.org/Subscription#sendLogisticsObjectBody",
+    "baseIri" : "https://onerecord.iata.org/Subscription",
+    "range" : "77",
+    "label" : {
+      "IRI-based" : "sendLogisticsObjectBody",
+      "en" : "subscription:sendLogisticsObjectBody"
+    },
+    "maxCardinality" : "1",
+    "domain" : "10",
+    "comment" : {
+      "en" : "Flag specifying if the publisher should send the whole logistics object or not in the notification object"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "157"
+  }, {
+    "iri" : "https://onerecord.iata.org/ChangeRequest#companyId",
+    "baseIri" : "https://onerecord.iata.org/ChangeRequest",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "companyId",
+      "en" : "changeRequests:companyId"
+    },
+    "maxCardinality" : "1",
+    "minCardinality" : "1",
+    "domain" : "34",
+    "comment" : {
+      "en" : "Company which sent the change request"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "158"
+  }, {
+    "iri" : "https://onerecord.iata.org/Subscription#subscribeToStatusUpdates",
+    "baseIri" : "https://onerecord.iata.org/Subscription",
+    "range" : "80",
+    "label" : {
+      "IRI-based" : "subscribeToStatusUpdates",
+      "en" : "subscription:subscribeToStatusUpdates"
+    },
+    "maxCardinality" : "1",
+    "domain" : "10",
+    "comment" : {
+      "en" : "Flag specifying if the subscriber wants to receive updates for a Logistics Object"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "159"
+  }, {
+    "iri" : "https://onerecord.iata.org/Error#details",
+    "baseIri" : "https://onerecord.iata.org/Error",
+    "range" : "28",
+    "label" : {
+      "IRI-based" : "details",
+      "en" : "error:details"
+    },
+    "domain" : "24",
+    "comment" : {
+      "en" : "Error details"
+    },
+    "attributes" : [ "object", "allValues" ],
+    "id" : "160"
+  }, {
+    "iri" : "https://onerecord.iata.org/Details#attribute",
+    "baseIri" : "https://onerecord.iata.org/Details",
+    "range" : "161",
+    "label" : {
+      "IRI-based" : "attribute",
+      "en" : "details:attribute"
+    },
+    "domain" : "28",
+    "comment" : {
+      "en" : "Field of the object for which the error applies"
+    },
+    "attributes" : [ "datatype", "allValues" ],
+    "id" : "162"
+  }, {
+    "iri" : "https://onerecord.iata.org/Details#code",
+    "baseIri" : "https://onerecord.iata.org/Details",
+    "range" : "163",
+    "label" : {
+      "IRI-based" : "code",
+      "en" : "details:code"
+    },
+    "domain" : "28",
+    "comment" : {
+      "en" : "Error code"
+    },
+    "attributes" : [ "datatype", "allValues" ],
+    "id" : "164"
+  }, {
+    "iri" : "https://onerecord.iata.org/Details#resource",
+    "baseIri" : "https://onerecord.iata.org/Details",
+    "range" : "165",
+    "label" : {
+      "IRI-based" : "resource",
+      "en" : "details:resource"
+    },
+    "domain" : "28",
+    "comment" : {
+      "en" : "Object for which the error applies"
+    },
+    "attributes" : [ "datatype", "allValues" ],
+    "id" : "166"
+  }, {
+    "iri" : "https://onerecord.iata.org/Details#message",
+    "baseIri" : "https://onerecord.iata.org/Details",
+    "range" : "167",
+    "label" : {
+      "IRI-based" : "message",
+      "en" : "details:message"
+    },
+    "domain" : "28",
+    "comment" : {
+      "en" : "Message of the error"
+    },
+    "attributes" : [ "datatype", "allValues" ],
+    "id" : "168"
+  }, {
+    "iri" : "https://onerecord.iata.org/Operation#p",
+    "baseIri" : "https://onerecord.iata.org/Operation",
+    "range" : "169",
+    "label" : {
+      "IRI-based" : "p",
+      "en" : "operation:p"
+    },
+    "domain" : "50",
+    "comment" : {
+      "en" : "Operations objects must have exactly one p, predicate, member. The value of this member must be an IRI"
+    },
+    "attributes" : [ "datatype", "allValues" ],
+    "id" : "170"
+  }, {
+    "iri" : "https://onerecord.iata.org/OperationObject#value",
+    "baseIri" : "https://onerecord.iata.org/OperationObject",
+    "range" : "171",
+    "label" : {
+      "IRI-based" : "value",
+      "en" : "operationObject:value"
+    },
+    "domain" : "61",
+    "comment" : {
+      "en" : "Value to update"
+    },
+    "attributes" : [ "datatype", "allValues" ],
+    "id" : "172"
+  }, {
+    "iri" : "https://onerecord.iata.org/CompanyInformation#serverEndpoint",
+    "baseIri" : "https://onerecord.iata.org/CompanyInformation",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "serverEndpoint",
+      "en" : "companyInformation:serverEndpoint"
+    },
+    "maxCardinality" : "1",
+    "minCardinality" : "1",
+    "domain" : "56",
+    "comment" : {
+      "en" : "Endpoint of the company in the Internet of Logistics"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "174"
+  }, {
+    "iri" : "https://onerecord.iata.org/MementoEntry#datetime",
+    "baseIri" : "https://onerecord.iata.org/MementoEntry",
+    "range" : "102",
+    "label" : {
+      "IRI-based" : "datetime",
+      "en" : "mementoEntry:datetime"
+    },
+    "maxCardinality" : "1",
+    "minCardinality" : "1",
+    "domain" : "57",
+    "comment" : {
+      "en" : "Creation date of the memento"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "175"
+  }, {
+    "iri" : "https://onerecord.iata.org/Operation#op",
+    "baseIri" : "https://onerecord.iata.org/Operation",
+    "range" : "173",
+    "label" : {
+      "IRI-based" : "op",
+      "en" : "operation:op"
+    },
+    "domain" : "50",
+    "comment" : {
+      "en" : "Operation objects must have exactly one op (operation) member; this value indicates which operation is to be performed. The value must be one of add or del; all other values result in an error"
+    },
+    "attributes" : [ "datatype", "allValues" ],
+    "id" : "176"
+  }, {
+    "iri" : "https://onerecord.iata.org/Operation#o",
+    "baseIri" : "https://onerecord.iata.org/Operation",
+    "range" : "61",
+    "label" : {
+      "IRI-based" : "o",
+      "en" : "operation:o"
+    },
+    "domain" : "50",
+    "comment" : {
+      "en" : "PATCH object to modify"
+    },
+    "attributes" : [ "object", "allValues" ],
+    "id" : "177"
+  }, {
+    "iri" : "https://onerecord.iata.org/Details#code",
+    "baseIri" : "https://onerecord.iata.org/Details",
+    "range" : "107",
+    "label" : {
+      "IRI-based" : "code",
+      "en" : "details:code"
+    },
+    "maxCardinality" : "1",
+    "minCardinality" : "1",
+    "domain" : "28",
+    "comment" : {
+      "en" : "Error code"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "178"
+  }, {
+    "iri" : "https://onerecord.iata.org/Notification#logisticsObjectRef",
+    "baseIri" : "https://onerecord.iata.org/Notification",
+    "range" : "179",
+    "label" : {
+      "IRI-based" : "logisticsObjectRef",
+      "en" : "notification:logisticsObjectRef"
+    },
+    "domain" : "32",
+    "comment" : {
+      "en" : "Logistics Object reference for which the notification is sent"
+    },
+    "attributes" : [ "datatype", "allValues" ],
+    "id" : "180"
+  }, {
+    "iri" : "https://onerecord.iata.org/Subscription#error",
+    "baseIri" : "https://onerecord.iata.org/Subscription",
+    "range" : "24",
+    "label" : {
+      "IRI-based" : "error",
+      "en" : "subscription:error"
+    },
+    "domain" : "10",
+    "comment" : {
+      "en" : "Non mandatory error details"
+    },
+    "attributes" : [ "object" ],
+    "id" : "181"
+  }, {
+    "iri" : "https://onerecord.iata.org/Notification#topic",
+    "baseIri" : "https://onerecord.iata.org/Notification",
+    "range" : "182",
+    "label" : {
+      "IRI-based" : "topic",
+      "en" : "notification:topic"
+    },
+    "domain" : "32",
+    "comment" : {
+      "en" : "Type of Logistics Object"
+    },
+    "attributes" : [ "datatype", "allValues" ],
+    "id" : "183"
+  }, {
+    "iri" : "https://onerecord.iata.org/Mementos#list",
+    "baseIri" : "https://onerecord.iata.org/Mementos",
+    "range" : "42",
+    "label" : {
+      "IRI-based" : "list",
+      "en" : "mementos:list"
+    },
+    "domain" : "16",
+    "comment" : {
+      "en" : "List of mementos of a Logistics Object"
+    },
+    "attributes" : [ "object", "allValues" ],
+    "id" : "184"
+  }, {
+    "iri" : "https://onerecord.iata.org/AuditTrail#error",
+    "baseIri" : "https://onerecord.iata.org/AuditTrail",
+    "range" : "24",
+    "label" : {
+      "IRI-based" : "error",
+      "en" : "auditTrail:error"
+    },
+    "domain" : "46",
+    "comment" : {
+      "en" : "Non mandatory error details"
+    },
+    "attributes" : [ "object" ],
+    "id" : "185"
+  }, {
+    "iri" : "https://onerecord.iata.org/MementoEntry#memento",
+    "baseIri" : "https://onerecord.iata.org/MementoEntry",
+    "range" : "97",
+    "label" : {
+      "IRI-based" : "memento",
+      "en" : "mementoEntry:memento"
+    },
+    "maxCardinality" : "1",
+    "minCardinality" : "1",
+    "domain" : "57",
+    "comment" : {
+      "en" : "Link to the memento"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "188"
+  }, {
+    "iri" : "https://onerecord.iata.org/Notification#eventType",
+    "baseIri" : "https://onerecord.iata.org/Notification",
+    "range" : "187",
+    "label" : {
+      "IRI-based" : "eventType",
+      "en" : "notification:eventType"
+    },
+    "domain" : "32",
+    "comment" : {
+      "en" : "OBJECT_CREATED or OBJECT_UPDATED"
+    },
+    "attributes" : [ "datatype", "allValues" ],
+    "id" : "189"
+  }, {
+    "iri" : "https://onerecord.iata.org/Mementos#lastMemento",
+    "baseIri" : "https://onerecord.iata.org/Mementos",
+    "range" : "190",
+    "label" : {
+      "IRI-based" : "lastMemento",
+      "en" : "mementos:lastMemento"
+    },
+    "domain" : "16",
+    "comment" : {
+      "en" : "Last memento of the Logistics Object"
+    },
+    "attributes" : [ "datatype", "allValues" ],
+    "id" : "191"
+  }, {
+    "iri" : "https://onerecord.iata.org/Mementos#firstMemento",
+    "baseIri" : "https://onerecord.iata.org/Mementos",
+    "range" : "186",
+    "label" : {
+      "IRI-based" : "firstMemento",
+      "en" : "mementos:firstMemento"
+    },
+    "domain" : "16",
+    "comment" : {
+      "en" : "First memento of the Logistics Object"
+    },
+    "attributes" : [ "datatype", "allValues" ],
+    "id" : "192"
+  }, {
+    "iri" : "https://onerecord.iata.org/MementoEntry#memento",
+    "baseIri" : "https://onerecord.iata.org/MementoEntry",
+    "range" : "194",
+    "label" : {
+      "IRI-based" : "memento",
+      "en" : "mementoEntry:memento"
+    },
+    "domain" : "57",
+    "comment" : {
+      "en" : "Link to the memento"
+    },
+    "attributes" : [ "datatype", "allValues" ],
+    "id" : "193"
+  }, {
+    "iri" : "https://onerecord.iata.org/MementoList#mementoEntry",
+    "baseIri" : "https://onerecord.iata.org/MementoList",
+    "range" : "57",
+    "label" : {
+      "IRI-based" : "mementoEntry",
+      "en" : "mementoList:mementoEntry"
+    },
+    "domain" : "42",
+    "comment" : {
+      "en" : "List of mementos of a Logistics Object"
+    },
+    "attributes" : [ "object", "allValues" ],
+    "id" : "195"
+  }, {
+    "iri" : "https://onerecord.iata.org/Operation#p",
+    "baseIri" : "https://onerecord.iata.org/Operation",
+    "range" : "90",
+    "label" : {
+      "IRI-based" : "p",
+      "en" : "operation:p"
+    },
+    "maxCardinality" : "1",
+    "minCardinality" : "1",
+    "domain" : "50",
+    "comment" : {
+      "en" : "Operations objects must have exactly one p, predicate, member. The value of this member must be an IRI"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "196"
+  }, {
+    "iri" : "https://onerecord.iata.org/Subscription#cacheFor",
+    "baseIri" : "https://onerecord.iata.org/Subscription",
+    "range" : "198",
+    "label" : {
+      "IRI-based" : "cacheFor",
+      "en" : "subscription:cacheFor"
+    },
+    "domain" : "10",
+    "comment" : {
+      "en" : "Duration of the period to cache the subscription information in seconds"
+    },
+    "attributes" : [ "datatype", "allValues" ],
+    "id" : "197"
+  }, {
+    "iri" : "https://onerecord.iata.org/Subscription#topic",
+    "baseIri" : "https://onerecord.iata.org/Subscription",
+    "range" : "39",
+    "label" : {
+      "IRI-based" : "topic",
+      "en" : "subscription:topic"
+    },
+    "domain" : "10",
+    "comment" : {
+      "en" : "The Logistics Object type to which the subscriber wants subscribe to"
+    },
+    "attributes" : [ "datatype", "allValues" ],
+    "id" : "200"
+  }, {
+    "iri" : "https://onerecord.iata.org/Operation#o",
+    "baseIri" : "https://onerecord.iata.org/Operation",
+    "range" : "61",
+    "label" : {
+      "IRI-based" : "o",
+      "en" : "operation:o"
+    },
+    "minCardinality" : "1",
+    "domain" : "50",
+    "comment" : {
+      "en" : "PATCH object to modify"
+    },
+    "attributes" : [ "object" ],
+    "id" : "201"
+  }, {
+    "iri" : "https://onerecord.iata.org/CompanyInformation#error",
+    "baseIri" : "https://onerecord.iata.org/CompanyInformation",
+    "range" : "24",
+    "label" : {
+      "IRI-based" : "error",
+      "en" : "companyInformation:error"
+    },
+    "domain" : "56",
+    "comment" : {
+      "en" : "Non mandatory error details"
+    },
+    "attributes" : [ "object" ],
+    "id" : "202"
+  }, {
+    "iri" : "https://onerecord.iata.org/Subscription#subscribeToStatusUpdates",
+    "baseIri" : "https://onerecord.iata.org/Subscription",
+    "range" : "204",
+    "label" : {
+      "IRI-based" : "subscribeToStatusUpdates",
+      "en" : "subscription:subscribeToStatusUpdates"
+    },
+    "domain" : "10",
+    "comment" : {
+      "en" : "Flag specifying if the subscriber wants to receive updates for a Logistics Object"
+    },
+    "attributes" : [ "datatype", "allValues" ],
+    "id" : "203"
+  }, {
+    "iri" : "https://onerecord.iata.org/DelegationRequest#action",
+    "baseIri" : "https://onerecord.iata.org/DelegationRequest",
+    "range" : "68",
+    "label" : {
+      "IRI-based" : "action",
+      "en" : "delegationRequest:action"
+    },
+    "maxCardinality" : "1",
+    "minCardinality" : "1",
+    "domain" : "114",
+    "comment" : {
+      "en" : "REVOKE or DELEGATE"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "205"
+  }, {
+    "iri" : "https://onerecord.iata.org/Subscription#sendLogisticsObjectBody",
+    "baseIri" : "https://onerecord.iata.org/Subscription",
+    "range" : "199",
+    "label" : {
+      "IRI-based" : "sendLogisticsObjectBody",
+      "en" : "subscription:sendLogisticsObjectBody"
+    },
+    "domain" : "10",
+    "comment" : {
+      "en" : "Flag specifying if the publisher should send the whole logistics object or not in the notification object"
+    },
+    "attributes" : [ "datatype", "allValues" ],
+    "id" : "206"
+  }, {
+    "iri" : "https://onerecord.iata.org/AuditTrail#create",
+    "baseIri" : "https://onerecord.iata.org/AuditTrail",
+    "range" : "96",
+    "label" : {
+      "IRI-based" : "create",
+      "en" : "auditTrail:create"
+    },
+    "domain" : "46",
+    "comment" : {
+      "en" : "Initial content of the Logistics Object at the creation moment"
+    },
+    "attributes" : [ "object", "allValues" ],
+    "id" : "207"
+  }, {
+    "iri" : "https://onerecord.iata.org/AuditTrail#changeRequests",
+    "baseIri" : "https://onerecord.iata.org/AuditTrail",
+    "range" : "34",
+    "label" : {
+      "IRI-based" : "changeRequests",
+      "en" : "auditTrail:changeRequests"
+    },
+    "domain" : "46",
+    "comment" : {
+      "en" : "List of change requests that were sent as PATCH on for a Logitstics Object"
+    },
+    "attributes" : [ "object", "allValues" ],
+    "id" : "208"
+  }, {
+    "iri" : "https://onerecord.iata.org/AuditTrail#error",
+    "baseIri" : "https://onerecord.iata.org/AuditTrail",
+    "range" : "24",
+    "label" : {
+      "IRI-based" : "error",
+      "en" : "auditTrail:error"
+    },
+    "domain" : "46",
+    "comment" : {
+      "en" : "Non mandatory error details"
+    },
+    "attributes" : [ "object", "allValues" ],
+    "id" : "209"
+  }, {
+    "iri" : "https://onerecord.iata.org/ChangeRequest#companyId",
+    "baseIri" : "https://onerecord.iata.org/ChangeRequest",
+    "range" : "211",
+    "label" : {
+      "IRI-based" : "companyId",
+      "en" : "changeRequests:companyId"
+    },
+    "domain" : "34",
+    "comment" : {
+      "en" : "Company which sent the change request"
+    },
+    "attributes" : [ "datatype", "allValues" ],
+    "id" : "210"
+  }, {
+    "iri" : "https://onerecord.iata.org/ChangeRequest#changeRequest",
+    "baseIri" : "https://onerecord.iata.org/ChangeRequest",
+    "range" : "53",
+    "label" : {
+      "IRI-based" : "changeRequest",
+      "en" : "changeRequests:changeRequest"
+    },
+    "domain" : "34",
+    "comment" : {
+      "en" : "PATCH body of a change request sent for a specific Logistics Object"
+    },
+    "attributes" : [ "object", "allValues" ],
+    "id" : "212"
+  }, {
+    "iri" : "https://onerecord.iata.org/ChangeRequest#timestamp",
+    "baseIri" : "https://onerecord.iata.org/ChangeRequest",
+    "range" : "214",
+    "label" : {
+      "IRI-based" : "timestamp",
+      "en" : "changeRequests:timestamp"
+    },
+    "domain" : "34",
+    "comment" : {
+      "en" : "Timestamp of the change request"
+    },
+    "attributes" : [ "datatype", "allValues" ],
+    "id" : "213"
+  }, {
+    "iri" : "https://onerecord.iata.org/Memento#created",
+    "baseIri" : "https://onerecord.iata.org/Memento",
+    "range" : "99",
+    "label" : {
+      "IRI-based" : "created",
+      "en" : "memento:created"
+    },
+    "maxCardinality" : "1",
+    "minCardinality" : "1",
+    "domain" : "82",
+    "comment" : {
+      "en" : "Date and time of the memento creation"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "215"
+  }, {
+    "iri" : "https://onerecord.iata.org/AuditTrail#logisticsObjectRef",
+    "baseIri" : "https://onerecord.iata.org/AuditTrail",
+    "range" : "217",
+    "label" : {
+      "IRI-based" : "logisticsObjectRef",
+      "en" : "auditTrail:logisticsObjectRef"
+    },
+    "domain" : "46",
+    "comment" : {
+      "en" : "Logistics Object Reference for which the audit trail applies"
+    },
+    "attributes" : [ "datatype", "allValues" ],
+    "id" : "216"
+  }, {
+    "iri" : "https://onerecord.iata.org/Error#details",
+    "baseIri" : "https://onerecord.iata.org/Error",
+    "range" : "28",
+    "label" : {
+      "IRI-based" : "details",
+      "en" : "error:details"
+    },
+    "minCardinality" : "1",
+    "domain" : "24",
+    "comment" : {
+      "en" : "Error details"
+    },
+    "attributes" : [ "object" ],
+    "id" : "218"
+  }, {
+    "iri" : "https://onerecord.iata.org/CompanyInformation#supportedContentTypes",
+    "baseIri" : "https://onerecord.iata.org/CompanyInformation",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "supportedContentTypes",
+      "en" : "companyInformation:supportedContentTypes"
+    },
+    "minCardinality" : "1",
+    "domain" : "56",
+    "comment" : {
+      "en" : "Supported content types of the server"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "219"
+  }, {
+    "iri" : "https://onerecord.iata.org/Subscription#secret",
+    "baseIri" : "https://onerecord.iata.org/Subscription",
+    "range" : "220",
+    "label" : {
+      "IRI-based" : "secret",
+      "en" : "subscription:secret"
+    },
+    "domain" : "10",
+    "comment" : {
+      "en" : "Either a secret or API Key that ensures that only companies with this subscription information can POST to the subscriber callback endpoint"
+    },
+    "attributes" : [ "datatype", "allValues" ],
+    "id" : "221"
+  }, {
+    "iri" : "https://onerecord.iata.org/Subscription#myCompanyIdentifier",
+    "baseIri" : "https://onerecord.iata.org/Subscription",
+    "range" : "222",
+    "label" : {
+      "IRI-based" : "myCompanyIdentifier",
+      "en" : "subscription:myCompanyIdentifier"
+    },
+    "domain" : "10",
+    "comment" : {
+      "en" : "The company identifier from the Internet of Logistics of my company."
+    },
+    "attributes" : [ "datatype", "allValues" ],
+    "id" : "223"
+  }, {
+    "iri" : "https://onerecord.iata.org/PatchRequest#revision",
+    "baseIri" : "https://onerecord.iata.org/PatchRequest",
+    "range" : "225",
+    "label" : {
+      "IRI-based" : "revision",
+      "en" : "patchRequest:revision"
+    },
+    "domain" : "53",
+    "comment" : {
+      "en" : "Revision number of the Logistics Object"
+    },
+    "attributes" : [ "datatype", "allValues" ],
+    "id" : "224"
+  }, {
+    "iri" : "https://onerecord.iata.org/PatchRequest#operations",
+    "baseIri" : "https://onerecord.iata.org/PatchRequest",
+    "range" : "50",
+    "label" : {
+      "IRI-based" : "operations",
+      "en" : "patchRequest:operations"
+    },
+    "domain" : "53",
+    "comment" : {
+      "en" : "List of operations to apply as PATCH on a Logistics Object"
+    },
+    "attributes" : [ "object", "allValues" ],
+    "id" : "227"
+  }, {
+    "iri" : "https://onerecord.iata.org/PatchRequest#logisticsObjectRef",
+    "baseIri" : "https://onerecord.iata.org/PatchRequest",
+    "range" : "226",
+    "label" : {
+      "IRI-based" : "logisticsObjectRef",
+      "en" : "patchRequest:logisticsObjectRef"
+    },
+    "domain" : "53",
+    "comment" : {
+      "en" : "Reference of the Logistics Object to which te change request is applied to"
+    },
+    "attributes" : [ "datatype", "allValues" ],
+    "id" : "228"
+  }, {
+    "iri" : "https://onerecord.iata.org/DelegationRequest#targetCompany",
+    "baseIri" : "https://onerecord.iata.org/DelegationRequest",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "targetCompany",
+      "en" : "delegationRequest:targetCompany"
+    },
+    "minCardinality" : "1",
+    "domain" : "114",
+    "comment" : {
+      "en" : "Party that receives the delegated rights"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "229"
+  }, {
+    "iri" : "https://onerecord.iata.org/Error#title",
+    "baseIri" : "https://onerecord.iata.org/Error",
+    "range" : "98",
+    "label" : {
+      "IRI-based" : "title",
+      "en" : "error:title"
+    },
+    "maxCardinality" : "1",
+    "minCardinality" : "1",
+    "domain" : "24",
+    "comment" : {
+      "en" : "Brief description of the error"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "231"
+  }, {
+    "iri" : "https://onerecord.iata.org/DelegationRequest#targetLogisticsObject",
+    "baseIri" : "https://onerecord.iata.org/DelegationRequest",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "targetLogisticsObject",
+      "en" : "delegationRequest:targetLogisticsObject"
+    },
+    "minCardinality" : "1",
+    "domain" : "114",
+    "comment" : {
+      "en" : "Identifier of the logistics object to which the access is requested"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "232"
+  }, {
+    "iri" : "https://onerecord.iata.org/ChangeRequest#changeRequest",
+    "baseIri" : "https://onerecord.iata.org/ChangeRequest",
+    "range" : "53",
+    "label" : {
+      "IRI-based" : "changeRequest",
+      "en" : "changeRequests:changeRequest"
+    },
+    "maxCardinality" : "1",
+    "minCardinality" : "1",
+    "domain" : "34",
+    "comment" : {
+      "en" : "PATCH body of a change request sent for a specific Logistics Object"
+    },
+    "attributes" : [ "object" ],
+    "id" : "233"
+  }, {
+    "iri" : "https://onerecord.iata.org/PatchRequest#description",
+    "baseIri" : "https://onerecord.iata.org/PatchRequest",
+    "range" : "230",
+    "label" : {
+      "IRI-based" : "description",
+      "en" : "patchRequest:description"
+    },
+    "domain" : "53",
+    "comment" : {
+      "en" : "Reason for the change (optional)"
+    },
+    "attributes" : [ "datatype", "allValues" ],
+    "id" : "234"
+  }, {
+    "iri" : "https://onerecord.iata.org/OperationObject#datatype",
+    "baseIri" : "https://onerecord.iata.org/OperationObject",
+    "range" : "235",
+    "label" : {
+      "IRI-based" : "datatype",
+      "en" : "operationObject:datatype"
+    },
+    "domain" : "61",
+    "comment" : {
+      "en" : "Data type of the field to update"
+    },
+    "attributes" : [ "datatype", "allValues" ],
+    "id" : "236"
+  }, {
+    "iri" : "https://onerecord.iata.org/PatchRequest#requestorCompanyIdentifier",
+    "baseIri" : "https://onerecord.iata.org/PatchRequest",
+    "range" : "237",
+    "label" : {
+      "IRI-based" : "requestorCompanyIdentifier",
+      "en" : "patchRequest:requestorCompanyIdentifier"
+    },
+    "domain" : "53",
+    "comment" : {
+      "en" : "The company identifier of the entity that is requesting the change request"
+    },
+    "attributes" : [ "datatype", "allValues" ],
+    "id" : "238"
+  } ]
+}

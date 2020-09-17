@@ -1,0 +1,17 @@
+https://onerecord.iata.org/OperationObject type Class
+https://onerecord.iata.org/Memento type Class
+https://onerecord.iata.org/Subscription type Class
+https://onerecord.iata.org/Timemap type Class
+https://onerecord.iata.org/AuditTrail type Class
+https://onerecord.iata.org/MementoList type Class
+https://onerecord.iata.org/Details type Class
+https://onerecord.iata.org/Notification type Class
+https://onerecord.iata.org/Mementos type Class
+https://onerecord.iata.org/DelegationRequest type Class
+https://onerecord.iata.org/Operation type Class
+https://onerecord.iata.org/MementoEntry type Class
+https://onerecord.iata.org/CompanyInformation type Class
+https://onerecord.iata.org/Error type Class
+https://onerecord.iata.org/ChangeRequest type Class
+https://onerecord.iata.org/Create type Class
+https://onerecord.iata.org/PatchRequest type Class

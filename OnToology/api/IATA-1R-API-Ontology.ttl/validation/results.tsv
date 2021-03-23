@@ -13,5 +13,5 @@ https://onerecord.iata.org/MementoEntry type Class	Passed
 https://onerecord.iata.org/CompanyInformation type Class	Passed
 https://onerecord.iata.org/Error type Class	Passed
 https://onerecord.iata.org/ChangeRequest type Class	Passed
-https://onerecord.iata.org/Create type Class	Passed
+https://onerecord.iata.org/Create type Class	Undefined
 https://onerecord.iata.org/PatchRequest type Class	Passed

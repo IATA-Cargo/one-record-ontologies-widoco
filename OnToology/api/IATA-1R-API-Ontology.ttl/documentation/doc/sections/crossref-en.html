@@ -1,6 +1,6 @@
 <h2 id="crossreference" class="list">Cross reference for IATA ONE Record API vocabulary classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 This section provides details for each class and property defined by IATA ONE Record API vocabulary.
-<div id="classes">
+<div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
    <h3 id="classes-headline" class="list">Classes</h3>
    <ul class="hlist">
       <li>
@@ -13,9 +13,6 @@ This section provides details for each class and property defined by IATA ONE Re
          <a href="#CompanyInformation" title="https://onerecord.iata.org/CompanyInformation">CompanyInformation</a>
       </li>
       <li>
-         <a href="#Create" title="https://onerecord.iata.org/Create">Create</a>
-      </li>
-      <li>
          <a href="#DelegationRequest" title="https://onerecord.iata.org/DelegationRequest">DelegationRequest</a>
       </li>
       <li>
@@ -23,6 +20,9 @@ This section provides details for each class and property defined by IATA ONE Re
       </li>
       <li>
          <a href="#Error" title="https://onerecord.iata.org/Error">Error</a>
+      </li>
+      <li>
+         <a href="#LogisticsObjectRef" title="https://onerecord.iata.org/LogisticsObjectRef">LogisticsObjectRef</a>
       </li>
       <li>
          <a href="#Memento" title="https://onerecord.iata.org/Memento">Memento</a>
@@ -72,11 +72,12 @@ This section provides details for each class and property defined by IATA ONE Re
          <dd>
             <a href="#AuditTrail#changeRequests"
                title="https://onerecord.iata.org/AuditTrail#changeRequests">auditTrail:changeRequests</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#AuditTrail#create" title="https://onerecord.iata.org/AuditTrail#create">auditTrail:create</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#AuditTrail#error" title="https://onerecord.iata.org/AuditTrail#error">auditTrail:error</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#AuditTrail#errors" title="https://onerecord.iata.org/AuditTrail#errors">auditTrail:errors</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#AuditTrail#loInitialSnapshot"
+               title="https://onerecord.iata.org/AuditTrail#loInitialSnapshot">auditTrail:loInitialSnapshot</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#AuditTrail#logisticsObjectRef"
                title="https://onerecord.iata.org/AuditTrail#logisticsObjectRef">auditTrail:logisticsObjectRef</a>
-            <sup class="type-dp" title="data property">dp</sup>
+            <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
    </div>
@@ -95,13 +96,15 @@ This section provides details for each class and property defined by IATA ONE Re
          <dd/>
          <dt>is in domain of</dt>
          <dd>
-            <a href="#ChangeRequest#changeRequest"
-               title="https://onerecord.iata.org/ChangeRequest#changeRequest">changeRequests:changeRequest</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#ChangeRequest#companyId"
-               title="https://onerecord.iata.org/ChangeRequest#companyId">changeRequests:companyId</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#ChangeRequest#status" title="https://onerecord.iata.org/ChangeRequest#status">changeRequests:status</a>
+            <a href="#ChangeRequest#companyId"
+               title="https://onerecord.iata.org/ChangeRequest#companyId">changeRequest:companyId</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#ChangeRequest#patchRequest"
+               title="https://onerecord.iata.org/ChangeRequest#patchRequest">changeRequest:patchRequest</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#ChangeRequest#requestingParty"
+               title="https://onerecord.iata.org/ChangeRequest#requestingParty">changeRequest:requestingParty</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#ChangeRequest#status" title="https://onerecord.iata.org/ChangeRequest#status">changeRequest:status</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#ChangeRequest#timestamp"
-               title="https://onerecord.iata.org/ChangeRequest#timestamp">changeRequests:timestamp</a>
+               title="https://onerecord.iata.org/ChangeRequest#timestamp">changeRequest:timestamp</a>
             <sup class="type-dp" title="data property">dp</sup>
          </dd>
          <dt>is in range of</dt>
@@ -131,8 +134,8 @@ This section provides details for each class and property defined by IATA ONE Re
                title="https://onerecord.iata.org/CompanyInformation#company">companyInformation:company</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#CompanyInformation#companyId"
                title="https://onerecord.iata.org/CompanyInformation#companyId">companyInformation:companyId</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#CompanyInformation#error"
-               title="https://onerecord.iata.org/CompanyInformation#error">companyInformation:error</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#CompanyInformation#errors"
+               title="https://onerecord.iata.org/CompanyInformation#errors">companyInformation:errors</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#CompanyInformation#serverEndpoint"
                title="https://onerecord.iata.org/CompanyInformation#serverEndpoint">companyInformation:serverEndpoint</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#CompanyInformation#supportedContentTypes"
@@ -140,31 +143,6 @@ This section provides details for each class and property defined by IATA ONE Re
             <sup class="type-dp" title="data property">dp</sup>, <a href="#CompanyInformation#supportedLogisticsObjects"
                title="https://onerecord.iata.org/CompanyInformation#supportedLogisticsObjects">companyInformation:supportedLogisticsObjects</a>
             <sup class="type-dp" title="data property">dp</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="Create">
-      <h3>Create<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://onerecord.iata.org/Create</p>
-      <div class="comment">
-         <span class="markdown">Create model for the audit trail</span>
-      </div>
-      <dl class="description">
-         <dt>has super-classes</dt>
-         <dd/>
-         <dt>is in domain of</dt>
-         <dd>
-            <a href="#Create#lo" title="https://onerecord.iata.org/Create#lo">create:lo</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
-         <dt>is in range of</dt>
-         <dd>
-            <a href="#AuditTrail#create" title="https://onerecord.iata.org/AuditTrail#create">auditTrail:create</a>
-            <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
    </div>
@@ -187,11 +165,11 @@ This section provides details for each class and property defined by IATA ONE Re
                title="https://onerecord.iata.org/DelegationRequest#action">delegationRequest:action</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#DelegationRequest#operations"
                title="https://onerecord.iata.org/DelegationRequest#operations">delegationRequest:operations</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#DelegationRequest#targetCompany"
-               title="https://onerecord.iata.org/DelegationRequest#targetCompany">delegationRequest:targetCompany</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#DelegationRequest#targetLogisticsObject"
-               title="https://onerecord.iata.org/DelegationRequest#targetLogisticsObject">delegationRequest:targetLogisticsObject</a>
-            <sup class="type-dp" title="data property">dp</sup>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#DelegationRequest#targetCompanies"
+               title="https://onerecord.iata.org/DelegationRequest#targetCompanies">delegationRequest:targetCompanies</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#DelegationRequest#targetLogisticsObjects"
+               title="https://onerecord.iata.org/DelegationRequest#targetLogisticsObjects">delegationRequest:targetLogisticsObjects</a>
+            <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
    </div>
@@ -244,10 +222,43 @@ This section provides details for each class and property defined by IATA ONE Re
          </dd>
          <dt>is in range of</dt>
          <dd>
-            <a href="#AuditTrail#error" title="https://onerecord.iata.org/AuditTrail#error">auditTrail:error</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#CompanyInformation#error"
-               title="https://onerecord.iata.org/CompanyInformation#error">companyInformation:error</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#Subscription#error" title="https://onerecord.iata.org/Subscription#error">subscription:error</a>
+            <a href="#AuditTrail#errors" title="https://onerecord.iata.org/AuditTrail#errors">auditTrail:errors</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#CompanyInformation#errors"
+               title="https://onerecord.iata.org/CompanyInformation#errors">companyInformation:errors</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#Subscription#errors" title="https://onerecord.iata.org/Subscription#errors">subscription:errors</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="LogisticsObjectRef">
+      <h3>LogisticsObjectRef<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://onerecord.iata.org/LogisticsObjectRef</p>
+      <div class="comment">
+         <span class="markdown">Reference to a Logistics Object</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd/>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#LogisticsObjectRef#logisticsObjectId"
+               title="https://onerecord.iata.org/LogisticsObjectRef#logisticsObjectId">logisticsObjectRef:logisticsObjectId</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#LogisticsObjectRef#logisticsObjectType"
+               title="https://onerecord.iata.org/LogisticsObjectRef#logisticsObjectType">logisticsObjectRef:logisticsObjectType</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#AuditTrail#logisticsObjectRef"
+               title="https://onerecord.iata.org/AuditTrail#logisticsObjectRef">auditTrail:logisticsObjectRef</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#DelegationRequest#targetLogisticsObjects"
+               title="https://onerecord.iata.org/DelegationRequest#targetLogisticsObjects">delegationRequest:targetLogisticsObjects</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#PatchRequest#logisticsObjectRef"
+               title="https://onerecord.iata.org/PatchRequest#logisticsObjectRef">patchRequest:logisticsObjectRef</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -273,6 +284,13 @@ This section provides details for each class and property defined by IATA ONE Re
             <sup class="type-dp" title="data property">dp</sup>, <a href="#Memento#original" title="https://onerecord.iata.org/Memento#original">memento:original</a>
             <sup class="type-dp" title="data property">dp</sup>
          </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#AuditTrail#loInitialSnapshot"
+               title="https://onerecord.iata.org/AuditTrail#loInitialSnapshot">auditTrail:loInitialSnapshot</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#MementoEntry#memento" title="https://onerecord.iata.org/MementoEntry#memento">mementoEntry:memento</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
       </dl>
    </div>
    <div class="entity" id="MementoEntry">
@@ -293,7 +311,7 @@ This section provides details for each class and property defined by IATA ONE Re
             <a href="#MementoEntry#datetime" title="https://onerecord.iata.org/MementoEntry#datetime">mementoEntry:datetime</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#MementoEntry#label" title="https://onerecord.iata.org/MementoEntry#label">mementoEntry:label</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#MementoEntry#memento" title="https://onerecord.iata.org/MementoEntry#memento">mementoEntry:memento</a>
-            <sup class="type-dp" title="data property">dp</sup>
+            <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>is in range of</dt>
          <dd>
@@ -373,9 +391,9 @@ This section provides details for each class and property defined by IATA ONE Re
          <dd>
             <a href="#Notification#eventType"
                title="https://onerecord.iata.org/Notification#eventType">notification:eventType</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#Notification#logisticsObjectRef"
-               title="https://onerecord.iata.org/Notification#logisticsObjectRef">notification:logisticsObjectRef</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#Notification#topic" title="https://onerecord.iata.org/Notification#topic">notification:topic</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#Notification#logisticsObject"
+               title="https://onerecord.iata.org/Notification#logisticsObject">notification:logisticsObject</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#Notification#topic" title="https://onerecord.iata.org/Notification#topic">notification:topic</a>
             <sup class="type-dp" title="data property">dp</sup>
          </dd>
       </dl>
@@ -454,7 +472,7 @@ This section provides details for each class and property defined by IATA ONE Re
                title="https://onerecord.iata.org/PatchRequest#description">patchRequest:description</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#PatchRequest#logisticsObjectRef"
                title="https://onerecord.iata.org/PatchRequest#logisticsObjectRef">patchRequest:logisticsObjectRef</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#PatchRequest#operations"
+            <sup class="type-op" title="object property">op</sup>, <a href="#PatchRequest#operations"
                title="https://onerecord.iata.org/PatchRequest#operations">patchRequest:operations</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#PatchRequest#requestorCompanyIdentifier"
                title="https://onerecord.iata.org/PatchRequest#requestorCompanyIdentifier">patchRequest:requestorCompanyIdentifier</a>
@@ -463,8 +481,8 @@ This section provides details for each class and property defined by IATA ONE Re
          </dd>
          <dt>is in range of</dt>
          <dd>
-            <a href="#ChangeRequest#changeRequest"
-               title="https://onerecord.iata.org/ChangeRequest#changeRequest">changeRequests:changeRequest</a>
+            <a href="#ChangeRequest#patchRequest"
+               title="https://onerecord.iata.org/ChangeRequest#patchRequest">changeRequest:patchRequest</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -487,9 +505,9 @@ This section provides details for each class and property defined by IATA ONE Re
             <a href="#Subscription#cacheFor" title="https://onerecord.iata.org/Subscription#cacheFor">subscription:cacheFor</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#Subscription#callbackUrl"
                title="https://onerecord.iata.org/Subscription#callbackUrl">subscription:callbackUrl</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#Subscription#contentType"
-               title="https://onerecord.iata.org/Subscription#contentType">subscription:contentType</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#Subscription#error" title="https://onerecord.iata.org/Subscription#error">subscription:error</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#Subscription#contentTypes"
+               title="https://onerecord.iata.org/Subscription#contentTypes">subscription:contentTypes</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#Subscription#errors" title="https://onerecord.iata.org/Subscription#errors">subscription:errors</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#Subscription#myCompanyIdentifier"
                title="https://onerecord.iata.org/Subscription#myCompanyIdentifier">subscription:myCompanyIdentifier</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#Subscription#secret" title="https://onerecord.iata.org/Subscription#secret">subscription:secret</a>
@@ -526,7 +544,7 @@ This section provides details for each class and property defined by IATA ONE Re
          </dd>
       </dl>
    </div>
-</div><div id="objectproperties">
+</div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
    <h3 id="properties" class="list">Object Properties</h3>
    <ul class="hlist">
       <li>
@@ -534,28 +552,45 @@ This section provides details for each class and property defined by IATA ONE Re
             title="https://onerecord.iata.org/AuditTrail#changeRequests">auditTrail:changeRequests</a>
       </li>
       <li>
-         <a href="#AuditTrail#create" title="https://onerecord.iata.org/AuditTrail#create">auditTrail:create</a>
+         <a href="#AuditTrail#errors" title="https://onerecord.iata.org/AuditTrail#errors">auditTrail:errors</a>
       </li>
       <li>
-         <a href="#AuditTrail#error" title="https://onerecord.iata.org/AuditTrail#error">auditTrail:error</a>
+         <a href="#AuditTrail#logisticsObjectRef"
+            title="https://onerecord.iata.org/AuditTrail#logisticsObjectRef">
+            <span>auditTrail:logisticsObjectRef</span>
+         </a>
       </li>
       <li>
-         <a href="#ChangeRequest#changeRequest"
-            title="https://onerecord.iata.org/ChangeRequest#changeRequest">changeRequests:changeRequest</a>
+         <a href="#AuditTrail#loInitialSnapshot"
+            title="https://onerecord.iata.org/AuditTrail#loInitialSnapshot">auditTrail:loInitialSnapshot</a>
+      </li>
+      <li>
+         <a href="#ChangeRequest#patchRequest"
+            title="https://onerecord.iata.org/ChangeRequest#patchRequest">changeRequest:patchRequest</a>
+      </li>
+      <li>
+         <a href="#ChangeRequest#requestingParty"
+            title="https://onerecord.iata.org/ChangeRequest#requestingParty">changeRequest:requestingParty</a>
       </li>
       <li>
          <a href="#CompanyInformation#company"
             title="https://onerecord.iata.org/CompanyInformation#company">companyInformation:company</a>
       </li>
       <li>
-         <a href="#CompanyInformation#error"
-            title="https://onerecord.iata.org/CompanyInformation#error">companyInformation:error</a>
+         <a href="#CompanyInformation#errors"
+            title="https://onerecord.iata.org/CompanyInformation#errors">companyInformation:errors</a>
       </li>
       <li>
-         <a href="#Create#lo" title="https://onerecord.iata.org/Create#lo">create:lo</a>
+         <a href="#DelegationRequest#targetLogisticsObjects"
+            title="https://onerecord.iata.org/DelegationRequest#targetLogisticsObjects">delegationRequest:targetLogisticsObjects</a>
       </li>
       <li>
          <a href="#Error#details" title="https://onerecord.iata.org/Error#details">error:details</a>
+      </li>
+      <li>
+         <a href="#MementoEntry#memento" title="https://onerecord.iata.org/MementoEntry#memento">
+            <span>mementoEntry:memento</span>
+         </a>
       </li>
       <li>
          <a href="#MementoList#mementoEntry"
@@ -565,14 +600,26 @@ This section provides details for each class and property defined by IATA ONE Re
          <a href="#Mementos#list" title="https://onerecord.iata.org/Mementos#list">mementos:list</a>
       </li>
       <li>
+         <a href="#Notification#logisticsObject"
+            title="https://onerecord.iata.org/Notification#logisticsObject">
+            <span>notification:logisticsObject</span>
+         </a>
+      </li>
+      <li>
          <a href="#Operation#o" title="https://onerecord.iata.org/Operation#o">operation:o</a>
+      </li>
+      <li>
+         <a href="#PatchRequest#logisticsObjectRef"
+            title="https://onerecord.iata.org/PatchRequest#logisticsObjectRef">
+            <span>patchRequest:logisticsObjectRef</span>
+         </a>
       </li>
       <li>
          <a href="#PatchRequest#operations"
             title="https://onerecord.iata.org/PatchRequest#operations">patchRequest:operations</a>
       </li>
       <li>
-         <a href="#Subscription#error" title="https://onerecord.iata.org/Subscription#error">subscription:error</a>
+         <a href="#Subscription#errors" title="https://onerecord.iata.org/Subscription#errors">subscription:errors</a>
       </li>
       <li>
          <a href="#Timemap#mementos" title="https://onerecord.iata.org/Timemap#mementos">timemap:mementos</a>
@@ -586,7 +633,7 @@ This section provides details for each class and property defined by IATA ONE Re
       <p>
          <strong>IRI:</strong> https://onerecord.iata.org/AuditTrail#changeRequests</p>
       <div class="comment">
-         <span class="markdown">List of change requests that were sent as PATCH on for a Logitstics Object</span>
+         <span class="markdown">List of change requests that were sent as PATCH on for a Logistics Object</span>
       </div>
       <div class="description">
          <dl>
@@ -603,38 +650,13 @@ This section provides details for each class and property defined by IATA ONE Re
          </dl>
       </div>
    </div>
-   <div class="entity" id="AuditTrail#create">
-      <h3>auditTrail:create<sup class="type-op" title="object property">op</sup>
+   <div class="entity" id="AuditTrail#errors">
+      <h3>auditTrail:errors<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://onerecord.iata.org/AuditTrail#create</p>
-      <div class="comment">
-         <span class="markdown">Initial content of the Logistics Object at the creation moment</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#AuditTrail" title="https://onerecord.iata.org/AuditTrail">AuditTrail</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#Create" title="https://onerecord.iata.org/Create">Create</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="AuditTrail#error">
-      <h3>auditTrail:error<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://onerecord.iata.org/AuditTrail#error</p>
+         <strong>IRI:</strong> https://onerecord.iata.org/AuditTrail#errors</p>
       <div class="comment">
          <span class="markdown">Non mandatory error details</span>
       </div>
@@ -653,13 +675,62 @@ This section provides details for each class and property defined by IATA ONE Re
          </dl>
       </div>
    </div>
-   <div class="entity" id="ChangeRequest#changeRequest">
-      <h3>changeRequests:changeRequest<sup class="type-op" title="object property">op</sup>
+   <div class="entity" id="AuditTrail#logisticsObjectRef">
+      <h3>auditTrail:logisticsObjectRef<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://onerecord.iata.org/ChangeRequest#changeRequest</p>
+         <strong>IRI:</strong> https://onerecord.iata.org/AuditTrail#logisticsObjectRef</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#AuditTrail" title="https://onerecord.iata.org/AuditTrail">AuditTrail</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#LogisticsObjectRef" title="https://onerecord.iata.org/LogisticsObjectRef">LogisticsObjectRef</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is also defined as</dt>
+            <dd>data property</dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="AuditTrail#loInitialSnapshot">
+      <h3>auditTrail:loInitialSnapshot<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://onerecord.iata.org/AuditTrail#loInitialSnapshot</p>
+      <div class="comment">
+         <span class="markdown">Initial content of the Logistics Object at the creation moment, represented via a Memento</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#AuditTrail" title="https://onerecord.iata.org/AuditTrail">AuditTrail</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Memento" title="https://onerecord.iata.org/Memento">Memento</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="ChangeRequest#patchRequest">
+      <h3>changeRequest:patchRequest<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://onerecord.iata.org/ChangeRequest#patchRequest</p>
       <div class="comment">
          <span class="markdown">PATCH body of a change request sent for a specific Logistics Object</span>
       </div>
@@ -673,6 +744,33 @@ This section provides details for each class and property defined by IATA ONE Re
             <dt>has range</dt>
             <dd>
                <a href="#PatchRequest" title="https://onerecord.iata.org/PatchRequest">PatchRequest</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="ChangeRequest#requestingParty">
+      <h3>changeRequest:requestingParty<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://onerecord.iata.org/ChangeRequest#requestingParty</p>
+      <div class="comment">
+         <span class="markdown">The party that has requested the change request</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#ChangeRequest" title="https://onerecord.iata.org/ChangeRequest">ChangeRequest</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="https://onerecord.iata.org/Branch"
+                  target="_blank"
+                  title="https://onerecord.iata.org/Branch">branch</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -705,13 +803,13 @@ This section provides details for each class and property defined by IATA ONE Re
          </dl>
       </div>
    </div>
-   <div class="entity" id="CompanyInformation#error">
-      <h3>companyInformation:error<sup class="type-op" title="object property">op</sup>
+   <div class="entity" id="CompanyInformation#errors">
+      <h3>companyInformation:errors<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://onerecord.iata.org/CompanyInformation#error</p>
+         <strong>IRI:</strong> https://onerecord.iata.org/CompanyInformation#errors</p>
       <div class="comment">
          <span class="markdown">Non mandatory error details</span>
       </div>
@@ -730,28 +828,26 @@ This section provides details for each class and property defined by IATA ONE Re
          </dl>
       </div>
    </div>
-   <div class="entity" id="Create#lo">
-      <h3>create:lo<sup class="type-op" title="object property">op</sup>
+   <div class="entity" id="DelegationRequest#targetLogisticsObjects">
+      <h3>delegationRequest:targetLogisticsObjects<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://onerecord.iata.org/Create#lo</p>
+         <strong>IRI:</strong> https://onerecord.iata.org/DelegationRequest#targetLogisticsObjects</p>
       <div class="comment">
-         <span class="markdown">Content of a Logistics Object</span>
+         <span class="markdown">Identifiers of the logistics objects to which the access is requested</span>
       </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Create" title="https://onerecord.iata.org/Create">Create</a>
+               <a href="#DelegationRequest" title="https://onerecord.iata.org/DelegationRequest">DelegationRequest</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="https://onerecord.iata.org/LogisticsObject"
-                  target="_blank"
-                  title="https://onerecord.iata.org/LogisticsObject">logistics object</a>
+               <a href="#LogisticsObjectRef" title="https://onerecord.iata.org/LogisticsObjectRef">LogisticsObjectRef</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -779,6 +875,30 @@ This section provides details for each class and property defined by IATA ONE Re
                <a href="#Details" title="https://onerecord.iata.org/Details">Details</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="MementoEntry#memento">
+      <h3>mementoEntry:memento<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://onerecord.iata.org/MementoEntry#memento</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#MementoEntry" title="https://onerecord.iata.org/MementoEntry">MementoEntry</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Memento" title="https://onerecord.iata.org/Memento">Memento</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is also defined as</dt>
+            <dd>data property</dd>
          </dl>
       </div>
    </div>
@@ -832,6 +952,32 @@ This section provides details for each class and property defined by IATA ONE Re
          </dl>
       </div>
    </div>
+   <div class="entity" id="Notification#logisticsObject">
+      <h3>notification:logisticsObject<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://onerecord.iata.org/Notification#logisticsObject</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Notification" title="https://onerecord.iata.org/Notification">Notification</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="https://onerecord.iata.org/LogisticsObject"
+                  target="_blank"
+                  title="https://onerecord.iata.org/LogisticsObject">logistics object</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is also defined as</dt>
+            <dd>data property</dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="Operation#o">
       <h3>operation:o<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -854,6 +1000,30 @@ This section provides details for each class and property defined by IATA ONE Re
                <a href="#OperationObject" title="https://onerecord.iata.org/OperationObject">OperationObject</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="PatchRequest#logisticsObjectRef">
+      <h3>patchRequest:logisticsObjectRef<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://onerecord.iata.org/PatchRequest#logisticsObjectRef</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#PatchRequest" title="https://onerecord.iata.org/PatchRequest">PatchRequest</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#LogisticsObjectRef" title="https://onerecord.iata.org/LogisticsObjectRef">LogisticsObjectRef</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is also defined as</dt>
+            <dd>data property</dd>
          </dl>
       </div>
    </div>
@@ -882,13 +1052,13 @@ This section provides details for each class and property defined by IATA ONE Re
          </dl>
       </div>
    </div>
-   <div class="entity" id="Subscription#error">
-      <h3>subscription:error<sup class="type-op" title="object property">op</sup>
+   <div class="entity" id="Subscription#errors">
+      <h3>subscription:errors<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://onerecord.iata.org/Subscription#error</p>
+         <strong>IRI:</strong> https://onerecord.iata.org/Subscription#errors</p>
       <div class="comment">
          <span class="markdown">Non mandatory error details</span>
       </div>
@@ -932,23 +1102,19 @@ This section provides details for each class and property defined by IATA ONE Re
          </dl>
       </div>
    </div>
-</div><div id="dataproperties">
+</div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="dataproperties">
    <h3 id="dataproperties-headline" class="list">Data Properties</h3>
    <ul class="hlist">
       <li>
-         <a href="#AuditTrail#logisticsObjectRef"
-            title="https://onerecord.iata.org/AuditTrail#logisticsObjectRef">auditTrail:logisticsObjectRef</a>
-      </li>
-      <li>
          <a href="#ChangeRequest#companyId"
-            title="https://onerecord.iata.org/ChangeRequest#companyId">changeRequests:companyId</a>
+            title="https://onerecord.iata.org/ChangeRequest#companyId">changeRequest:companyId</a>
       </li>
       <li>
-         <a href="#ChangeRequest#status" title="https://onerecord.iata.org/ChangeRequest#status">changeRequests:status</a>
+         <a href="#ChangeRequest#status" title="https://onerecord.iata.org/ChangeRequest#status">changeRequest:status</a>
       </li>
       <li>
          <a href="#ChangeRequest#timestamp"
-            title="https://onerecord.iata.org/ChangeRequest#timestamp">changeRequests:timestamp</a>
+            title="https://onerecord.iata.org/ChangeRequest#timestamp">changeRequest:timestamp</a>
       </li>
       <li>
          <a href="#CompanyInformation#companyId"
@@ -975,12 +1141,8 @@ This section provides details for each class and property defined by IATA ONE Re
             title="https://onerecord.iata.org/DelegationRequest#operations">delegationRequest:operations</a>
       </li>
       <li>
-         <a href="#DelegationRequest#targetCompany"
-            title="https://onerecord.iata.org/DelegationRequest#targetCompany">delegationRequest:targetCompany</a>
-      </li>
-      <li>
-         <a href="#DelegationRequest#targetLogisticsObject"
-            title="https://onerecord.iata.org/DelegationRequest#targetLogisticsObject">delegationRequest:targetLogisticsObject</a>
+         <a href="#DelegationRequest#targetCompanies"
+            title="https://onerecord.iata.org/DelegationRequest#targetCompanies">delegationRequest:targetCompanies</a>
       </li>
       <li>
          <a href="#Details#attribute" title="https://onerecord.iata.org/Details#attribute">details:attribute</a>
@@ -996,6 +1158,14 @@ This section provides details for each class and property defined by IATA ONE Re
       </li>
       <li>
          <a href="#Error#title" title="https://onerecord.iata.org/Error#title">error:title</a>
+      </li>
+      <li>
+         <a href="#LogisticsObjectRef#logisticsObjectId"
+            title="https://onerecord.iata.org/LogisticsObjectRef#logisticsObjectId">logisticsObjectRef:logisticsObjectId</a>
+      </li>
+      <li>
+         <a href="#LogisticsObjectRef#logisticsObjectType"
+            title="https://onerecord.iata.org/LogisticsObjectRef#logisticsObjectType">logisticsObjectRef:logisticsObjectType</a>
       </li>
       <li>
          <a href="#Memento#created" title="https://onerecord.iata.org/Memento#created">memento:created</a>
@@ -1016,9 +1186,6 @@ This section provides details for each class and property defined by IATA ONE Re
          <a href="#MementoEntry#label" title="https://onerecord.iata.org/MementoEntry#label">mementoEntry:label</a>
       </li>
       <li>
-         <a href="#MementoEntry#memento" title="https://onerecord.iata.org/MementoEntry#memento">mementoEntry:memento</a>
-      </li>
-      <li>
          <a href="#Mementos#firstMemento" title="https://onerecord.iata.org/Mementos#firstMemento">mementos:firstMemento</a>
       </li>
       <li>
@@ -1027,10 +1194,6 @@ This section provides details for each class and property defined by IATA ONE Re
       <li>
          <a href="#Notification#eventType"
             title="https://onerecord.iata.org/Notification#eventType">notification:eventType</a>
-      </li>
-      <li>
-         <a href="#Notification#logisticsObjectRef"
-            title="https://onerecord.iata.org/Notification#logisticsObjectRef">notification:logisticsObjectRef</a>
       </li>
       <li>
          <a href="#Notification#topic" title="https://onerecord.iata.org/Notification#topic">notification:topic</a>
@@ -1053,10 +1216,6 @@ This section provides details for each class and property defined by IATA ONE Re
             title="https://onerecord.iata.org/PatchRequest#description">patchRequest:description</a>
       </li>
       <li>
-         <a href="#PatchRequest#logisticsObjectRef"
-            title="https://onerecord.iata.org/PatchRequest#logisticsObjectRef">patchRequest:logisticsObjectRef</a>
-      </li>
-      <li>
          <a href="#PatchRequest#requestorCompanyIdentifier"
             title="https://onerecord.iata.org/PatchRequest#requestorCompanyIdentifier">patchRequest:requestorCompanyIdentifier</a>
       </li>
@@ -1071,8 +1230,8 @@ This section provides details for each class and property defined by IATA ONE Re
             title="https://onerecord.iata.org/Subscription#callbackUrl">subscription:callbackUrl</a>
       </li>
       <li>
-         <a href="#Subscription#contentType"
-            title="https://onerecord.iata.org/Subscription#contentType">subscription:contentType</a>
+         <a href="#Subscription#contentTypes"
+            title="https://onerecord.iata.org/Subscription#contentTypes">subscription:contentTypes</a>
       </li>
       <li>
          <a href="#Subscription#myCompanyIdentifier"
@@ -1103,34 +1262,8 @@ This section provides details for each class and property defined by IATA ONE Re
          <a href="#Timemap#timegate" title="https://onerecord.iata.org/Timemap#timegate">timemap:timegate</a>
       </li>
    </ul>
-   <div class="entity" id="AuditTrail#logisticsObjectRef">
-      <h3>auditTrail:logisticsObjectRef<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://onerecord.iata.org/AuditTrail#logisticsObjectRef</p>
-      <div class="comment">
-         <span class="markdown">Logistics Object Reference for which the audit trail applies</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#AuditTrail" title="https://onerecord.iata.org/AuditTrail">AuditTrail</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
    <div class="entity" id="ChangeRequest#companyId">
-      <h3>changeRequests:companyId<sup class="type-dp" title="data property">dp</sup>
+      <h3>changeRequest:companyId<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
@@ -1156,7 +1289,7 @@ This section provides details for each class and property defined by IATA ONE Re
       </div>
    </div>
    <div class="entity" id="ChangeRequest#status">
-      <h3>changeRequests:status<sup class="type-dp" title="data property">dp</sup>
+      <h3>changeRequest:status<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
@@ -1178,7 +1311,7 @@ This section provides details for each class and property defined by IATA ONE Re
       </div>
    </div>
    <div class="entity" id="ChangeRequest#timestamp">
-      <h3>changeRequests:timestamp<sup class="type-dp" title="data property">dp</sup>
+      <h3>changeRequest:timestamp<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
@@ -1351,41 +1484,15 @@ This section provides details for each class and property defined by IATA ONE Re
          </dl>
       </div>
    </div>
-   <div class="entity" id="DelegationRequest#targetCompany">
-      <h3>delegationRequest:targetCompany<sup class="type-dp" title="data property">dp</sup>
+   <div class="entity" id="DelegationRequest#targetCompanies">
+      <h3>delegationRequest:targetCompanies<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://onerecord.iata.org/DelegationRequest#targetCompany</p>
+         <strong>IRI:</strong> https://onerecord.iata.org/DelegationRequest#targetCompanies</p>
       <div class="comment">
-         <span class="markdown">Party that receives the delegated rights</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#DelegationRequest" title="https://onerecord.iata.org/DelegationRequest">DelegationRequest</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="DelegationRequest#targetLogisticsObject">
-      <h3>delegationRequest:targetLogisticsObject<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://onerecord.iata.org/DelegationRequest#targetLogisticsObject</p>
-      <div class="comment">
-         <span class="markdown">Identifier of the logistics object to which the access is requested</span>
+         <span class="markdown">Parties that receive the delegated rights</span>
       </div>
       <div class="description">
          <dl>
@@ -1522,6 +1629,58 @@ This section provides details for each class and property defined by IATA ONE Re
             <dt>has domain</dt>
             <dd>
                <a href="#Error" title="https://onerecord.iata.org/Error">Error</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="LogisticsObjectRef#logisticsObjectId">
+      <h3>logisticsObjectRef:logisticsObjectId<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://onerecord.iata.org/LogisticsObjectRef#logisticsObjectId</p>
+      <div class="comment">
+         <span class="markdown">Id of the reference Logistics Object</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#LogisticsObjectRef" title="https://onerecord.iata.org/LogisticsObjectRef">LogisticsObjectRef</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="http://www.w3.org/2001/XMLSchema#string"
+                  target="_blank"
+                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="LogisticsObjectRef#logisticsObjectType">
+      <h3>logisticsObjectRef:logisticsObjectType<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://onerecord.iata.org/LogisticsObjectRef#logisticsObjectType</p>
+      <div class="comment">
+         <span class="markdown">Type of the reference Logistics Object</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#LogisticsObjectRef" title="https://onerecord.iata.org/LogisticsObjectRef">LogisticsObjectRef</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -1689,32 +1848,6 @@ This section provides details for each class and property defined by IATA ONE Re
          </dl>
       </div>
    </div>
-   <div class="entity" id="MementoEntry#memento">
-      <h3>mementoEntry:memento<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://onerecord.iata.org/MementoEntry#memento</p>
-      <div class="comment">
-         <span class="markdown">Link to the memento</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#MementoEntry" title="https://onerecord.iata.org/MementoEntry">MementoEntry</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
    <div class="entity" id="Mementos#firstMemento">
       <h3>mementos:firstMemento<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
@@ -1786,32 +1919,6 @@ This section provides details for each class and property defined by IATA ONE Re
             </dd>
             <dt>has range</dt>
             <dd>{ "OBJECT_CREATED" , "OBJECT_UPDATED" }</dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="Notification#logisticsObjectRef">
-      <h3>notification:logisticsObjectRef<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://onerecord.iata.org/Notification#logisticsObjectRef</p>
-      <div class="comment">
-         <span class="markdown">Logistics Object reference for which the notification is sent</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Notification" title="https://onerecord.iata.org/Notification">Notification</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
          </dl>
       </div>
    </div>
@@ -1967,32 +2074,6 @@ This section provides details for each class and property defined by IATA ONE Re
          </dl>
       </div>
    </div>
-   <div class="entity" id="PatchRequest#logisticsObjectRef">
-      <h3>patchRequest:logisticsObjectRef<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://onerecord.iata.org/PatchRequest#logisticsObjectRef</p>
-      <div class="comment">
-         <span class="markdown">Reference of the Logistics Object to which te change request is applied to</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#PatchRequest" title="https://onerecord.iata.org/PatchRequest">PatchRequest</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
    <div class="entity" id="PatchRequest#requestorCompanyIdentifier">
       <h3>patchRequest:requestorCompanyIdentifier<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
@@ -2097,15 +2178,15 @@ This section provides details for each class and property defined by IATA ONE Re
          </dl>
       </div>
    </div>
-   <div class="entity" id="Subscription#contentType">
-      <h3>subscription:contentType<sup class="type-dp" title="data property">dp</sup>
+   <div class="entity" id="Subscription#contentTypes">
+      <h3>subscription:contentTypes<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://onerecord.iata.org/Subscription#contentType</p>
+         <strong>IRI:</strong> https://onerecord.iata.org/Subscription#contentTypes</p>
       <div class="comment">
-         <span class="markdown">Content type that the subscriber wants to receive in the notifications</span>
+         <span class="markdown">Content types that the subscriber wants to receive in the notifications</span>
       </div>
       <div class="description">
          <dl>

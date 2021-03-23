@@ -2,7 +2,7 @@
 <span class="markdown">
 This ontology has the following classes and properties.</span>
 <h4>Classes</h4>
-<ul class="hlist">
+<ul xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="hlist">
    <li>
       <a href="#AuditTrail" title="https://onerecord.iata.org/AuditTrail">AuditTrail</a>
    </li>
@@ -13,9 +13,6 @@ This ontology has the following classes and properties.</span>
       <a href="#CompanyInformation" title="https://onerecord.iata.org/CompanyInformation">CompanyInformation</a>
    </li>
    <li>
-      <a href="#Create" title="https://onerecord.iata.org/Create">Create</a>
-   </li>
-   <li>
       <a href="#DelegationRequest" title="https://onerecord.iata.org/DelegationRequest">DelegationRequest</a>
    </li>
    <li>
@@ -23,6 +20,9 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#Error" title="https://onerecord.iata.org/Error">Error</a>
+   </li>
+   <li>
+      <a href="#LogisticsObjectRef" title="https://onerecord.iata.org/LogisticsObjectRef">LogisticsObjectRef</a>
    </li>
    <li>
       <a href="#Memento" title="https://onerecord.iata.org/Memento">Memento</a>
@@ -54,34 +54,51 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#Timemap" title="https://onerecord.iata.org/Timemap">Timemap</a>
    </li>
-</ul><h4>Object Properties</h4><ul class="hlist">
+</ul><h4>Object Properties</h4><ul xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="hlist">
    <li>
       <a href="#AuditTrail#changeRequests"
          title="https://onerecord.iata.org/AuditTrail#changeRequests">auditTrail:changeRequests</a>
    </li>
    <li>
-      <a href="#AuditTrail#create" title="https://onerecord.iata.org/AuditTrail#create">auditTrail:create</a>
+      <a href="#AuditTrail#errors" title="https://onerecord.iata.org/AuditTrail#errors">auditTrail:errors</a>
    </li>
    <li>
-      <a href="#AuditTrail#error" title="https://onerecord.iata.org/AuditTrail#error">auditTrail:error</a>
+      <a href="#AuditTrail#logisticsObjectRef"
+         title="https://onerecord.iata.org/AuditTrail#logisticsObjectRef">
+         <span>auditTrail:logisticsObjectRef</span>
+      </a>
    </li>
    <li>
-      <a href="#ChangeRequest#changeRequest"
-         title="https://onerecord.iata.org/ChangeRequest#changeRequest">changeRequests:changeRequest</a>
+      <a href="#AuditTrail#loInitialSnapshot"
+         title="https://onerecord.iata.org/AuditTrail#loInitialSnapshot">auditTrail:loInitialSnapshot</a>
+   </li>
+   <li>
+      <a href="#ChangeRequest#patchRequest"
+         title="https://onerecord.iata.org/ChangeRequest#patchRequest">changeRequest:patchRequest</a>
+   </li>
+   <li>
+      <a href="#ChangeRequest#requestingParty"
+         title="https://onerecord.iata.org/ChangeRequest#requestingParty">changeRequest:requestingParty</a>
    </li>
    <li>
       <a href="#CompanyInformation#company"
          title="https://onerecord.iata.org/CompanyInformation#company">companyInformation:company</a>
    </li>
    <li>
-      <a href="#CompanyInformation#error"
-         title="https://onerecord.iata.org/CompanyInformation#error">companyInformation:error</a>
+      <a href="#CompanyInformation#errors"
+         title="https://onerecord.iata.org/CompanyInformation#errors">companyInformation:errors</a>
    </li>
    <li>
-      <a href="#Create#lo" title="https://onerecord.iata.org/Create#lo">create:lo</a>
+      <a href="#DelegationRequest#targetLogisticsObjects"
+         title="https://onerecord.iata.org/DelegationRequest#targetLogisticsObjects">delegationRequest:targetLogisticsObjects</a>
    </li>
    <li>
       <a href="#Error#details" title="https://onerecord.iata.org/Error#details">error:details</a>
+   </li>
+   <li>
+      <a href="#MementoEntry#memento" title="https://onerecord.iata.org/MementoEntry#memento">
+         <span>mementoEntry:memento</span>
+      </a>
    </li>
    <li>
       <a href="#MementoList#mementoEntry"
@@ -91,33 +108,41 @@ This ontology has the following classes and properties.</span>
       <a href="#Mementos#list" title="https://onerecord.iata.org/Mementos#list">mementos:list</a>
    </li>
    <li>
+      <a href="#Notification#logisticsObject"
+         title="https://onerecord.iata.org/Notification#logisticsObject">
+         <span>notification:logisticsObject</span>
+      </a>
+   </li>
+   <li>
       <a href="#Operation#o" title="https://onerecord.iata.org/Operation#o">operation:o</a>
+   </li>
+   <li>
+      <a href="#PatchRequest#logisticsObjectRef"
+         title="https://onerecord.iata.org/PatchRequest#logisticsObjectRef">
+         <span>patchRequest:logisticsObjectRef</span>
+      </a>
    </li>
    <li>
       <a href="#PatchRequest#operations"
          title="https://onerecord.iata.org/PatchRequest#operations">patchRequest:operations</a>
    </li>
    <li>
-      <a href="#Subscription#error" title="https://onerecord.iata.org/Subscription#error">subscription:error</a>
+      <a href="#Subscription#errors" title="https://onerecord.iata.org/Subscription#errors">subscription:errors</a>
    </li>
    <li>
       <a href="#Timemap#mementos" title="https://onerecord.iata.org/Timemap#mementos">timemap:mementos</a>
    </li>
-</ul><h4>Data Properties</h4><ul class="hlist">
-   <li>
-      <a href="#AuditTrail#logisticsObjectRef"
-         title="https://onerecord.iata.org/AuditTrail#logisticsObjectRef">auditTrail:logisticsObjectRef</a>
-   </li>
+</ul><h4>Data Properties</h4><ul xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="hlist">
    <li>
       <a href="#ChangeRequest#companyId"
-         title="https://onerecord.iata.org/ChangeRequest#companyId">changeRequests:companyId</a>
+         title="https://onerecord.iata.org/ChangeRequest#companyId">changeRequest:companyId</a>
    </li>
    <li>
-      <a href="#ChangeRequest#status" title="https://onerecord.iata.org/ChangeRequest#status">changeRequests:status</a>
+      <a href="#ChangeRequest#status" title="https://onerecord.iata.org/ChangeRequest#status">changeRequest:status</a>
    </li>
    <li>
       <a href="#ChangeRequest#timestamp"
-         title="https://onerecord.iata.org/ChangeRequest#timestamp">changeRequests:timestamp</a>
+         title="https://onerecord.iata.org/ChangeRequest#timestamp">changeRequest:timestamp</a>
    </li>
    <li>
       <a href="#CompanyInformation#companyId"
@@ -144,12 +169,8 @@ This ontology has the following classes and properties.</span>
          title="https://onerecord.iata.org/DelegationRequest#operations">delegationRequest:operations</a>
    </li>
    <li>
-      <a href="#DelegationRequest#targetCompany"
-         title="https://onerecord.iata.org/DelegationRequest#targetCompany">delegationRequest:targetCompany</a>
-   </li>
-   <li>
-      <a href="#DelegationRequest#targetLogisticsObject"
-         title="https://onerecord.iata.org/DelegationRequest#targetLogisticsObject">delegationRequest:targetLogisticsObject</a>
+      <a href="#DelegationRequest#targetCompanies"
+         title="https://onerecord.iata.org/DelegationRequest#targetCompanies">delegationRequest:targetCompanies</a>
    </li>
    <li>
       <a href="#Details#attribute" title="https://onerecord.iata.org/Details#attribute">details:attribute</a>
@@ -165,6 +186,14 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#Error#title" title="https://onerecord.iata.org/Error#title">error:title</a>
+   </li>
+   <li>
+      <a href="#LogisticsObjectRef#logisticsObjectId"
+         title="https://onerecord.iata.org/LogisticsObjectRef#logisticsObjectId">logisticsObjectRef:logisticsObjectId</a>
+   </li>
+   <li>
+      <a href="#LogisticsObjectRef#logisticsObjectType"
+         title="https://onerecord.iata.org/LogisticsObjectRef#logisticsObjectType">logisticsObjectRef:logisticsObjectType</a>
    </li>
    <li>
       <a href="#Memento#created" title="https://onerecord.iata.org/Memento#created">memento:created</a>
@@ -185,9 +214,6 @@ This ontology has the following classes and properties.</span>
       <a href="#MementoEntry#label" title="https://onerecord.iata.org/MementoEntry#label">mementoEntry:label</a>
    </li>
    <li>
-      <a href="#MementoEntry#memento" title="https://onerecord.iata.org/MementoEntry#memento">mementoEntry:memento</a>
-   </li>
-   <li>
       <a href="#Mementos#firstMemento" title="https://onerecord.iata.org/Mementos#firstMemento">mementos:firstMemento</a>
    </li>
    <li>
@@ -196,10 +222,6 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#Notification#eventType"
          title="https://onerecord.iata.org/Notification#eventType">notification:eventType</a>
-   </li>
-   <li>
-      <a href="#Notification#logisticsObjectRef"
-         title="https://onerecord.iata.org/Notification#logisticsObjectRef">notification:logisticsObjectRef</a>
    </li>
    <li>
       <a href="#Notification#topic" title="https://onerecord.iata.org/Notification#topic">notification:topic</a>
@@ -222,10 +244,6 @@ This ontology has the following classes and properties.</span>
          title="https://onerecord.iata.org/PatchRequest#description">patchRequest:description</a>
    </li>
    <li>
-      <a href="#PatchRequest#logisticsObjectRef"
-         title="https://onerecord.iata.org/PatchRequest#logisticsObjectRef">patchRequest:logisticsObjectRef</a>
-   </li>
-   <li>
       <a href="#PatchRequest#requestorCompanyIdentifier"
          title="https://onerecord.iata.org/PatchRequest#requestorCompanyIdentifier">patchRequest:requestorCompanyIdentifier</a>
    </li>
@@ -240,8 +258,8 @@ This ontology has the following classes and properties.</span>
          title="https://onerecord.iata.org/Subscription#callbackUrl">subscription:callbackUrl</a>
    </li>
    <li>
-      <a href="#Subscription#contentType"
-         title="https://onerecord.iata.org/Subscription#contentType">subscription:contentType</a>
+      <a href="#Subscription#contentTypes"
+         title="https://onerecord.iata.org/Subscription#contentTypes">subscription:contentTypes</a>
    </li>
    <li>
       <a href="#Subscription#myCompanyIdentifier"

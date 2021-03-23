@@ -2,12 +2,18 @@
 <span class="markdown">
 This ontology has the following classes and properties.</span>
 <h4>Classes</h4>
-<ul class="hlist">
+<ul xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="hlist">
    <li>
       <a href="#Address" title="https://onerecord.iata.org/Address">Address</a>
    </li>
    <li>
       <a href="#Booking" title="https://onerecord.iata.org/Booking">Booking</a>
+   </li>
+   <li>
+      <a href="#BookingOption" title="https://onerecord.iata.org/BookingOption">BookingOption</a>
+   </li>
+   <li>
+      <a href="#BookingOptionRequest" title="https://onerecord.iata.org/BookingOptionRequest">BookingOptionRequest</a>
    </li>
    <li>
       <a href="#Branch" title="https://onerecord.iata.org/Branch">Branch</a>
@@ -22,10 +28,10 @@ This ontology has the following classes and properties.</span>
       <a href="#CO2CalcMethod" title="https://onerecord.iata.org/CO2CalcMethod">CO2CalcMethod</a>
    </li>
    <li>
-      <a href="#Company" title="https://onerecord.iata.org/Company">Company</a>
+      <a href="#CO2Emissions" title="https://onerecord.iata.org/CO2Emissions">CO2Emissions</a>
    </li>
    <li>
-      <a href="#ConnectedDevice" title="https://onerecord.iata.org/ConnectedDevice">ConnectedDevice</a>
+      <a href="#Company" title="https://onerecord.iata.org/Company">Company</a>
    </li>
    <li>
       <a href="#Contact" title="https://onerecord.iata.org/Contact">Contact</a>
@@ -52,6 +58,12 @@ This ontology has the following classes and properties.</span>
       <a href="#Dimensions" title="https://onerecord.iata.org/Dimensions">Dimensions</a>
    </li>
    <li>
+      <a href="#EpermitConsignment" title="https://onerecord.iata.org/EpermitConsignment">EpermitConsignment</a>
+   </li>
+   <li>
+      <a href="#EpermitSignature" title="https://onerecord.iata.org/EpermitSignature">EpermitSignature</a>
+   </li>
+   <li>
       <a href="#Event" title="https://onerecord.iata.org/Event">Event</a>
    </li>
    <li>
@@ -64,7 +76,13 @@ This ontology has the following classes and properties.</span>
       <a href="#Geolocation" title="https://onerecord.iata.org/Geolocation">Geolocation</a>
    </li>
    <li>
+      <a href="#MeasurementsGeoloc" title="https://onerecord.iata.org/MeasurementsGeoloc">https://onerecord.iata.org/MeasurementsGeoloc</a>
+   </li>
+   <li>
       <a href="#Insurance" title="https://onerecord.iata.org/Insurance">Insurance</a>
+   </li>
+   <li>
+      <a href="#IotDevice" title="https://onerecord.iata.org/IotDevice">IotDevice</a>
    </li>
    <li>
       <a href="#Item" title="https://onerecord.iata.org/Item">Item</a>
@@ -73,10 +91,19 @@ This ontology has the following classes and properties.</span>
       <a href="#ItemDg" title="https://onerecord.iata.org/ItemDg">ItemDg</a>
    </li>
    <li>
+      <a href="#LiveAnimalsEpermit" title="https://onerecord.iata.org/LiveAnimalsEpermit">LiveAnimalsEpermit</a>
+   </li>
+   <li>
       <a href="#Location" title="https://onerecord.iata.org/Location">Location</a>
    </li>
    <li>
       <a href="#LogisticsObject" title="https://onerecord.iata.org/LogisticsObject">LogisticsObject</a>
+   </li>
+   <li>
+      <a href="#Measurements" title="https://onerecord.iata.org/Measurements">Measurements</a>
+   </li>
+   <li>
+      <a href="#MeasurementsOther" title="https://onerecord.iata.org/MeasurementsOther">MeasurementsOther</a>
    </li>
    <li>
       <a href="#OtherIdentifier" title="https://onerecord.iata.org/OtherIdentifier">OtherIdentifier</a>
@@ -95,6 +122,9 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#PieceDg" title="https://onerecord.iata.org/PieceDg">PieceDg</a>
+   </li>
+   <li>
+      <a href="#PieceLiveAnimals" title="https://onerecord.iata.org/PieceLiveAnimals">PieceLiveAnimals</a>
    </li>
    <li>
       <a href="#Price" title="https://onerecord.iata.org/Price">Price</a>
@@ -121,10 +151,19 @@ This ontology has the following classes and properties.</span>
       <a href="#Routing" title="https://onerecord.iata.org/Routing">Routing</a>
    </li>
    <li>
+      <a href="#Schedule" title="https://onerecord.iata.org/Schedule">Schedule</a>
+   </li>
+   <li>
       <a href="#SecurityDeclaration" title="https://onerecord.iata.org/SecurityDeclaration">SecurityDeclaration</a>
    </li>
    <li>
       <a href="#Sensor" title="https://onerecord.iata.org/Sensor">Sensor</a>
+   </li>
+   <li>
+      <a href="#SensorGeoloc" title="https://onerecord.iata.org/SensorGeoloc">SensorGeoloc</a>
+   </li>
+   <li>
+      <a href="#SensorOther" title="https://onerecord.iata.org/SensorOther">SensorOther</a>
    </li>
    <li>
       <a href="#ServiceRequest" title="https://onerecord.iata.org/ServiceRequest">ServiceRequest</a>
@@ -153,7 +192,7 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#Waybill" title="https://onerecord.iata.org/Waybill">Waybill</a>
    </li>
-</ul><h4>Object Properties</h4><ul class="hlist">
+</ul><h4>Object Properties</h4><ul xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="hlist">
    <li>
       <a href="#Address#country" title="https://onerecord.iata.org/Address#country">address:country</a>
    </li>
@@ -198,6 +237,82 @@ This ontology has the following classes and properties.</span>
       <a href="#Booking#waybillNumber" title="https://onerecord.iata.org/Booking#waybillNumber">booking:waybillNumber</a>
    </li>
    <li>
+      <a href="#BookingOption#carrier" title="https://onerecord.iata.org/BookingOption#carrier">bookingOption:carrier</a>
+   </li>
+   <li>
+      <a href="#BookingOption#carrierProductInfo"
+         title="https://onerecord.iata.org/BookingOption#carrierProductInfo">bookingOption:carrierProductInfo</a>
+   </li>
+   <li>
+      <a href="#BookingOption#consignee"
+         title="https://onerecord.iata.org/BookingOption#consignee">bookingOption:consignee</a>
+   </li>
+   <li>
+      <a href="#BookingOption#freightForwarder"
+         title="https://onerecord.iata.org/BookingOption#freightForwarder">bookingOption:freightForwarder</a>
+   </li>
+   <li>
+      <a href="#BookingOption#notifyParty"
+         title="https://onerecord.iata.org/BookingOption#notifyParty">bookingOption:notifyParty</a>
+   </li>
+   <li>
+      <a href="#BookingOption#price" title="https://onerecord.iata.org/BookingOption#price">bookingOption:price</a>
+   </li>
+   <li>
+      <a href="#BookingOption#requestRef"
+         title="https://onerecord.iata.org/BookingOption#requestRef">bookingOption:requestRef</a>
+   </li>
+   <li>
+      <a href="#BookingOption#routing" title="https://onerecord.iata.org/BookingOption#routing">bookingOption:routing</a>
+   </li>
+   <li>
+      <a href="#BookingOption#schedule"
+         title="https://onerecord.iata.org/BookingOption#schedule">bookingOption:schedule</a>
+   </li>
+   <li>
+      <a href="#BookingOption#shipmentDetails"
+         title="https://onerecord.iata.org/BookingOption#shipmentDetails">bookingOption:shipmentDetails</a>
+   </li>
+   <li>
+      <a href="#BookingOption#shipper" title="https://onerecord.iata.org/BookingOption#shipper">bookingOption:shipper</a>
+   </li>
+   <li>
+      <a href="#BookingOption#transportMovement"
+         title="https://onerecord.iata.org/BookingOption#transportMovement">bookingOption:transportMovement</a>
+   </li>
+   <li>
+      <a href="#BookingOption#waybillNumber"
+         title="https://onerecord.iata.org/BookingOption#waybillNumber">bookingOption:waybillNumber</a>
+   </li>
+   <li>
+      <a href="#BookingOptionRequest#parties"
+         title="https://onerecord.iata.org/BookingOptionRequest#parties">bookingOptionRequest:parties</a>
+   </li>
+   <li>
+      <a href="#BookingOptionRequest#ratingsPreference"
+         title="https://onerecord.iata.org/BookingOptionRequest#ratingsPreference">bookingOptionRequest:ratingsPreference</a>
+   </li>
+   <li>
+      <a href="#BookingOptionRequest#routingPreferences"
+         title="https://onerecord.iata.org/BookingOptionRequest#routingPreferences">bookingOptionRequest:routingPreferences</a>
+   </li>
+   <li>
+      <a href="#BookingOptionRequest#schedulePreferences"
+         title="https://onerecord.iata.org/BookingOptionRequest#schedulePreferences">bookingOptionRequest:schedulePreferences</a>
+   </li>
+   <li>
+      <a href="#BookingOptionRequest#shipmentDetails"
+         title="https://onerecord.iata.org/BookingOptionRequest#shipmentDetails">bookingOptionRequest:shipmentDetails</a>
+   </li>
+   <li>
+      <a href="#BookingOptionRequest#transportMovement"
+         title="https://onerecord.iata.org/BookingOptionRequest#transportMovement">bookingOptionRequest:transportMovement</a>
+   </li>
+   <li>
+      <a href="#BookingOptionRequest#unitsPreference"
+         title="https://onerecord.iata.org/BookingOptionRequest#unitsPreference">bookingOptionRequest:unitsPreference</a>
+   </li>
+   <li>
       <a href="#Branch#company" title="https://onerecord.iata.org/Branch#company">branch:company</a>
    </li>
    <li>
@@ -209,6 +324,10 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#Branch#otherIdentifier"
          title="https://onerecord.iata.org/Branch#otherIdentifier">branch:otherIdentifier</a>
+   </li>
+   <li>
+      <a href="#CO2Emissions#calculatedEmissions"
+         title="https://onerecord.iata.org/CO2Emissions#calculatedEmissions">co2Emissions:calculatedEmissions</a>
    </li>
    <li>
       <a href="#Company#branch" title="https://onerecord.iata.org/Company#branch">company:branch</a>
@@ -233,6 +352,18 @@ This ontology has the following classes and properties.</span>
       <a href="#Dimensions#width" title="https://onerecord.iata.org/Dimensions#width">dimensions:width</a>
    </li>
    <li>
+      <a href="#EpermitConsignment#consignmentItems"
+         title="https://onerecord.iata.org/EpermitConsignment#consignmentItems">epermitConsignment:consignmentItems</a>
+   </li>
+   <li>
+      <a href="#EpermitConsignment#examiningQuantity"
+         title="https://onerecord.iata.org/EpermitConsignment#examiningQuantity">epermitConsignment:examiningQuantity</a>
+   </li>
+   <li>
+      <a href="#EpermitSignature#signatoryCompany"
+         title="https://onerecord.iata.org/EpermitSignature#signatoryCompany">epermitSignature:signatoryCompany</a>
+   </li>
+   <li>
       <a href="#Event#location" title="https://onerecord.iata.org/Event#location">event:location</a>
    </li>
    <li>
@@ -241,15 +372,6 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#ExternalReference#documentOriginator"
          title="https://onerecord.iata.org/ExternalReference#documentOriginator">externalReference:documentOriginator</a>
-   </li>
-   <li>
-      <a href="#Geolocation#elevation" title="https://onerecord.iata.org/Geolocation#elevation">geolocation:elevation</a>
-   </li>
-   <li>
-      <a href="#Geolocation#latitude" title="https://onerecord.iata.org/Geolocation#latitude">geolocation:latitude</a>
-   </li>
-   <li>
-      <a href="#Geolocation#longitude" title="https://onerecord.iata.org/Geolocation#longitude">geolocation:longitude</a>
    </li>
    <li>
       <a href="#Insurance#coveringParty"
@@ -262,6 +384,13 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#Insurance#insuranceShipment"
          title="https://onerecord.iata.org/Insurance#insuranceShipment">insurance:insuranceShipment</a>
+   </li>
+   <li>
+      <a href="#IotDevice#deviceManufacturer"
+         title="https://onerecord.iata.org/IotDevice#deviceManufacturer">iotDevice:deviceManufacturer</a>
+   </li>
+   <li>
+      <a href="#IotDevice#sensors" title="https://onerecord.iata.org/IotDevice#sensors">iotDevice:sensors</a>
    </li>
    <li>
       <a href="#Item#dimensions" title="https://onerecord.iata.org/Item#dimensions">item:dimensions</a>
@@ -278,6 +407,9 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#Item#productionCountry"
          title="https://onerecord.iata.org/Item#productionCountry">item:productionCountry</a>
+   </li>
+   <li>
+      <a href="#Item#quantity" title="https://onerecord.iata.org/Item#quantity">item:quantity</a>
    </li>
    <li>
       <a href="#Item#targetCountry" title="https://onerecord.iata.org/Item#targetCountry">item:targetCountry</a>
@@ -297,13 +429,34 @@ This ontology has the following classes and properties.</span>
          title="https://onerecord.iata.org/ItemDg#netWeightMeasure">itemDg:netWeightMeasure</a>
    </li>
    <li>
+      <a href="#LiveAnimalsEpermit#consignee"
+         title="https://onerecord.iata.org/LiveAnimalsEpermit#consignee">liveAnimalsEpermit:consignee</a>
+   </li>
+   <li>
+      <a href="#LiveAnimalsEpermit#consignments"
+         title="https://onerecord.iata.org/LiveAnimalsEpermit#consignments">liveAnimalsEpermit:consignments</a>
+   </li>
+   <li>
+      <a href="#LiveAnimalsEpermit#signatures"
+         title="https://onerecord.iata.org/LiveAnimalsEpermit#signatures">liveAnimalsEpermit:signatures</a>
+   </li>
+   <li>
       <a href="#Location#address" title="https://onerecord.iata.org/Location#address">location:address</a>
    </li>
    <li>
       <a href="#Location#geolocation" title="https://onerecord.iata.org/Location#geolocation">location:geolocation</a>
    </li>
    <li>
-      <a href="#LogisticsObject#event" title="https://onerecord.iata.org/LogisticsObject#event">logisticsObject:event</a>
+      <a href="#LogisticsObject#event"
+         title="https://onerecord.iata.org/LogisticsObject#event">logisticsObject:event</a>
+   </li>
+   <li>
+      <a href="#MeasurementsGeoloc#geolocationMeasurement"
+         title="https://onerecord.iata.org/MeasurementsGeoloc#geolocationMeasurement">measurementsGeoloc:geolocationMeasurement</a>
+   </li>
+   <li>
+      <a href="#MeasurementsOther#genericMeasurement"
+         title="https://onerecord.iata.org/MeasurementsOther#genericMeasurement">measurementsOther:genericMeasurement</a>
    </li>
    <li>
       <a href="#OtherParty#companyDetails"
@@ -326,9 +479,6 @@ This ontology has the following classes and properties.</span>
       <a href="#Piece#customsInfo" title="https://onerecord.iata.org/Piece#customsInfo">piece:CustomsInfo</a>
    </li>
    <li>
-      <a href="#Piece#dgDeclaration" title="https://onerecord.iata.org/Piece#dgDeclaration">piece:dgDeclaration</a>
-   </li>
-   <li>
       <a href="#Piece#dimensions" title="https://onerecord.iata.org/Piece#dimensions">piece:dimensions</a>
    </li>
    <li>
@@ -339,7 +489,8 @@ This ontology has the following classes and properties.</span>
       <a href="#Piece#grossWeight" title="https://onerecord.iata.org/Piece#grossWeight">piece:grossWeight</a>
    </li>
    <li>
-      <a href="#Piece#otherIdentifier" title="https://onerecord.iata.org/Piece#otherIdentifier">piece:otherIdentifier</a>
+      <a href="#Piece#otherIdentifier"
+         title="https://onerecord.iata.org/Piece#otherIdentifier">piece:otherIdentifier</a>
    </li>
    <li>
       <a href="#Piece#otherParty" title="https://onerecord.iata.org/Piece#otherParty">piece:otherParty</a>
@@ -377,6 +528,25 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#Piece#volumetricWeight"
          title="https://onerecord.iata.org/Piece#volumetricWeight">piece:volumetricWeight</a>
+   </li>
+   <li>
+      <a href="#PieceDg#dgDeclaration"
+         title="https://onerecord.iata.org/PieceDg#dgDeclaration">pieceDg:dgDeclaration</a>
+   </li>
+   <li>
+      <a href="#PieceLiveAnimals#associatedEpermit"
+         title="https://onerecord.iata.org/PieceLiveAnimals#associatedEpermit">pieceLa:associatedEpermit</a>
+   </li>
+   <li>
+      <a href="#PieceLiveAnimals#exportTradeCountry"
+         title="https://onerecord.iata.org/PieceLiveAnimals#exportTradeCountry">pieceLa:exportTradeCountry</a>
+   </li>
+   <li>
+      <a href="#PieceLiveAnimals#originTradeCountry"
+         title="https://onerecord.iata.org/PieceLiveAnimals#originTradeCountry">pieceLa:originTradeCountry</a>
+   </li>
+   <li>
+      <a href="#Price#bookingOption" title="https://onerecord.iata.org/Price#bookingOption">price:bookingOption</a>
    </li>
    <li>
       <a href="#Price#bookingRef" title="https://onerecord.iata.org/Price#bookingRef">price:bookingRef</a>
@@ -418,10 +588,6 @@ This ontology has the following classes and properties.</span>
          title="https://onerecord.iata.org/Request#ratingsPreference">request:ratingsPreference</a>
    </li>
    <li>
-      <a href="#Request#routingPreferences"
-         title="https://onerecord.iata.org/Request#routingPreferences">request:routingPreferences</a>
-   </li>
-   <li>
       <a href="#Request#shipmentDetails"
          title="https://onerecord.iata.org/Request#shipmentDetails">request:shipmentDetails</a>
    </li>
@@ -454,8 +620,21 @@ This ontology has the following classes and properties.</span>
          title="https://onerecord.iata.org/SecurityDeclaration#regulatedEntityIssuer">securityDeclaration:regulatedEntityIssuer</a>
    </li>
    <li>
+      <a href="#Sensor#iotDevice" title="https://onerecord.iata.org/Sensor#iotDevice">sensor:iotDevice</a>
+   </li>
+   <li>
+      <a href="#SensorGeoloc#val" title="https://onerecord.iata.org/SensorGeoloc#val">sensorGeoloc:val</a>
+   </li>
+   <li>
+      <a href="#SensorOther#val" title="https://onerecord.iata.org/SensorOther#val">sensorOther:val</a>
+   </li>
+   <li>
       <a href="#Shipment#containedPiece"
          title="https://onerecord.iata.org/Shipment#containedPiece">shipment:containedPiece</a>
+   </li>
+   <li>
+      <a href="#Shipment#deliveryLocation"
+         title="https://onerecord.iata.org/Shipment#deliveryLocation">shipment:deliveryLocation</a>
    </li>
    <li>
       <a href="#Shipment#dimensions" title="https://onerecord.iata.org/Shipment#dimensions">shipment:dimensions</a>
@@ -532,6 +711,10 @@ This ontology has the following classes and properties.</span>
          title="https://onerecord.iata.org/TransportSegment#fuelAmountMeasured">transportSegment:fuelAmountMeasured</a>
    </li>
    <li>
+      <a href="#TransportSegment#payload"
+         title="https://onerecord.iata.org/TransportSegment#payload">transportSegment:payload</a>
+   </li>
+   <li>
       <a href="#TransportSegment#transportedPieces"
          title="https://onerecord.iata.org/TransportSegment#transportedPieces">transportSegment:transportedPieces</a>
    </li>
@@ -569,13 +752,16 @@ This ontology has the following classes and properties.</span>
          title="https://onerecord.iata.org/VolumetricWeight#conversionFactor">volumetricWeight:conversionFactor</a>
    </li>
    <li>
+      <a href="#Waybill#booking" title="https://onerecord.iata.org/Waybill#booking">waybill:booking</a>
+   </li>
+   <li>
       <a href="#Waybill#bookingRef" title="https://onerecord.iata.org/Waybill#bookingRef">waybill:bookingRef</a>
    </li>
    <li>
       <a href="#Waybill#containedWaybill"
          title="https://onerecord.iata.org/Waybill#containedWaybill">waybill:containedWaybill</a>
    </li>
-</ul><h4>Data Properties</h4><ul class="hlist">
+</ul><h4>Data Properties</h4><ul xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" class="hlist">
    <li>
       <a href="#Address#addressCode" title="https://onerecord.iata.org/Address#addressCode">address:addressCode</a>
    </li>
@@ -629,6 +815,46 @@ This ontology has the following classes and properties.</span>
          title="https://onerecord.iata.org/Booking#totalTransitTime">booking:totalTransitTime</a>
    </li>
    <li>
+      <a href="#BookingOption#bookingStatus"
+         title="https://onerecord.iata.org/BookingOption#bookingStatus">bookingOption:bookingStatus</a>
+   </li>
+   <li>
+      <a href="#BookingOption#offerValidFrom"
+         title="https://onerecord.iata.org/BookingOption#offerValidFrom">bookingOption:offerValidFrom</a>
+   </li>
+   <li>
+      <a href="#BookingOption#offerValidTo"
+         title="https://onerecord.iata.org/BookingOption#offerValidTo">bookingOption:offerValidTo</a>
+   </li>
+   <li>
+      <a href="#BookingOption#requestMatchInd"
+         title="https://onerecord.iata.org/BookingOption#requestMatchInd">bookingOption:requestMatchInd</a>
+   </li>
+   <li>
+      <a href="#BookingOption#shipmentSecurityStatus"
+         title="https://onerecord.iata.org/BookingOption#shipmentSecurityStatus">bookingOption:shipmentSecurityStatus</a>
+   </li>
+   <li>
+      <a href="#BookingOptionRequest#allotment"
+         title="https://onerecord.iata.org/BookingOptionRequest#allotment">bookingOptionRequest:allotment</a>
+   </li>
+   <li>
+      <a href="#BookingOptionRequest#expectedCommodity"
+         title="https://onerecord.iata.org/BookingOptionRequest#expectedCommodity">bookingOptionRequest:expectedCommodity</a>
+   </li>
+   <li>
+      <a href="#BookingOptionRequest#requestedHandling"
+         title="https://onerecord.iata.org/BookingOptionRequest#requestedHandling">bookingOptionRequest:requestedHandling</a>
+   </li>
+   <li>
+      <a href="#BookingOptionRequest#requestType"
+         title="https://onerecord.iata.org/BookingOptionRequest#requestType">bookingOptionRequest:requestType</a>
+   </li>
+   <li>
+      <a href="#BookingOptionRequest#shipmentSecurityStatus"
+         title="https://onerecord.iata.org/BookingOptionRequest#shipmentSecurityStatus">bookingOptionRequest:shipmentSecurityStatus</a>
+   </li>
+   <li>
       <a href="#Branch#branchName" title="https://onerecord.iata.org/Branch#branchName">branch:branchName</a>
    </li>
    <li>
@@ -658,6 +884,14 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#CO2CalcMethod#methodVersion"
          title="https://onerecord.iata.org/CO2CalcMethod#methodVersion">co2CalcMethod:methodVersion</a>
+   </li>
+   <li>
+      <a href="#CO2Emissions#methodName"
+         title="https://onerecord.iata.org/CO2Emissions#methodName">co2Emissions:methodName</a>
+   </li>
+   <li>
+      <a href="#CO2Emissions#methodVersion"
+         title="https://onerecord.iata.org/CO2Emissions#methodVersion">co2Emissions:methodVersion</a>
    </li>
    <li>
       <a href="#Company#airlineCode" title="https://onerecord.iata.org/Company#airlineCode">company:airlineCode</a>
@@ -711,6 +945,10 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#CustomsInfo#customsInfoSubjectCode"
          title="https://onerecord.iata.org/CustomsInfo#customsInfoSubjectCode">customsInfo:customsInfoSubjectCode</a>
+   </li>
+   <li>
+      <a href="#Waybill#destinationCurrencyCode"
+         title="https://onerecord.iata.org/Waybill#destinationCurrencyCode">destinationCurrencyCode</a>
    </li>
    <li>
       <a href="#DgDeclaration#aircraftLimitationInformation"
@@ -777,6 +1015,30 @@ This ontology has the following classes and properties.</span>
          title="https://onerecord.iata.org/DgRadioactiveIsotope#specialFormIndicator">dgRadioactiveIsotope:specialFormIndicator</a>
    </li>
    <li>
+      <a href="#EpermitConsignment#usedToDateQuotaQuantity"
+         title="https://onerecord.iata.org/EpermitConsignment#usedToDateQuotaQuantity">epermitConsignment:usedToDateQuotaQuantity</a>
+   </li>
+   <li>
+      <a href="#EpermitSignature#securityStampId"
+         title="https://onerecord.iata.org/EpermitSignature#securityStampId">epermitSignature:securityStampId</a>
+   </li>
+   <li>
+      <a href="#EpermitSignature#signatoryRole"
+         title="https://onerecord.iata.org/EpermitSignature#signatoryRole">epermitSignature:signatoryRole</a>
+   </li>
+   <li>
+      <a href="#EpermitSignature#signatureDate"
+         title="https://onerecord.iata.org/EpermitSignature#signatureDate">epermitSignature:signatureDate</a>
+   </li>
+   <li>
+      <a href="#EpermitSignature#signatureStatement"
+         title="https://onerecord.iata.org/EpermitSignature#signatureStatement">epermitSignature:signatureStatement</a>
+   </li>
+   <li>
+      <a href="#EpermitSignature#signatureTypeCode"
+         title="https://onerecord.iata.org/EpermitSignature#signatureTypeCode">epermitSignature:signatureTypeCode</a>
+   </li>
+   <li>
       <a href="#Event#dateTime" title="https://onerecord.iata.org/Event#dateTime">event:dateTime</a>
    </li>
    <li>
@@ -813,6 +1075,40 @@ This ontology has the following classes and properties.</span>
          title="https://onerecord.iata.org/ExternalReference#documentVersion">externalReference:documentVersion</a>
    </li>
    <li>
+      <a href="#Geolocation#elevation"
+         title="https://onerecord.iata.org/Geolocation#elevation">geolocation:elevation</a>
+   </li>
+   <li>
+      <a href="#Geolocation#geolocationUnit"
+         title="https://onerecord.iata.org/Geolocation#geolocationUnit">Geolocation:geolocationUnit</a>
+   </li>
+   <li>
+      <a href="#Geolocation#latitude" title="https://onerecord.iata.org/Geolocation#latitude">geolocation:latitude</a>
+   </li>
+   <li>
+      <a href="#Geolocation#longitude"
+         title="https://onerecord.iata.org/Geolocation#longitude">geolocation:longitude</a>
+   </li>
+   <li>
+      <a href="#IotDevice#associatedObject"
+         title="https://onerecord.iata.org/IotDevice#associatedObject">iotDevice:associatedObject</a>
+   </li>
+   <li>
+      <a href="#IotDevice#deviceDescription"
+         title="https://onerecord.iata.org/IotDevice#deviceDescription">iotDevice:deviceDescription</a>
+   </li>
+   <li>
+      <a href="#IotDevice#deviceModel"
+         title="https://onerecord.iata.org/IotDevice#deviceModel">iotDevice:deviceModel</a>
+   </li>
+   <li>
+      <a href="#IotDevice#deviceName" title="https://onerecord.iata.org/IotDevice#deviceName">iotDevice:deviceName</a>
+   </li>
+   <li>
+      <a href="#IotDevice#deviceSerialNumber"
+         title="https://onerecord.iata.org/IotDevice#deviceSerialNumber">iotDevice:deviceSerialNumber</a>
+   </li>
+   <li>
       <a href="#Item#batchNumber" title="https://onerecord.iata.org/Item#batchNumber">item:batchNumber</a>
    </li>
    <li>
@@ -842,6 +1138,50 @@ This ontology has the following classes and properties.</span>
          title="https://onerecord.iata.org/ItemDg#supplementaryInfoSuffix">itemDg:supplementaryInfoSuffix</a>
    </li>
    <li>
+      <a href="#LiveAnimalsEpermit#permitCopyIndicator"
+         title="https://onerecord.iata.org/LiveAnimalsEpermit#permitCopyIndicator">liveAnimalsEpermit:permitCopyIndicator</a>
+   </li>
+   <li>
+      <a href="#LiveAnimalsEpermit#permitNumber"
+         title="https://onerecord.iata.org/LiveAnimalsEpermit#permitNumber">liveAnimalsEpermit:permitNumber</a>
+   </li>
+   <li>
+      <a href="#LiveAnimalsEpermit#permitTypeCode"
+         title="https://onerecord.iata.org/LiveAnimalsEpermit#permitTypeCode">liveAnimalsEpermit:permitTypeCode</a>
+   </li>
+   <li>
+      <a href="#LiveAnimalsEpermit#permitTypeOther"
+         title="https://onerecord.iata.org/LiveAnimalsEpermit#permitTypeOther">liveAnimalsEpermit:permitTypeOgher</a>
+   </li>
+   <li>
+      <a href="#LiveAnimalsEpermit#permitValidFrom"
+         title="https://onerecord.iata.org/LiveAnimalsEpermit#permitValidFrom">liveAnimalsEpermit:permitValidFrom</a>
+   </li>
+   <li>
+      <a href="#LiveAnimalsEpermit#permitValidUntil"
+         title="https://onerecord.iata.org/LiveAnimalsEpermit#permitValidUntil">liveAnimalsEpermit:permitValidUntil</a>
+   </li>
+   <li>
+      <a href="#LiveAnimalsEpermit#specialConditions"
+         title="https://onerecord.iata.org/LiveAnimalsEpermit#specialConditions">liveAnimalsEpermit:specialConditions</a>
+   </li>
+   <li>
+      <a href="#LiveAnimalsEpermit#transactionPurposeCode"
+         title="https://onerecord.iata.org/LiveAnimalsEpermit#transactionPurposeCode">liveAnimalsEpermit:transactionPurposeCode</a>
+   </li>
+   <li>
+      <a href="#LiveAnimalsEpermit#transactionPurposeText"
+         title="https://onerecord.iata.org/LiveAnimalsEpermit#transactionPurposeText">liveAnimalsEpermit:transactionPurposeText</a>
+   </li>
+   <li>
+      <a href="#LiveAnimalsEpermit#transportContractId"
+         title="https://onerecord.iata.org/LiveAnimalsEpermit#transportContractId">liveAnimalsEpermit:transportContractId</a>
+   </li>
+   <li>
+      <a href="#LiveAnimalsEpermit#transportContractTypeCode"
+         title="https://onerecord.iata.org/LiveAnimalsEpermit#transportContractTypeCode">liveAnimalsEpermit:transportContractTypeCode</a>
+   </li>
+   <li>
       <a href="#Location#code" title="https://onerecord.iata.org/Location#code">location:code</a>
    </li>
    <li>
@@ -857,12 +1197,26 @@ This ontology has the following classes and properties.</span>
          title="https://onerecord.iata.org/LogisticsObject#companyIdentifier">logisticsObject:companyIdentifier</a>
    </li>
    <li>
+      <a href="#Measurements#measurementTimestamp"
+         title="https://onerecord.iata.org/Measurements#measurementTimestamp">measurements:measurementTimestamp</a>
+   </li>
+   <li>
+      <a href="#Waybill#optionalShippingRefNo"
+         title="https://onerecord.iata.org/Waybill#optionalShippingRefNo">
+         <span>optional shipping ref no</span>
+      </a>
+   </li>
+   <li>
       <a href="#OtherIdentifier#identifier"
          title="https://onerecord.iata.org/OtherIdentifier#identifier">otherIdentifier:identifier</a>
    </li>
    <li>
       <a href="#OtherIdentifier#otherIdentifierType"
          title="https://onerecord.iata.org/OtherIdentifier#otherIdentifierType">otherIdentifier:otherIdentifierType</a>
+   </li>
+   <li>
+      <a href="#OtherParty#partyTypeCode"
+         title="https://onerecord.iata.org/OtherParty#partyTypeCode">otherParty:partyTypeCode</a>
    </li>
    <li>
       <a href="#OtherParty#roleName" title="https://onerecord.iata.org/OtherParty#roleName">otherParty:roleName</a>
@@ -903,11 +1257,30 @@ This ontology has the following classes and properties.</span>
       <a href="#Piece#coload" title="https://onerecord.iata.org/Piece#coload">piece:coload</a>
    </li>
    <li>
+      <a href="#Piece#declaredValueForCarriage"
+         title="https://onerecord.iata.org/Piece#declaredValueForCarriage">piece:declaredValueForCarriage</a>
+   </li>
+   <li>
+      <a href="#Piece#declaredValueForCustoms"
+         title="https://onerecord.iata.org/Piece#declaredValueForCustoms">piece:declaredValueForCustoms</a>
+   </li>
+   <li>
       <a href="#Piece#goodsDescription"
          title="https://onerecord.iata.org/Piece#goodsDescription">piece:goodsDescription</a>
    </li>
    <li>
       <a href="#Piece#loadType" title="https://onerecord.iata.org/Piece#loadType">piece:loadType</a>
+   </li>
+   <li>
+      <a href="#Piece#packagedeIdentifier"
+         title="https://onerecord.iata.org/Piece#packagedeIdentifier">piece:packagedeIdentifier</a>
+   </li>
+   <li>
+      <a href="#Piece#packageMarkCoded"
+         title="https://onerecord.iata.org/Piece#packageMarkCoded">piece:packageMarkCoded</a>
+   </li>
+   <li>
+      <a href="#Piece#shippingMarks" title="https://onerecord.iata.org/Piece#shippingMarks">piece:shippingMarks</a>
    </li>
    <li>
       <a href="#Piece#slac" title="https://onerecord.iata.org/Piece#slac">piece:slac</a>
@@ -943,6 +1316,62 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#PieceDg#qValueNumeric"
          title="https://onerecord.iata.org/PieceDg#qValueNumeric">pieceDg:qValueNumeric</a>
+   </li>
+   <li>
+      <a href="#PieceLiveAnimals#acquisitionDatetime"
+         title="https://onerecord.iata.org/PieceLiveAnimals#acquisitionDatetime">pieceLa:acquisitionDatetime</a>
+   </li>
+   <li>
+      <a href="#PieceLiveAnimals#annualQuotaQuantity"
+         title="https://onerecord.iata.org/PieceLiveAnimals#annualQuotaQuantity">pieceLa:annualQuotaQuantity</a>
+   </li>
+   <li>
+      <a href="#PieceLiveAnimals#categoryCode"
+         title="https://onerecord.iata.org/PieceLiveAnimals#categoryCode">pieceLa:categoryCode</a>
+   </li>
+   <li>
+      <a href="#PieceLiveAnimals#goodsTypeCode"
+         title="https://onerecord.iata.org/PieceLiveAnimals#goodsTypeCode">pieceLa:goodsTypeCode</a>
+   </li>
+   <li>
+      <a href="#PieceLiveAnimals#goodsTypeExtensionCode"
+         title="https://onerecord.iata.org/PieceLiveAnimals#goodsTypeExtensionCode">pieceLa:goodsTypeExtensionCode</a>
+   </li>
+   <li>
+      <a href="#PieceLiveAnimals#originReferencePermitDatetime"
+         title="https://onerecord.iata.org/PieceLiveAnimals#originReferencePermitDatetime">pieceLa:originReferencePermitDatetime</a>
+   </li>
+   <li>
+      <a href="#PieceLiveAnimals#originReferencePermitId"
+         title="https://onerecord.iata.org/PieceLiveAnimals#originReferencePermitId">pieceLa:originReferencePermitId</a>
+   </li>
+   <li>
+      <a href="#PieceLiveAnimals#originReferencePermitTypeCode"
+         title="https://onerecord.iata.org/PieceLiveAnimals#originReferencePermitTypeCode">pieceLa:originReferencePermitTypeCode</a>
+   </li>
+   <li>
+      <a href="#PieceLiveAnimals#quantityAnimals"
+         title="https://onerecord.iata.org/PieceLiveAnimals#quantityAnimals">pieceLa:quantityAnimals</a>
+   </li>
+   <li>
+      <a href="#PieceLiveAnimals#speciesCommonName"
+         title="https://onerecord.iata.org/PieceLiveAnimals#speciesCommonName">pieceLa:speciesCommonName</a>
+   </li>
+   <li>
+      <a href="#PieceLiveAnimals#speciesScientificName"
+         title="https://onerecord.iata.org/PieceLiveAnimals#speciesScientificName">pieceLa:speciesScientificName</a>
+   </li>
+   <li>
+      <a href="#PieceLiveAnimals#specimenDescription"
+         title="https://onerecord.iata.org/PieceLiveAnimals#specimenDescription">pieceLa:specimenDescription</a>
+   </li>
+   <li>
+      <a href="#PieceLiveAnimals#specimenTypeCode"
+         title="https://onerecord.iata.org/PieceLiveAnimals#specimenTypeCode">pieceLa:specimenTypeCode</a>
+   </li>
+   <li>
+      <a href="#Price#carrierChargeCode"
+         title="https://onerecord.iata.org/Price#carrierChargeCode">price:carrierChargeCode</a>
    </li>
    <li>
       <a href="#Price#grandTotal" title="https://onerecord.iata.org/Price#grandTotal">price:grandTotal</a>
@@ -1046,6 +1475,10 @@ This ontology has the following classes and properties.</span>
          title="https://onerecord.iata.org/Ratings#chargeDescription">ratings:chargeDescription</a>
    </li>
    <li>
+      <a href="#Ratings#chargePaymentType"
+         title="https://onerecord.iata.org/Ratings#chargePaymentType">ratings:chargePaymentType</a>
+   </li>
+   <li>
       <a href="#Ratings#chargeType" title="https://onerecord.iata.org/Ratings#chargeType">ratings:chargeType</a>
    </li>
    <li>
@@ -1055,6 +1488,9 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#Ratings#priceSpecificationRef"
          title="https://onerecord.iata.org/Ratings#priceSpecificationRef">ratings:priceSpecificationRef</a>
+   </li>
+   <li>
+      <a href="#Ratings#rcp" title="https://onerecord.iata.org/Ratings#rcp">ratings:rcp</a>
    </li>
    <li>
       <a href="#Ratings#subTotal" title="https://onerecord.iata.org/Ratings#subTotal">ratings:subTotal</a>
@@ -1096,6 +1532,22 @@ This ontology has the following classes and properties.</span>
       <a href="#Routing#rfsInd" title="https://onerecord.iata.org/Routing#rfsInd">routing:rfsInd</a>
    </li>
    <li>
+      <a href="#Schedule#earliestAcceptanceTime"
+         title="https://onerecord.iata.org/Schedule#earliestAcceptanceTime">schedule:earliestAcceptanceTime</a>
+   </li>
+   <li>
+      <a href="#Schedule#latestAcceptanceTime"
+         title="https://onerecord.iata.org/Schedule#latestAcceptanceTime">schedule:latestAcceptanceTime</a>
+   </li>
+   <li>
+      <a href="#Schedule#timeOfAvailability"
+         title="https://onerecord.iata.org/Schedule#timeOfAvailability">schedule:timeOfAvailability</a>
+   </li>
+   <li>
+      <a href="#Schedule#totalTransitTime"
+         title="https://onerecord.iata.org/Schedule#totalTransitTime">schedule:totalTransitTime</a>
+   </li>
+   <li>
       <a href="#SecurityDeclaration#additionalSecurityInformation"
          title="https://onerecord.iata.org/SecurityDeclaration#additionalSecurityInformation">securityDeclaration:additionalSecurityInformation</a>
    </li>
@@ -1120,6 +1572,20 @@ This ontology has the following classes and properties.</span>
          title="https://onerecord.iata.org/SecurityDeclaration#securityStatus">securityDeclaration:securityStatus</a>
    </li>
    <li>
+      <a href="#Sensor#sensorDescription"
+         title="https://onerecord.iata.org/Sensor#sensorDescription">sensor:sensorDescription</a>
+   </li>
+   <li>
+      <a href="#Sensor#sensorName" title="https://onerecord.iata.org/Sensor#sensorName">sensor:sensorName</a>
+   </li>
+   <li>
+      <a href="#Sensor#sensorSerialNumber"
+         title="https://onerecord.iata.org/Sensor#sensorSerialNumber">sensor:sensorSerialNumber</a>
+   </li>
+   <li>
+      <a href="#Sensor#sensorType" title="https://onerecord.iata.org/Sensor#sensorType">sensor:sensorType</a>
+   </li>
+   <li>
       <a href="#ServiceRequest#code" title="https://onerecord.iata.org/ServiceRequest#code">serviceRequest:code</a>
    </li>
    <li>
@@ -1135,8 +1601,19 @@ This ontology has the following classes and properties.</span>
          title="https://onerecord.iata.org/ServiceRequest#statementType">serviceRequest:statementType</a>
    </li>
    <li>
+      <a href="#Shipment#deliveryDate"
+         title="https://onerecord.iata.org/Shipment#deliveryDate">shipment:deliveryDate</a>
+   </li>
+   <li>
       <a href="#Shipment#goodsDescription"
          title="https://onerecord.iata.org/Shipment#goodsDescription">shipment:goodsDescription</a>
+   </li>
+   <li>
+      <a href="#Shipment#incoterms" title="https://onerecord.iata.org/Shipment#incoterms">shipment:incoterms</a>
+   </li>
+   <li>
+      <a href="#Shipment#otherChargesIndicator"
+         title="https://onerecord.iata.org/Shipment#otherChargesIndicator">shipment:otherChargesIndicator</a>
    </li>
    <li>
       <a href="#Shipment#totalPieceCount"
@@ -1146,7 +1623,15 @@ This ontology has the following classes and properties.</span>
       <a href="#Shipment#totalSLAC" title="https://onerecord.iata.org/Shipment#totalSLAC">shipment:totalSLAC</a>
    </li>
    <li>
+      <a href="#Shipment#weightValuationIndicator"
+         title="https://onerecord.iata.org/Shipment#weightValuationIndicator">shipment:weightValuationIndicator</a>
+   </li>
+   <li>
       <a href="#SpecialHandling#code" title="https://onerecord.iata.org/SpecialHandling#code">specialHandling:code</a>
+   </li>
+   <li>
+      <a href="#SpecialHandling#handlingText"
+         title="https://onerecord.iata.org/SpecialHandling#handlingText">specialHandling:handlingText</a>
    </li>
    <li>
       <a href="#TransportMeans#vehicleRegistration"
@@ -1175,6 +1660,10 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#TransportSegment#modeCode"
          title="https://onerecord.iata.org/TransportSegment#modeCode">transportSegment:modeCode</a>
+   </li>
+   <li>
+      <a href="#TransportSegment#modeQualifier"
+         title="https://onerecord.iata.org/TransportSegment#modeQualifier">transportSegment:modeQualifier</a>
    </li>
    <li>
       <a href="#TransportSegment#movementType"
@@ -1243,6 +1732,18 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#Value#value" title="https://onerecord.iata.org/Value#value">value:value</a>
+   </li>
+   <li>
+      <a href="#Waybill#destinationCharges"
+         title="https://onerecord.iata.org/Waybill#destinationCharges">waybill:destinationCharges</a>
+   </li>
+   <li>
+      <a href="#Waybill#destinationCurrencyRate"
+         title="https://onerecord.iata.org/Waybill#destinationCurrencyRate">waybill:destinationCurrencyRate</a>
+   </li>
+   <li>
+      <a href="#Waybill#optionalShippingInfo"
+         title="https://onerecord.iata.org/Waybill#optionalShippingInfo">waybill:optionalShippingInfo</a>
    </li>
    <li>
       <a href="#Waybill#waybillNumber"

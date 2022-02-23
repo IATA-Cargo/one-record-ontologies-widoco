@@ -1,14 +1,14 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://onerecord.iata.org/"
-     xml:base="https://onerecord.iata.org/"
+<rdf:RDF xmlns="https://onerecord.iata.org/api/"
+     xml:base="https://onerecord.iata.org/api/"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="https://onerecord.iata.org/">
-        <dc:description xml:lang="en">The IATA ONE Record API vocabulary, described using W3C RDF Schema and the Web Ontology Language.</dc:description>
+    <owl:Ontology rdf:about="https://onerecord.iata.org/api/">
+        <dc:description xml:lang="en">The IATA ONE Record vocabulary, described using W3C RDF Schema and the Web Ontology Language.</dc:description>
         <dc:title xml:lang="en">IATA ONE Record API vocabulary</dc:title>
         <owl:versionInfo>1.1</owl:versionInfo>
     </owl:Ontology>
@@ -72,220 +72,220 @@
     
 
 
-    <!-- https://onerecord.iata.org/AuditTrail#changeRequests -->
+    <!-- https://onerecord.iata.org/api/AuditTrail#changeRequests -->
 
 
-    <owl:ObjectProperty rdf:about="https://onerecord.iata.org/AuditTrail#changeRequests">
-        <rdfs:domain rdf:resource="https://onerecord.iata.org/AuditTrail"/>
-        <rdfs:range rdf:resource="https://onerecord.iata.org/ChangeRequest"/>
+    <owl:ObjectProperty rdf:about="https://onerecord.iata.org/api/AuditTrail#changeRequests">
+        <rdfs:domain rdf:resource="https://onerecord.iata.org/api/AuditTrail"/>
+        <rdfs:range rdf:resource="https://onerecord.iata.org/api/ChangeRequest"/>
         <rdfs:comment xml:lang="en">List of change requests that were sent as PATCH on for a Logistics Object</rdfs:comment>
         <rdfs:label xml:lang="en">auditTrail:changeRequests</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://onerecord.iata.org/AuditTrail#errors -->
+    <!-- https://onerecord.iata.org/api/AuditTrail#errors -->
 
 
-    <owl:ObjectProperty rdf:about="https://onerecord.iata.org/AuditTrail#errors">
-        <rdfs:domain rdf:resource="https://onerecord.iata.org/AuditTrail"/>
-        <rdfs:range rdf:resource="https://onerecord.iata.org/Error"/>
+    <owl:ObjectProperty rdf:about="https://onerecord.iata.org/api/AuditTrail#errors">
+        <rdfs:domain rdf:resource="https://onerecord.iata.org/api/AuditTrail"/>
+        <rdfs:range rdf:resource="https://onerecord.iata.org/api/Error"/>
         <rdfs:comment xml:lang="en">Non mandatory error details</rdfs:comment>
         <rdfs:label xml:lang="en">auditTrail:errors</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://onerecord.iata.org/AuditTrail#loInitialSnapshot -->
+    <!-- https://onerecord.iata.org/api/AuditTrail#loInitialSnapshot -->
 
 
-    <owl:ObjectProperty rdf:about="https://onerecord.iata.org/AuditTrail#loInitialSnapshot">
-        <rdfs:domain rdf:resource="https://onerecord.iata.org/AuditTrail"/>
-        <rdfs:range rdf:resource="https://onerecord.iata.org/Memento"/>
+    <owl:ObjectProperty rdf:about="https://onerecord.iata.org/api/AuditTrail#loInitialSnapshot">
+        <rdfs:domain rdf:resource="https://onerecord.iata.org/api/AuditTrail"/>
+        <rdfs:range rdf:resource="https://onerecord.iata.org/api/Memento"/>
         <rdfs:comment xml:lang="en">Initial content of the Logistics Object at the creation moment, represented via a Memento</rdfs:comment>
         <rdfs:label xml:lang="en">auditTrail:loInitialSnapshot</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://onerecord.iata.org/AuditTrail#logisticsObjectRef -->
+    <!-- https://onerecord.iata.org/api/AuditTrail#logisticsObjectRef -->
 
 
-    <owl:ObjectProperty rdf:about="https://onerecord.iata.org/AuditTrail#logisticsObjectRef">
-        <rdfs:domain rdf:resource="https://onerecord.iata.org/AuditTrail"/>
-        <rdfs:range rdf:resource="https://onerecord.iata.org/LogisticsObjectRef"/>
+    <owl:ObjectProperty rdf:about="https://onerecord.iata.org/api/AuditTrail#logisticsObjectRef">
+        <rdfs:domain rdf:resource="https://onerecord.iata.org/api/AuditTrail"/>
+        <rdfs:range rdf:resource="https://onerecord.iata.org/api/LogisticsObjectRef"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://onerecord.iata.org/ChangeRequest#patchRequest -->
+    <!-- https://onerecord.iata.org/api/ChangeRequest#patchRequest -->
 
 
-    <owl:ObjectProperty rdf:about="https://onerecord.iata.org/ChangeRequest#patchRequest">
-        <rdfs:domain rdf:resource="https://onerecord.iata.org/ChangeRequest"/>
-        <rdfs:range rdf:resource="https://onerecord.iata.org/PatchRequest"/>
+    <owl:ObjectProperty rdf:about="https://onerecord.iata.org/api/ChangeRequest#patchRequest">
+        <rdfs:domain rdf:resource="https://onerecord.iata.org/api/ChangeRequest"/>
+        <rdfs:range rdf:resource="https://onerecord.iata.org/api/PatchRequest"/>
         <rdfs:comment xml:lang="en">PATCH body of a change request sent for a specific Logistics Object</rdfs:comment>
         <rdfs:label xml:lang="en">changeRequest:patchRequest</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://onerecord.iata.org/ChangeRequest#requestingParty -->
+    <!-- https://onerecord.iata.org/api/ChangeRequest#requestingParty -->
 
 
-    <owl:ObjectProperty rdf:about="https://onerecord.iata.org/ChangeRequest#requestingParty">
-        <rdfs:domain rdf:resource="https://onerecord.iata.org/ChangeRequest"/>
-        <rdfs:range rdf:resource="https://onerecord.iata.org/Branch"/>
+    <owl:ObjectProperty rdf:about="https://onerecord.iata.org/api/ChangeRequest#requestingParty">
+        <rdfs:domain rdf:resource="https://onerecord.iata.org/api/ChangeRequest"/>
+        <rdfs:range rdf:resource="https://onerecord.iata.org/api/Branch"/>
         <rdfs:comment xml:lang="en">The party that has requested the change request</rdfs:comment>
         <rdfs:label xml:lang="en">changeRequest:requestingParty</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://onerecord.iata.org/CompanyInformation#company -->
+    <!-- https://onerecord.iata.org/api/CompanyInformation#company -->
 
 
-    <owl:ObjectProperty rdf:about="https://onerecord.iata.org/CompanyInformation#company">
-        <rdfs:domain rdf:resource="https://onerecord.iata.org/CompanyInformation"/>
-        <rdfs:range rdf:resource="https://onerecord.iata.org/Company"/>
+    <owl:ObjectProperty rdf:about="https://onerecord.iata.org/api/CompanyInformation#company">
+        <rdfs:domain rdf:resource="https://onerecord.iata.org/api/CompanyInformation"/>
+        <rdfs:range rdf:resource="https://onerecord.iata.org/api/Company"/>
         <rdfs:comment xml:lang="en">Company details</rdfs:comment>
         <rdfs:label xml:lang="en">companyInformation:company</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://onerecord.iata.org/CompanyInformation#errors -->
+    <!-- https://onerecord.iata.org/api/CompanyInformation#errors -->
 
 
-    <owl:ObjectProperty rdf:about="https://onerecord.iata.org/CompanyInformation#errors">
-        <rdfs:domain rdf:resource="https://onerecord.iata.org/CompanyInformation"/>
-        <rdfs:range rdf:resource="https://onerecord.iata.org/Error"/>
+    <owl:ObjectProperty rdf:about="https://onerecord.iata.org/api/CompanyInformation#errors">
+        <rdfs:domain rdf:resource="https://onerecord.iata.org/api/CompanyInformation"/>
+        <rdfs:range rdf:resource="https://onerecord.iata.org/api/Error"/>
         <rdfs:comment xml:lang="en">Non mandatory error details</rdfs:comment>
         <rdfs:label xml:lang="en">companyInformation:errors</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://onerecord.iata.org/DelegationRequest#targetLogisticsObjects -->
+    <!-- https://onerecord.iata.org/api/DelegationRequest#targetLogisticsObjects -->
 
 
-    <owl:ObjectProperty rdf:about="https://onerecord.iata.org/DelegationRequest#targetLogisticsObjects">
-        <rdfs:domain rdf:resource="https://onerecord.iata.org/DelegationRequest"/>
-        <rdfs:range rdf:resource="https://onerecord.iata.org/LogisticsObjectRef"/>
+    <owl:ObjectProperty rdf:about="https://onerecord.iata.org/api/DelegationRequest#targetLogisticsObjects">
+        <rdfs:domain rdf:resource="https://onerecord.iata.org/api/DelegationRequest"/>
+        <rdfs:range rdf:resource="https://onerecord.iata.org/api/LogisticsObjectRef"/>
         <rdfs:comment xml:lang="en">Identifiers of the logistics objects to which the access is requested</rdfs:comment>
         <rdfs:label xml:lang="en">delegationRequest:targetLogisticsObjects</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://onerecord.iata.org/Error#details -->
+    <!-- https://onerecord.iata.org/api/Error#details -->
 
 
-    <owl:ObjectProperty rdf:about="https://onerecord.iata.org/Error#details">
-        <rdfs:domain rdf:resource="https://onerecord.iata.org/Error"/>
-        <rdfs:range rdf:resource="https://onerecord.iata.org/Details"/>
+    <owl:ObjectProperty rdf:about="https://onerecord.iata.org/api/Error#details">
+        <rdfs:domain rdf:resource="https://onerecord.iata.org/api/Error"/>
+        <rdfs:range rdf:resource="https://onerecord.iata.org/api/Details"/>
         <rdfs:comment xml:lang="en">Error details</rdfs:comment>
         <rdfs:label xml:lang="en">error:details</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://onerecord.iata.org/MementoEntry#memento -->
+    <!-- https://onerecord.iata.org/api/MementoEntry#memento -->
 
 
-    <owl:ObjectProperty rdf:about="https://onerecord.iata.org/MementoEntry#memento">
-        <rdfs:domain rdf:resource="https://onerecord.iata.org/MementoEntry"/>
-        <rdfs:range rdf:resource="https://onerecord.iata.org/Memento"/>
+    <owl:ObjectProperty rdf:about="https://onerecord.iata.org/api/MementoEntry#memento">
+        <rdfs:domain rdf:resource="https://onerecord.iata.org/api/MementoEntry"/>
+        <rdfs:range rdf:resource="https://onerecord.iata.org/api/Memento"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://onerecord.iata.org/MementoList#mementoEntry -->
+    <!-- https://onerecord.iata.org/api/MementoList#mementoEntry -->
 
 
-    <owl:ObjectProperty rdf:about="https://onerecord.iata.org/MementoList#mementoEntry">
-        <rdfs:domain rdf:resource="https://onerecord.iata.org/MementoList"/>
-        <rdfs:range rdf:resource="https://onerecord.iata.org/MementoEntry"/>
+    <owl:ObjectProperty rdf:about="https://onerecord.iata.org/api/MementoList#mementoEntry">
+        <rdfs:domain rdf:resource="https://onerecord.iata.org/api/MementoList"/>
+        <rdfs:range rdf:resource="https://onerecord.iata.org/api/MementoEntry"/>
         <rdfs:comment xml:lang="en">List of mementos of a Logistics Object</rdfs:comment>
         <rdfs:label xml:lang="en">mementoList:mementoEntry</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://onerecord.iata.org/Mementos#list -->
+    <!-- https://onerecord.iata.org/api/Mementos#list -->
 
 
-    <owl:ObjectProperty rdf:about="https://onerecord.iata.org/Mementos#list">
-        <rdfs:domain rdf:resource="https://onerecord.iata.org/Mementos"/>
-        <rdfs:range rdf:resource="https://onerecord.iata.org/MementoList"/>
+    <owl:ObjectProperty rdf:about="https://onerecord.iata.org/api/Mementos#list">
+        <rdfs:domain rdf:resource="https://onerecord.iata.org/api/Mementos"/>
+        <rdfs:range rdf:resource="https://onerecord.iata.org/api/MementoList"/>
         <rdfs:comment xml:lang="en">List of mementos of a Logistics Object</rdfs:comment>
         <rdfs:label xml:lang="en">mementos:list</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://onerecord.iata.org/Notification#logisticsObject -->
+    <!-- https://onerecord.iata.org/api/Notification#logisticsObject -->
 
 
-    <owl:ObjectProperty rdf:about="https://onerecord.iata.org/Notification#logisticsObject">
-        <rdfs:domain rdf:resource="https://onerecord.iata.org/Notification"/>
-        <rdfs:range rdf:resource="https://onerecord.iata.org/LogisticsObject"/>
+    <owl:ObjectProperty rdf:about="https://onerecord.iata.org/api/Notification#logisticsObject">
+        <rdfs:domain rdf:resource="https://onerecord.iata.org/api/Notification"/>
+        <rdfs:range rdf:resource="https://onerecord.iata.org/api/LogisticsObject"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://onerecord.iata.org/Operation#o -->
+    <!-- https://onerecord.iata.org/api/Operation#o -->
 
 
-    <owl:ObjectProperty rdf:about="https://onerecord.iata.org/Operation#o">
-        <rdfs:domain rdf:resource="https://onerecord.iata.org/Operation"/>
-        <rdfs:range rdf:resource="https://onerecord.iata.org/OperationObject"/>
+    <owl:ObjectProperty rdf:about="https://onerecord.iata.org/api/Operation#o">
+        <rdfs:domain rdf:resource="https://onerecord.iata.org/api/Operation"/>
+        <rdfs:range rdf:resource="https://onerecord.iata.org/api/OperationObject"/>
         <rdfs:comment xml:lang="en">PATCH object to modify</rdfs:comment>
         <rdfs:label xml:lang="en">operation:o</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://onerecord.iata.org/PatchRequest#logisticsObjectRef -->
+    <!-- https://onerecord.iata.org/api/PatchRequest#logisticsObjectRef -->
 
 
-    <owl:ObjectProperty rdf:about="https://onerecord.iata.org/PatchRequest#logisticsObjectRef">
-        <rdfs:domain rdf:resource="https://onerecord.iata.org/PatchRequest"/>
-        <rdfs:range rdf:resource="https://onerecord.iata.org/LogisticsObjectRef"/>
+    <owl:ObjectProperty rdf:about="https://onerecord.iata.org/api/PatchRequest#logisticsObjectRef">
+        <rdfs:domain rdf:resource="https://onerecord.iata.org/api/PatchRequest"/>
+        <rdfs:range rdf:resource="https://onerecord.iata.org/api/LogisticsObjectRef"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://onerecord.iata.org/PatchRequest#operations -->
+    <!-- https://onerecord.iata.org/api/PatchRequest#operations -->
 
 
-    <owl:ObjectProperty rdf:about="https://onerecord.iata.org/PatchRequest#operations">
-        <rdfs:domain rdf:resource="https://onerecord.iata.org/PatchRequest"/>
-        <rdfs:range rdf:resource="https://onerecord.iata.org/Operation"/>
+    <owl:ObjectProperty rdf:about="https://onerecord.iata.org/api/PatchRequest#operations">
+        <rdfs:domain rdf:resource="https://onerecord.iata.org/api/PatchRequest"/>
+        <rdfs:range rdf:resource="https://onerecord.iata.org/api/Operation"/>
         <rdfs:comment xml:lang="en">List of operations to apply as PATCH on a Logistics Object</rdfs:comment>
         <rdfs:label xml:lang="en">patchRequest:operations</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://onerecord.iata.org/Subscription#errors -->
+    <!-- https://onerecord.iata.org/api/Subscription#errors -->
 
 
-    <owl:ObjectProperty rdf:about="https://onerecord.iata.org/Subscription#errors">
-        <rdfs:domain rdf:resource="https://onerecord.iata.org/Subscription"/>
-        <rdfs:range rdf:resource="https://onerecord.iata.org/Error"/>
+    <owl:ObjectProperty rdf:about="https://onerecord.iata.org/api/Subscription#errors">
+        <rdfs:domain rdf:resource="https://onerecord.iata.org/api/Subscription"/>
+        <rdfs:range rdf:resource="https://onerecord.iata.org/api/Error"/>
         <rdfs:comment xml:lang="en">Non mandatory error details</rdfs:comment>
         <rdfs:label xml:lang="en">subscription:errors</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- https://onerecord.iata.org/Timemap#mementos -->
+    <!-- https://onerecord.iata.org/api/Timemap#mementos -->
 
 
-    <owl:ObjectProperty rdf:about="https://onerecord.iata.org/Timemap#mementos">
-        <rdfs:domain rdf:resource="https://onerecord.iata.org/Timemap"/>
-        <rdfs:range rdf:resource="https://onerecord.iata.org/Mementos"/>
+    <owl:ObjectProperty rdf:about="https://onerecord.iata.org/api/Timemap#mementos">
+        <rdfs:domain rdf:resource="https://onerecord.iata.org/api/Timemap"/>
+        <rdfs:range rdf:resource="https://onerecord.iata.org/api/Mementos"/>
         <rdfs:comment xml:lang="en">List of mementos of a Logistics Object</rdfs:comment>
         <rdfs:label xml:lang="en">timemap:mementos</rdfs:label>
     </owl:ObjectProperty>
@@ -304,18 +304,18 @@
     
 
 
-    <!-- https://onerecord.iata.org/AuditTrail#logisticsObjectRef -->
+    <!-- https://onerecord.iata.org/api/AuditTrail#logisticsObjectRef -->
 
 
-    <owl:DatatypeProperty rdf:about="https://onerecord.iata.org/AuditTrail#logisticsObjectRef"/>
+    <owl:DatatypeProperty rdf:about="https://onerecord.iata.org/api/AuditTrail#logisticsObjectRef"/>
     
 
 
-    <!-- https://onerecord.iata.org/ChangeRequest#companyId -->
+    <!-- https://onerecord.iata.org/api/ChangeRequest#companyId -->
 
 
-    <owl:DatatypeProperty rdf:about="https://onerecord.iata.org/ChangeRequest#companyId">
-        <rdfs:domain rdf:resource="https://onerecord.iata.org/ChangeRequest"/>
+    <owl:DatatypeProperty rdf:about="https://onerecord.iata.org/api/ChangeRequest#companyId">
+        <rdfs:domain rdf:resource="https://onerecord.iata.org/api/ChangeRequest"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Company which sent the change request</rdfs:comment>
         <rdfs:label xml:lang="en">changeRequest:companyId</rdfs:label>
@@ -323,11 +323,11 @@
     
 
 
-    <!-- https://onerecord.iata.org/ChangeRequest#status -->
+    <!-- https://onerecord.iata.org/api/ChangeRequest#status -->
 
 
-    <owl:DatatypeProperty rdf:about="https://onerecord.iata.org/ChangeRequest#status">
-        <rdfs:domain rdf:resource="https://onerecord.iata.org/ChangeRequest"/>
+    <owl:DatatypeProperty rdf:about="https://onerecord.iata.org/api/ChangeRequest#status">
+        <rdfs:domain rdf:resource="https://onerecord.iata.org/api/ChangeRequest"/>
         <rdfs:range>
             <rdfs:Datatype>
                 <owl:oneOf>
@@ -351,11 +351,11 @@
     
 
 
-    <!-- https://onerecord.iata.org/ChangeRequest#timestamp -->
+    <!-- https://onerecord.iata.org/api/ChangeRequest#timestamp -->
 
 
-    <owl:DatatypeProperty rdf:about="https://onerecord.iata.org/ChangeRequest#timestamp">
-        <rdfs:domain rdf:resource="https://onerecord.iata.org/ChangeRequest"/>
+    <owl:DatatypeProperty rdf:about="https://onerecord.iata.org/api/ChangeRequest#timestamp">
+        <rdfs:domain rdf:resource="https://onerecord.iata.org/api/ChangeRequest"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
         <rdfs:comment xml:lang="en">Timestamp of the change request</rdfs:comment>
         <rdfs:label xml:lang="en">changeRequest:timestamp</rdfs:label>
@@ -363,11 +363,11 @@
     
 
 
-    <!-- https://onerecord.iata.org/CompanyInformation#companyId -->
+    <!-- https://onerecord.iata.org/api/CompanyInformation#companyId -->
 
 
-    <owl:DatatypeProperty rdf:about="https://onerecord.iata.org/CompanyInformation#companyId">
-        <rdfs:domain rdf:resource="https://onerecord.iata.org/CompanyInformation"/>
+    <owl:DatatypeProperty rdf:about="https://onerecord.iata.org/api/CompanyInformation#companyId">
+        <rdfs:domain rdf:resource="https://onerecord.iata.org/api/CompanyInformation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Company Id, for example airline code.</rdfs:comment>
         <rdfs:label xml:lang="en">companyInformation:companyId</rdfs:label>
@@ -375,11 +375,11 @@
     
 
 
-    <!-- https://onerecord.iata.org/CompanyInformation#serverEndpoint -->
+    <!-- https://onerecord.iata.org/api/CompanyInformation#serverEndpoint -->
 
 
-    <owl:DatatypeProperty rdf:about="https://onerecord.iata.org/CompanyInformation#serverEndpoint">
-        <rdfs:domain rdf:resource="https://onerecord.iata.org/CompanyInformation"/>
+    <owl:DatatypeProperty rdf:about="https://onerecord.iata.org/api/CompanyInformation#serverEndpoint">
+        <rdfs:domain rdf:resource="https://onerecord.iata.org/api/CompanyInformation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Endpoint of the company in the Internet of Logistics</rdfs:comment>
         <rdfs:label xml:lang="en">companyInformation:serverEndpoint</rdfs:label>
@@ -387,11 +387,11 @@
     
 
 
-    <!-- https://onerecord.iata.org/CompanyInformation#supportedContentTypes -->
+    <!-- https://onerecord.iata.org/api/CompanyInformation#supportedContentTypes -->
 
 
-    <owl:DatatypeProperty rdf:about="https://onerecord.iata.org/CompanyInformation#supportedContentTypes">
-        <rdfs:domain rdf:resource="https://onerecord.iata.org/CompanyInformation"/>
+    <owl:DatatypeProperty rdf:about="https://onerecord.iata.org/api/CompanyInformation#supportedContentTypes">
+        <rdfs:domain rdf:resource="https://onerecord.iata.org/api/CompanyInformation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Supported content types of the server</rdfs:comment>
         <rdfs:label xml:lang="en">companyInformation:supportedContentTypes</rdfs:label>
@@ -399,11 +399,11 @@
     
 
 
-    <!-- https://onerecord.iata.org/CompanyInformation#supportedLogisticsObjects -->
+    <!-- https://onerecord.iata.org/api/CompanyInformation#supportedLogisticsObjects -->
 
 
-    <owl:DatatypeProperty rdf:about="https://onerecord.iata.org/CompanyInformation#supportedLogisticsObjects">
-        <rdfs:domain rdf:resource="https://onerecord.iata.org/CompanyInformation"/>
+    <owl:DatatypeProperty rdf:about="https://onerecord.iata.org/api/CompanyInformation#supportedLogisticsObjects">
+        <rdfs:domain rdf:resource="https://onerecord.iata.org/api/CompanyInformation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Supported logistics object types on the server</rdfs:comment>
         <rdfs:label xml:lang="en">companyInformation:supportedLogisticsObjects</rdfs:label>
@@ -411,11 +411,11 @@
     
 
 
-    <!-- https://onerecord.iata.org/DelegationRequest#action -->
+    <!-- https://onerecord.iata.org/api/DelegationRequest#action -->
 
 
-    <owl:DatatypeProperty rdf:about="https://onerecord.iata.org/DelegationRequest#action">
-        <rdfs:domain rdf:resource="https://onerecord.iata.org/DelegationRequest"/>
+    <owl:DatatypeProperty rdf:about="https://onerecord.iata.org/api/DelegationRequest#action">
+        <rdfs:domain rdf:resource="https://onerecord.iata.org/api/DelegationRequest"/>
         <rdfs:range>
             <rdfs:Datatype>
                 <owl:oneOf>
@@ -439,11 +439,11 @@
     
 
 
-    <!-- https://onerecord.iata.org/DelegationRequest#operations -->
+    <!-- https://onerecord.iata.org/api/DelegationRequest#operations -->
 
 
-    <owl:DatatypeProperty rdf:about="https://onerecord.iata.org/DelegationRequest#operations">
-        <rdfs:domain rdf:resource="https://onerecord.iata.org/DelegationRequest"/>
+    <owl:DatatypeProperty rdf:about="https://onerecord.iata.org/api/DelegationRequest#operations">
+        <rdfs:domain rdf:resource="https://onerecord.iata.org/api/DelegationRequest"/>
         <rdfs:range>
             <rdfs:Datatype>
                 <owl:oneOf>
@@ -467,11 +467,11 @@
     
 
 
-    <!-- https://onerecord.iata.org/DelegationRequest#targetCompanies -->
+    <!-- https://onerecord.iata.org/api/DelegationRequest#targetCompanies -->
 
 
-    <owl:DatatypeProperty rdf:about="https://onerecord.iata.org/DelegationRequest#targetCompanies">
-        <rdfs:domain rdf:resource="https://onerecord.iata.org/DelegationRequest"/>
+    <owl:DatatypeProperty rdf:about="https://onerecord.iata.org/api/DelegationRequest#targetCompanies">
+        <rdfs:domain rdf:resource="https://onerecord.iata.org/api/DelegationRequest"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Parties that receive the delegated rights</rdfs:comment>
         <rdfs:label xml:lang="en">delegationRequest:targetCompanies</rdfs:label>
@@ -479,11 +479,11 @@
     
 
 
-    <!-- https://onerecord.iata.org/Details#attribute -->
+    <!-- https://onerecord.iata.org/api/Details#attribute -->
 
 
-    <owl:DatatypeProperty rdf:about="https://onerecord.iata.org/Details#attribute">
-        <rdfs:domain rdf:resource="https://onerecord.iata.org/Details"/>
+    <owl:DatatypeProperty rdf:about="https://onerecord.iata.org/api/Details#attribute">
+        <rdfs:domain rdf:resource="https://onerecord.iata.org/api/Details"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Field of the object for which the error applies</rdfs:comment>
         <rdfs:label xml:lang="en">details:attribute</rdfs:label>
@@ -491,11 +491,11 @@
     
 
 
-    <!-- https://onerecord.iata.org/Details#code -->
+    <!-- https://onerecord.iata.org/api/Details#code -->
 
 
-    <owl:DatatypeProperty rdf:about="https://onerecord.iata.org/Details#code">
-        <rdfs:domain rdf:resource="https://onerecord.iata.org/Details"/>
+    <owl:DatatypeProperty rdf:about="https://onerecord.iata.org/api/Details#code">
+        <rdfs:domain rdf:resource="https://onerecord.iata.org/api/Details"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Error code</rdfs:comment>
         <rdfs:label xml:lang="en">details:code</rdfs:label>
@@ -503,11 +503,11 @@
     
 
 
-    <!-- https://onerecord.iata.org/Details#message -->
+    <!-- https://onerecord.iata.org/api/Details#message -->
 
 
-    <owl:DatatypeProperty rdf:about="https://onerecord.iata.org/Details#message">
-        <rdfs:domain rdf:resource="https://onerecord.iata.org/Details"/>
+    <owl:DatatypeProperty rdf:about="https://onerecord.iata.org/api/Details#message">
+        <rdfs:domain rdf:resource="https://onerecord.iata.org/api/Details"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Message of the error</rdfs:comment>
         <rdfs:label xml:lang="en">details:message</rdfs:label>
@@ -515,11 +515,11 @@
     
 
 
-    <!-- https://onerecord.iata.org/Details#resource -->
+    <!-- https://onerecord.iata.org/api/Details#resource -->
 
 
-    <owl:DatatypeProperty rdf:about="https://onerecord.iata.org/Details#resource">
-        <rdfs:domain rdf:resource="https://onerecord.iata.org/Details"/>
+    <owl:DatatypeProperty rdf:about="https://onerecord.iata.org/api/Details#resource">
+        <rdfs:domain rdf:resource="https://onerecord.iata.org/api/Details"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Object for which the error applies</rdfs:comment>
         <rdfs:label xml:lang="en">details:resource</rdfs:label>
@@ -527,11 +527,11 @@
     
 
 
-    <!-- https://onerecord.iata.org/Error#title -->
+    <!-- https://onerecord.iata.org/api/Error#title -->
 
 
-    <owl:DatatypeProperty rdf:about="https://onerecord.iata.org/Error#title">
-        <rdfs:domain rdf:resource="https://onerecord.iata.org/Error"/>
+    <owl:DatatypeProperty rdf:about="https://onerecord.iata.org/api/Error#title">
+        <rdfs:domain rdf:resource="https://onerecord.iata.org/api/Error"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Brief description of the error</rdfs:comment>
         <rdfs:label xml:lang="en">error:title</rdfs:label>
@@ -539,11 +539,11 @@
     
 
 
-    <!-- https://onerecord.iata.org/LogisticsObjectRef#logisticsObjectId -->
+    <!-- https://onerecord.iata.org/api/LogisticsObjectRef#logisticsObjectId -->
 
 
-    <owl:DatatypeProperty rdf:about="https://onerecord.iata.org/LogisticsObjectRef#logisticsObjectId">
-        <rdfs:domain rdf:resource="https://onerecord.iata.org/LogisticsObjectRef"/>
+    <owl:DatatypeProperty rdf:about="https://onerecord.iata.org/api/LogisticsObjectRef#logisticsObjectId">
+        <rdfs:domain rdf:resource="https://onerecord.iata.org/api/LogisticsObjectRef"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Id of the reference Logistics Object</rdfs:comment>
         <rdfs:label xml:lang="en">logisticsObjectRef:logisticsObjectId</rdfs:label>
@@ -551,11 +551,11 @@
     
 
 
-    <!-- https://onerecord.iata.org/LogisticsObjectRef#logisticsObjectType -->
+    <!-- https://onerecord.iata.org/api/LogisticsObjectRef#logisticsObjectType -->
 
 
-    <owl:DatatypeProperty rdf:about="https://onerecord.iata.org/LogisticsObjectRef#logisticsObjectType">
-        <rdfs:domain rdf:resource="https://onerecord.iata.org/LogisticsObjectRef"/>
+    <owl:DatatypeProperty rdf:about="https://onerecord.iata.org/api/LogisticsObjectRef#logisticsObjectType">
+        <rdfs:domain rdf:resource="https://onerecord.iata.org/api/LogisticsObjectRef"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Type of the reference Logistics Object</rdfs:comment>
         <rdfs:label xml:lang="en">logisticsObjectRef:logisticsObjectType</rdfs:label>
@@ -563,11 +563,11 @@
     
 
 
-    <!-- https://onerecord.iata.org/Memento#created -->
+    <!-- https://onerecord.iata.org/api/Memento#created -->
 
 
-    <owl:DatatypeProperty rdf:about="https://onerecord.iata.org/Memento#created">
-        <rdfs:domain rdf:resource="https://onerecord.iata.org/Memento"/>
+    <owl:DatatypeProperty rdf:about="https://onerecord.iata.org/api/Memento#created">
+        <rdfs:domain rdf:resource="https://onerecord.iata.org/api/Memento"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
         <rdfs:comment xml:lang="en">Date and time of the memento creation</rdfs:comment>
         <rdfs:label xml:lang="en">memento:created</rdfs:label>
@@ -575,11 +575,11 @@
     
 
 
-    <!-- https://onerecord.iata.org/Memento#createdBy -->
+    <!-- https://onerecord.iata.org/api/Memento#createdBy -->
 
 
-    <owl:DatatypeProperty rdf:about="https://onerecord.iata.org/Memento#createdBy">
-        <rdfs:domain rdf:resource="https://onerecord.iata.org/Memento"/>
+    <owl:DatatypeProperty rdf:about="https://onerecord.iata.org/api/Memento#createdBy">
+        <rdfs:domain rdf:resource="https://onerecord.iata.org/api/Memento"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Name of the memento creator</rdfs:comment>
         <rdfs:label xml:lang="en">memento:createdBy</rdfs:label>
@@ -587,11 +587,11 @@
     
 
 
-    <!-- https://onerecord.iata.org/Memento#label -->
+    <!-- https://onerecord.iata.org/api/Memento#label -->
 
 
-    <owl:DatatypeProperty rdf:about="https://onerecord.iata.org/Memento#label">
-        <rdfs:domain rdf:resource="https://onerecord.iata.org/Memento"/>
+    <owl:DatatypeProperty rdf:about="https://onerecord.iata.org/api/Memento#label">
+        <rdfs:domain rdf:resource="https://onerecord.iata.org/api/Memento"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Label of the memento</rdfs:comment>
         <rdfs:label xml:lang="en">memento:label</rdfs:label>
@@ -599,11 +599,11 @@
     
 
 
-    <!-- https://onerecord.iata.org/Memento#original -->
+    <!-- https://onerecord.iata.org/api/Memento#original -->
 
 
-    <owl:DatatypeProperty rdf:about="https://onerecord.iata.org/Memento#original">
-        <rdfs:domain rdf:resource="https://onerecord.iata.org/Memento"/>
+    <owl:DatatypeProperty rdf:about="https://onerecord.iata.org/api/Memento#original">
+        <rdfs:domain rdf:resource="https://onerecord.iata.org/api/Memento"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">First version of the Logistics Object</rdfs:comment>
         <rdfs:label xml:lang="en">memento:original</rdfs:label>
@@ -611,11 +611,11 @@
     
 
 
-    <!-- https://onerecord.iata.org/MementoEntry#datetime -->
+    <!-- https://onerecord.iata.org/api/MementoEntry#datetime -->
 
 
-    <owl:DatatypeProperty rdf:about="https://onerecord.iata.org/MementoEntry#datetime">
-        <rdfs:domain rdf:resource="https://onerecord.iata.org/MementoEntry"/>
+    <owl:DatatypeProperty rdf:about="https://onerecord.iata.org/api/MementoEntry#datetime">
+        <rdfs:domain rdf:resource="https://onerecord.iata.org/api/MementoEntry"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
         <rdfs:comment xml:lang="en">Creation date of the memento</rdfs:comment>
         <rdfs:label xml:lang="en">mementoEntry:datetime</rdfs:label>
@@ -623,11 +623,11 @@
     
 
 
-    <!-- https://onerecord.iata.org/MementoEntry#label -->
+    <!-- https://onerecord.iata.org/api/MementoEntry#label -->
 
 
-    <owl:DatatypeProperty rdf:about="https://onerecord.iata.org/MementoEntry#label">
-        <rdfs:domain rdf:resource="https://onerecord.iata.org/MementoEntry"/>
+    <owl:DatatypeProperty rdf:about="https://onerecord.iata.org/api/MementoEntry#label">
+        <rdfs:domain rdf:resource="https://onerecord.iata.org/api/MementoEntry"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Non mandatory label of the memento</rdfs:comment>
         <rdfs:label xml:lang="en">mementoEntry:label</rdfs:label>
@@ -635,18 +635,18 @@
     
 
 
-    <!-- https://onerecord.iata.org/MementoEntry#memento -->
+    <!-- https://onerecord.iata.org/api/MementoEntry#memento -->
 
 
-    <owl:DatatypeProperty rdf:about="https://onerecord.iata.org/MementoEntry#memento"/>
+    <owl:DatatypeProperty rdf:about="https://onerecord.iata.org/api/MementoEntry#memento"/>
     
 
 
-    <!-- https://onerecord.iata.org/Mementos#firstMemento -->
+    <!-- https://onerecord.iata.org/api/Mementos#firstMemento -->
 
 
-    <owl:DatatypeProperty rdf:about="https://onerecord.iata.org/Mementos#firstMemento">
-        <rdfs:domain rdf:resource="https://onerecord.iata.org/Mementos"/>
+    <owl:DatatypeProperty rdf:about="https://onerecord.iata.org/api/Mementos#firstMemento">
+        <rdfs:domain rdf:resource="https://onerecord.iata.org/api/Mementos"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">First memento of the Logistics Object</rdfs:comment>
         <rdfs:label xml:lang="en">mementos:firstMemento</rdfs:label>
@@ -654,11 +654,11 @@
     
 
 
-    <!-- https://onerecord.iata.org/Mementos#lastMemento -->
+    <!-- https://onerecord.iata.org/api/Mementos#lastMemento -->
 
 
-    <owl:DatatypeProperty rdf:about="https://onerecord.iata.org/Mementos#lastMemento">
-        <rdfs:domain rdf:resource="https://onerecord.iata.org/Mementos"/>
+    <owl:DatatypeProperty rdf:about="https://onerecord.iata.org/api/Mementos#lastMemento">
+        <rdfs:domain rdf:resource="https://onerecord.iata.org/api/Mementos"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Last memento of the Logistics Object</rdfs:comment>
         <rdfs:label xml:lang="en">mementos:lastMemento</rdfs:label>
@@ -666,11 +666,11 @@
     
 
 
-    <!-- https://onerecord.iata.org/Notification#eventType -->
+    <!-- https://onerecord.iata.org/api/Notification#eventType -->
 
 
-    <owl:DatatypeProperty rdf:about="https://onerecord.iata.org/Notification#eventType">
-        <rdfs:domain rdf:resource="https://onerecord.iata.org/Notification"/>
+    <owl:DatatypeProperty rdf:about="https://onerecord.iata.org/api/Notification#eventType">
+        <rdfs:domain rdf:resource="https://onerecord.iata.org/api/Notification"/>
         <rdfs:range>
             <rdfs:Datatype>
                 <owl:oneOf>
@@ -694,18 +694,18 @@
     
 
 
-    <!-- https://onerecord.iata.org/Notification#logisticsObject -->
+    <!-- https://onerecord.iata.org/api/Notification#logisticsObject -->
 
 
-    <owl:DatatypeProperty rdf:about="https://onerecord.iata.org/Notification#logisticsObject"/>
+    <owl:DatatypeProperty rdf:about="https://onerecord.iata.org/api/Notification#logisticsObject"/>
     
 
 
-    <!-- https://onerecord.iata.org/Notification#topic -->
+    <!-- https://onerecord.iata.org/api/Notification#topic -->
 
 
-    <owl:DatatypeProperty rdf:about="https://onerecord.iata.org/Notification#topic">
-        <rdfs:domain rdf:resource="https://onerecord.iata.org/Notification"/>
+    <owl:DatatypeProperty rdf:about="https://onerecord.iata.org/api/Notification#topic">
+        <rdfs:domain rdf:resource="https://onerecord.iata.org/api/Notification"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Type of Logistics Object</rdfs:comment>
         <rdfs:label xml:lang="en">notification:topic</rdfs:label>
@@ -713,11 +713,11 @@
     
 
 
-    <!-- https://onerecord.iata.org/Operation#op -->
+    <!-- https://onerecord.iata.org/api/Operation#op -->
 
 
-    <owl:DatatypeProperty rdf:about="https://onerecord.iata.org/Operation#op">
-        <rdfs:domain rdf:resource="https://onerecord.iata.org/Operation"/>
+    <owl:DatatypeProperty rdf:about="https://onerecord.iata.org/api/Operation#op">
+        <rdfs:domain rdf:resource="https://onerecord.iata.org/api/Operation"/>
         <rdfs:range>
             <rdfs:Datatype>
                 <owl:oneOf>
@@ -741,11 +741,11 @@
     
 
 
-    <!-- https://onerecord.iata.org/Operation#p -->
+    <!-- https://onerecord.iata.org/api/Operation#p -->
 
 
-    <owl:DatatypeProperty rdf:about="https://onerecord.iata.org/Operation#p">
-        <rdfs:domain rdf:resource="https://onerecord.iata.org/Operation"/>
+    <owl:DatatypeProperty rdf:about="https://onerecord.iata.org/api/Operation#p">
+        <rdfs:domain rdf:resource="https://onerecord.iata.org/api/Operation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Operations objects must have exactly one p, predicate, member. The value of this member must be an IRI</rdfs:comment>
         <rdfs:label xml:lang="en">operation:p</rdfs:label>
@@ -753,11 +753,11 @@
     
 
 
-    <!-- https://onerecord.iata.org/OperationObject#datatype -->
+    <!-- https://onerecord.iata.org/api/OperationObject#datatype -->
 
 
-    <owl:DatatypeProperty rdf:about="https://onerecord.iata.org/OperationObject#datatype">
-        <rdfs:domain rdf:resource="https://onerecord.iata.org/OperationObject"/>
+    <owl:DatatypeProperty rdf:about="https://onerecord.iata.org/api/OperationObject#datatype">
+        <rdfs:domain rdf:resource="https://onerecord.iata.org/api/OperationObject"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Data type of the field to update</rdfs:comment>
         <rdfs:label xml:lang="en">operationObject:datatype</rdfs:label>
@@ -765,11 +765,11 @@
     
 
 
-    <!-- https://onerecord.iata.org/OperationObject#value -->
+    <!-- https://onerecord.iata.org/api/OperationObject#value -->
 
 
-    <owl:DatatypeProperty rdf:about="https://onerecord.iata.org/OperationObject#value">
-        <rdfs:domain rdf:resource="https://onerecord.iata.org/OperationObject"/>
+    <owl:DatatypeProperty rdf:about="https://onerecord.iata.org/api/OperationObject#value">
+        <rdfs:domain rdf:resource="https://onerecord.iata.org/api/OperationObject"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Value to update</rdfs:comment>
         <rdfs:label xml:lang="en">operationObject:value</rdfs:label>
@@ -777,11 +777,11 @@
     
 
 
-    <!-- https://onerecord.iata.org/PatchRequest#description -->
+    <!-- https://onerecord.iata.org/api/PatchRequest#description -->
 
 
-    <owl:DatatypeProperty rdf:about="https://onerecord.iata.org/PatchRequest#description">
-        <rdfs:domain rdf:resource="https://onerecord.iata.org/PatchRequest"/>
+    <owl:DatatypeProperty rdf:about="https://onerecord.iata.org/api/PatchRequest#description">
+        <rdfs:domain rdf:resource="https://onerecord.iata.org/api/PatchRequest"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Reason for the change (optional)</rdfs:comment>
         <rdfs:label xml:lang="en">patchRequest:description</rdfs:label>
@@ -789,18 +789,18 @@
     
 
 
-    <!-- https://onerecord.iata.org/PatchRequest#logisticsObjectRef -->
+    <!-- https://onerecord.iata.org/api/PatchRequest#logisticsObjectRef -->
 
 
-    <owl:DatatypeProperty rdf:about="https://onerecord.iata.org/PatchRequest#logisticsObjectRef"/>
+    <owl:DatatypeProperty rdf:about="https://onerecord.iata.org/api/PatchRequest#logisticsObjectRef"/>
     
 
 
-    <!-- https://onerecord.iata.org/PatchRequest#requestorCompanyIdentifier -->
+    <!-- https://onerecord.iata.org/api/PatchRequest#requestorCompanyIdentifier -->
 
 
-    <owl:DatatypeProperty rdf:about="https://onerecord.iata.org/PatchRequest#requestorCompanyIdentifier">
-        <rdfs:domain rdf:resource="https://onerecord.iata.org/PatchRequest"/>
+    <owl:DatatypeProperty rdf:about="https://onerecord.iata.org/api/PatchRequest#requestorCompanyIdentifier">
+        <rdfs:domain rdf:resource="https://onerecord.iata.org/api/PatchRequest"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">The company identifier of the entity that is requesting the change request</rdfs:comment>
         <rdfs:label xml:lang="en">patchRequest:requestorCompanyIdentifier</rdfs:label>
@@ -808,11 +808,11 @@
     
 
 
-    <!-- https://onerecord.iata.org/PatchRequest#revision -->
+    <!-- https://onerecord.iata.org/api/PatchRequest#revision -->
 
 
-    <owl:DatatypeProperty rdf:about="https://onerecord.iata.org/PatchRequest#revision">
-        <rdfs:domain rdf:resource="https://onerecord.iata.org/PatchRequest"/>
+    <owl:DatatypeProperty rdf:about="https://onerecord.iata.org/api/PatchRequest#revision">
+        <rdfs:domain rdf:resource="https://onerecord.iata.org/api/PatchRequest"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Revision number of the Logistics Object</rdfs:comment>
         <rdfs:label xml:lang="en">patchRequest:revision</rdfs:label>
@@ -820,11 +820,11 @@
     
 
 
-    <!-- https://onerecord.iata.org/Subscription#cacheFor -->
+    <!-- https://onerecord.iata.org/api/Subscription#cacheFor -->
 
 
-    <owl:DatatypeProperty rdf:about="https://onerecord.iata.org/Subscription#cacheFor">
-        <rdfs:domain rdf:resource="https://onerecord.iata.org/Subscription"/>
+    <owl:DatatypeProperty rdf:about="https://onerecord.iata.org/api/Subscription#cacheFor">
+        <rdfs:domain rdf:resource="https://onerecord.iata.org/api/Subscription"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
         <rdfs:comment xml:lang="en">Duration of the period to cache the subscription information in seconds</rdfs:comment>
         <rdfs:label xml:lang="en">subscription:cacheFor</rdfs:label>
@@ -832,11 +832,11 @@
     
 
 
-    <!-- https://onerecord.iata.org/Subscription#callbackUrl -->
+    <!-- https://onerecord.iata.org/api/Subscription#callbackUrl -->
 
 
-    <owl:DatatypeProperty rdf:about="https://onerecord.iata.org/Subscription#callbackUrl">
-        <rdfs:domain rdf:resource="https://onerecord.iata.org/Subscription"/>
+    <owl:DatatypeProperty rdf:about="https://onerecord.iata.org/api/Subscription#callbackUrl">
+        <rdfs:domain rdf:resource="https://onerecord.iata.org/api/Subscription"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Callback URL of the Client Subscription API where the subscriber receives Logistics Objects</rdfs:comment>
         <rdfs:label xml:lang="en">subscription:callbackUrl</rdfs:label>
@@ -844,11 +844,11 @@
     
 
 
-    <!-- https://onerecord.iata.org/Subscription#contentTypes -->
+    <!-- https://onerecord.iata.org/api/Subscription#contentTypes -->
 
 
-    <owl:DatatypeProperty rdf:about="https://onerecord.iata.org/Subscription#contentTypes">
-        <rdfs:domain rdf:resource="https://onerecord.iata.org/Subscription"/>
+    <owl:DatatypeProperty rdf:about="https://onerecord.iata.org/api/Subscription#contentTypes">
+        <rdfs:domain rdf:resource="https://onerecord.iata.org/api/Subscription"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Content types that the subscriber wants to receive in the notifications</rdfs:comment>
         <rdfs:label xml:lang="en">subscription:contentTypes</rdfs:label>
@@ -856,11 +856,11 @@
     
 
 
-    <!-- https://onerecord.iata.org/Subscription#myCompanyIdentifier -->
+    <!-- https://onerecord.iata.org/api/Subscription#myCompanyIdentifier -->
 
 
-    <owl:DatatypeProperty rdf:about="https://onerecord.iata.org/Subscription#myCompanyIdentifier">
-        <rdfs:domain rdf:resource="https://onerecord.iata.org/Subscription"/>
+    <owl:DatatypeProperty rdf:about="https://onerecord.iata.org/api/Subscription#myCompanyIdentifier">
+        <rdfs:domain rdf:resource="https://onerecord.iata.org/api/Subscription"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">The company identifier from the Internet of Logistics of my company.</rdfs:comment>
         <rdfs:label xml:lang="en">subscription:myCompanyIdentifier</rdfs:label>
@@ -868,11 +868,11 @@
     
 
 
-    <!-- https://onerecord.iata.org/Subscription#secret -->
+    <!-- https://onerecord.iata.org/api/Subscription#secret -->
 
 
-    <owl:DatatypeProperty rdf:about="https://onerecord.iata.org/Subscription#secret">
-        <rdfs:domain rdf:resource="https://onerecord.iata.org/Subscription"/>
+    <owl:DatatypeProperty rdf:about="https://onerecord.iata.org/api/Subscription#secret">
+        <rdfs:domain rdf:resource="https://onerecord.iata.org/api/Subscription"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Either a secret or API Key that ensures that only companies with this subscription information can POST to the subscriber callback endpoint</rdfs:comment>
         <rdfs:label xml:lang="en">subscription:secret</rdfs:label>
@@ -880,11 +880,11 @@
     
 
 
-    <!-- https://onerecord.iata.org/Subscription#sendLogisticsObjectBody -->
+    <!-- https://onerecord.iata.org/api/Subscription#sendLogisticsObjectBody -->
 
 
-    <owl:DatatypeProperty rdf:about="https://onerecord.iata.org/Subscription#sendLogisticsObjectBody">
-        <rdfs:domain rdf:resource="https://onerecord.iata.org/Subscription"/>
+    <owl:DatatypeProperty rdf:about="https://onerecord.iata.org/api/Subscription#sendLogisticsObjectBody">
+        <rdfs:domain rdf:resource="https://onerecord.iata.org/api/Subscription"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
         <rdfs:comment xml:lang="en">Flag specifying if the publisher should send the whole logistics object or not in the notification object</rdfs:comment>
         <rdfs:label xml:lang="en">subscription:sendLogisticsObjectBody</rdfs:label>
@@ -892,11 +892,11 @@
     
 
 
-    <!-- https://onerecord.iata.org/Subscription#subscribeToStatusUpdates -->
+    <!-- https://onerecord.iata.org/api/Subscription#subscribeToStatusUpdates -->
 
 
-    <owl:DatatypeProperty rdf:about="https://onerecord.iata.org/Subscription#subscribeToStatusUpdates">
-        <rdfs:domain rdf:resource="https://onerecord.iata.org/Subscription"/>
+    <owl:DatatypeProperty rdf:about="https://onerecord.iata.org/api/Subscription#subscribeToStatusUpdates">
+        <rdfs:domain rdf:resource="https://onerecord.iata.org/api/Subscription"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
         <rdfs:comment xml:lang="en">Flag specifying if the subscriber wants to receive updates for a Logistics Object</rdfs:comment>
         <rdfs:label xml:lang="en">subscription:subscribeToStatusUpdates</rdfs:label>
@@ -904,11 +904,11 @@
     
 
 
-    <!-- https://onerecord.iata.org/Subscription#subscribedTo -->
+    <!-- https://onerecord.iata.org/api/Subscription#subscribedTo -->
 
 
-    <owl:DatatypeProperty rdf:about="https://onerecord.iata.org/Subscription#subscribedTo">
-        <rdfs:domain rdf:resource="https://onerecord.iata.org/Subscription"/>
+    <owl:DatatypeProperty rdf:about="https://onerecord.iata.org/api/Subscription#subscribedTo">
+        <rdfs:domain rdf:resource="https://onerecord.iata.org/api/Subscription"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Company Identifier of the company the subscriber wants to subscribe to (delegation scenario).</rdfs:comment>
         <rdfs:label xml:lang="en">subscription:subscribedTo</rdfs:label>
@@ -916,11 +916,11 @@
     
 
 
-    <!-- https://onerecord.iata.org/Subscription#topic -->
+    <!-- https://onerecord.iata.org/api/Subscription#topic -->
 
 
-    <owl:DatatypeProperty rdf:about="https://onerecord.iata.org/Subscription#topic">
-        <rdfs:domain rdf:resource="https://onerecord.iata.org/Subscription"/>
+    <owl:DatatypeProperty rdf:about="https://onerecord.iata.org/api/Subscription#topic">
+        <rdfs:domain rdf:resource="https://onerecord.iata.org/api/Subscription"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">The Logistics Object type to which the subscriber wants subscribe to</rdfs:comment>
         <rdfs:label xml:lang="en">subscription:topic</rdfs:label>
@@ -928,11 +928,11 @@
     
 
 
-    <!-- https://onerecord.iata.org/Timemap#original -->
+    <!-- https://onerecord.iata.org/api/Timemap#original -->
 
 
-    <owl:DatatypeProperty rdf:about="https://onerecord.iata.org/Timemap#original">
-        <rdfs:domain rdf:resource="https://onerecord.iata.org/Timemap"/>
+    <owl:DatatypeProperty rdf:about="https://onerecord.iata.org/api/Timemap#original">
+        <rdfs:domain rdf:resource="https://onerecord.iata.org/api/Timemap"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Link to the initial version of the Logistics Object</rdfs:comment>
         <rdfs:label xml:lang="en">timemap:original</rdfs:label>
@@ -940,11 +940,11 @@
     
 
 
-    <!-- https://onerecord.iata.org/Timemap#timegate -->
+    <!-- https://onerecord.iata.org/api/Timemap#timegate -->
 
 
-    <owl:DatatypeProperty rdf:about="https://onerecord.iata.org/Timemap#timegate">
-        <rdfs:domain rdf:resource="https://onerecord.iata.org/Timemap"/>
+    <owl:DatatypeProperty rdf:about="https://onerecord.iata.org/api/Timemap#timegate">
+        <rdfs:domain rdf:resource="https://onerecord.iata.org/api/Timemap"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Link to the time gate of the Logistics Object, if applicable</rdfs:comment>
         <rdfs:label xml:lang="en">timemap:timegate</rdfs:label>
@@ -964,61 +964,61 @@
     
 
 
-    <!-- https://onerecord.iata.org/AuditTrail -->
+    <!-- https://onerecord.iata.org/api/AuditTrail -->
 
 
-    <owl:Class rdf:about="https://onerecord.iata.org/AuditTrail">
+    <owl:Class rdf:about="https://onerecord.iata.org/api/AuditTrail">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/AuditTrail#changeRequests"/>
-                <owl:allValuesFrom rdf:resource="https://onerecord.iata.org/ChangeRequest"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/AuditTrail#changeRequests"/>
+                <owl:allValuesFrom rdf:resource="https://onerecord.iata.org/api/ChangeRequest"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/AuditTrail#errors"/>
-                <owl:allValuesFrom rdf:resource="https://onerecord.iata.org/Error"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/AuditTrail#errors"/>
+                <owl:allValuesFrom rdf:resource="https://onerecord.iata.org/api/Error"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/AuditTrail#loInitialSnapshot"/>
-                <owl:allValuesFrom rdf:resource="https://onerecord.iata.org/Memento"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/AuditTrail#loInitialSnapshot"/>
+                <owl:allValuesFrom rdf:resource="https://onerecord.iata.org/api/Memento"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/AuditTrail#logisticsObjectRef"/>
-                <owl:allValuesFrom rdf:resource="https://onerecord.iata.org/LogisticsObjectRef"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/AuditTrail#logisticsObjectRef"/>
+                <owl:allValuesFrom rdf:resource="https://onerecord.iata.org/api/LogisticsObjectRef"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/AuditTrail#changeRequests"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/AuditTrail#changeRequests"/>
                 <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/AuditTrail#loInitialSnapshot"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/AuditTrail#loInitialSnapshot"/>
                 <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/AuditTrail#logisticsObjectRef"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/AuditTrail#logisticsObjectRef"/>
                 <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/AuditTrail#loInitialSnapshot"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/AuditTrail#loInitialSnapshot"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/AuditTrail#logisticsObjectRef"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/AuditTrail#logisticsObjectRef"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1028,104 +1028,104 @@
     
 
 
-    <!-- https://onerecord.iata.org/Branch -->
+    <!-- https://onerecord.iata.org/api/Branch -->
 
 
-    <owl:Class rdf:about="https://onerecord.iata.org/Branch"/>
+    <owl:Class rdf:about="https://onerecord.iata.org/api/Branch"/>
     
 
 
-    <!-- https://onerecord.iata.org/ChangeRequest -->
+    <!-- https://onerecord.iata.org/api/ChangeRequest -->
 
 
-    <owl:Class rdf:about="https://onerecord.iata.org/ChangeRequest">
+    <owl:Class rdf:about="https://onerecord.iata.org/api/ChangeRequest">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/ChangeRequest#patchRequest"/>
-                <owl:allValuesFrom rdf:resource="https://onerecord.iata.org/PatchRequest"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/ChangeRequest#patchRequest"/>
+                <owl:allValuesFrom rdf:resource="https://onerecord.iata.org/api/PatchRequest"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/ChangeRequest#requestingParty"/>
-                <owl:allValuesFrom rdf:resource="https://onerecord.iata.org/Branch"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/ChangeRequest#requestingParty"/>
+                <owl:allValuesFrom rdf:resource="https://onerecord.iata.org/cargo/Branch"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/ChangeRequest#patchRequest"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/ChangeRequest#patchRequest"/>
                 <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/ChangeRequest#requestingParty"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/ChangeRequest#requestingParty"/>
                 <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/ChangeRequest#patchRequest"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/ChangeRequest#patchRequest"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/ChangeRequest#requestingParty"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/ChangeRequest#requestingParty"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/ChangeRequest#companyId"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/ChangeRequest#companyId"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/ChangeRequest#status"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/ChangeRequest#status"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/ChangeRequest#timestamp"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/ChangeRequest#timestamp"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/ChangeRequest#companyId"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/ChangeRequest#companyId"/>
                 <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/ChangeRequest#status"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/ChangeRequest#status"/>
                 <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/ChangeRequest#timestamp"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/ChangeRequest#timestamp"/>
                 <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/ChangeRequest#companyId"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/ChangeRequest#companyId"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/ChangeRequest#status"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/ChangeRequest#status"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/ChangeRequest#timestamp"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/ChangeRequest#timestamp"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1135,98 +1135,98 @@
     
 
 
-    <!-- https://onerecord.iata.org/Company -->
+    <!-- https://onerecord.iata.org/api/Company -->
 
 
-    <owl:Class rdf:about="https://onerecord.iata.org/Company"/>
+    <owl:Class rdf:about="https://onerecord.iata.org/api/Company"/>
     
 
 
-    <!-- https://onerecord.iata.org/CompanyInformation -->
+    <!-- https://onerecord.iata.org/api/CompanyInformation -->
 
 
-    <owl:Class rdf:about="https://onerecord.iata.org/CompanyInformation">
+    <owl:Class rdf:about="https://onerecord.iata.org/api/CompanyInformation">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/CompanyInformation#company"/>
-                <owl:allValuesFrom rdf:resource="https://onerecord.iata.org/Company"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/CompanyInformation#company"/>
+                <owl:allValuesFrom rdf:resource="https://onerecord.iata.org/cargo/Company"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/CompanyInformation#errors"/>
-                <owl:allValuesFrom rdf:resource="https://onerecord.iata.org/Error"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/CompanyInformation#errors"/>
+                <owl:allValuesFrom rdf:resource="https://onerecord.iata.org/api/Error"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/CompanyInformation#company"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/CompanyInformation#company"/>
                 <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/CompanyInformation#company"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/CompanyInformation#company"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/CompanyInformation#companyId"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/CompanyInformation#companyId"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/CompanyInformation#serverEndpoint"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/CompanyInformation#serverEndpoint"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/CompanyInformation#supportedContentTypes"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/CompanyInformation#supportedContentTypes"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/CompanyInformation#supportedLogisticsObjects"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/CompanyInformation#supportedLogisticsObjects"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/CompanyInformation#companyId"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/CompanyInformation#companyId"/>
                 <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/CompanyInformation#serverEndpoint"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/CompanyInformation#serverEndpoint"/>
                 <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/CompanyInformation#supportedContentTypes"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/CompanyInformation#supportedContentTypes"/>
                 <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/CompanyInformation#supportedLogisticsObjects"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/CompanyInformation#supportedLogisticsObjects"/>
                 <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/CompanyInformation#companyId"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/CompanyInformation#companyId"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/CompanyInformation#serverEndpoint"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/CompanyInformation#serverEndpoint"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1236,61 +1236,61 @@
     
 
 
-    <!-- https://onerecord.iata.org/DelegationRequest -->
+    <!-- https://onerecord.iata.org/api/DelegationRequest -->
 
 
-    <owl:Class rdf:about="https://onerecord.iata.org/DelegationRequest">
+    <owl:Class rdf:about="https://onerecord.iata.org/api/DelegationRequest">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/DelegationRequest#targetLogisticsObjects"/>
-                <owl:allValuesFrom rdf:resource="https://onerecord.iata.org/LogisticsObjectRef"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/DelegationRequest#targetLogisticsObjects"/>
+                <owl:allValuesFrom rdf:resource="https://onerecord.iata.org/api/LogisticsObjectRef"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/DelegationRequest#targetLogisticsObjects"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/DelegationRequest#targetLogisticsObjects"/>
                 <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/DelegationRequest#action"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/DelegationRequest#action"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/DelegationRequest#operations"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/DelegationRequest#operations"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/DelegationRequest#targetCompanies"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/DelegationRequest#targetCompanies"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/DelegationRequest#action"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/DelegationRequest#action"/>
                 <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/DelegationRequest#operations"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/DelegationRequest#operations"/>
                 <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/DelegationRequest#targetCompanies"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/DelegationRequest#targetCompanies"/>
                 <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/DelegationRequest#action"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/DelegationRequest#action"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1300,61 +1300,61 @@
     
 
 
-    <!-- https://onerecord.iata.org/Details -->
+    <!-- https://onerecord.iata.org/api/Details -->
 
 
-    <owl:Class rdf:about="https://onerecord.iata.org/Details">
+    <owl:Class rdf:about="https://onerecord.iata.org/api/Details">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/Details#attribute"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/Details#attribute"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/Details#code"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/Details#code"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/Details#message"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/Details#message"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/Details#resource"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/Details#resource"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/Details#code"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/Details#code"/>
                 <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/Details#attribute"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/Details#attribute"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/Details#code"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/Details#code"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/Details#message"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/Details#message"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/Details#resource"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/Details#resource"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1364,37 +1364,37 @@
     
 
 
-    <!-- https://onerecord.iata.org/Error -->
+    <!-- https://onerecord.iata.org/api/Error -->
 
 
-    <owl:Class rdf:about="https://onerecord.iata.org/Error">
+    <owl:Class rdf:about="https://onerecord.iata.org/api/Error">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/Error#details"/>
-                <owl:allValuesFrom rdf:resource="https://onerecord.iata.org/Details"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/Error#details"/>
+                <owl:allValuesFrom rdf:resource="https://onerecord.iata.org/api/Details"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/Error#details"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/Error#details"/>
                 <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/Error#title"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/Error#title"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/Error#title"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/Error#title"/>
                 <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/Error#title"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/Error#title"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1404,50 +1404,50 @@
     
 
 
-    <!-- https://onerecord.iata.org/LogisticsObject -->
+    <!-- https://onerecord.iata.org/api/LogisticsObject -->
 
 
-    <owl:Class rdf:about="https://onerecord.iata.org/LogisticsObject"/>
+    <owl:Class rdf:about="https://onerecord.iata.org/api/LogisticsObject"/>
     
 
 
-    <!-- https://onerecord.iata.org/LogisticsObjectRef -->
+    <!-- https://onerecord.iata.org/api/LogisticsObjectRef -->
 
 
-    <owl:Class rdf:about="https://onerecord.iata.org/LogisticsObjectRef">
+    <owl:Class rdf:about="https://onerecord.iata.org/api/LogisticsObjectRef">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/LogisticsObjectRef#logisticsObjectId"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/LogisticsObjectRef#logisticsObjectId"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/LogisticsObjectRef#logisticsObjectType"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/LogisticsObjectRef#logisticsObjectType"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/LogisticsObjectRef#logisticsObjectId"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/LogisticsObjectRef#logisticsObjectId"/>
                 <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/LogisticsObjectRef#logisticsObjectType"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/LogisticsObjectRef#logisticsObjectType"/>
                 <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/LogisticsObjectRef#logisticsObjectId"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/LogisticsObjectRef#logisticsObjectId"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/LogisticsObjectRef#logisticsObjectType"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/LogisticsObjectRef#logisticsObjectType"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1457,73 +1457,73 @@
     
 
 
-    <!-- https://onerecord.iata.org/Memento -->
+    <!-- https://onerecord.iata.org/api/Memento -->
 
 
-    <owl:Class rdf:about="https://onerecord.iata.org/Memento">
+    <owl:Class rdf:about="https://onerecord.iata.org/api/Memento">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/Memento#created"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/Memento#created"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/Memento#createdBy"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/Memento#createdBy"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/Memento#label"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/Memento#label"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/Memento#original"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/Memento#original"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/Memento#created"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/Memento#created"/>
                 <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/Memento#createdBy"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/Memento#createdBy"/>
                 <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/Memento#original"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/Memento#original"/>
                 <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/Memento#created"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/Memento#created"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/Memento#createdBy"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/Memento#createdBy"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/Memento#label"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/Memento#label"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/Memento#original"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/Memento#original"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1533,55 +1533,55 @@
     
 
 
-    <!-- https://onerecord.iata.org/MementoEntry -->
+    <!-- https://onerecord.iata.org/api/MementoEntry -->
 
 
-    <owl:Class rdf:about="https://onerecord.iata.org/MementoEntry">
+    <owl:Class rdf:about="https://onerecord.iata.org/api/MementoEntry">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/MementoEntry#memento"/>
-                <owl:allValuesFrom rdf:resource="https://onerecord.iata.org/Memento"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/MementoEntry#memento"/>
+                <owl:allValuesFrom rdf:resource="https://onerecord.iata.org/api/Memento"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/MementoEntry#memento"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/MementoEntry#memento"/>
                 <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/MementoEntry#memento"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/MementoEntry#memento"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/MementoEntry#datetime"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/MementoEntry#datetime"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/MementoEntry#label"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/MementoEntry#label"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/MementoEntry#datetime"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/MementoEntry#datetime"/>
                 <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/MementoEntry#datetime"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/MementoEntry#datetime"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/MementoEntry#label"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/MementoEntry#label"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1591,19 +1591,19 @@
     
 
 
-    <!-- https://onerecord.iata.org/MementoList -->
+    <!-- https://onerecord.iata.org/api/MementoList -->
 
 
-    <owl:Class rdf:about="https://onerecord.iata.org/MementoList">
+    <owl:Class rdf:about="https://onerecord.iata.org/api/MementoList">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/MementoList#mementoEntry"/>
-                <owl:allValuesFrom rdf:resource="https://onerecord.iata.org/MementoEntry"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/MementoList#mementoEntry"/>
+                <owl:allValuesFrom rdf:resource="https://onerecord.iata.org/api/MementoEntry"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/MementoList#mementoEntry"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/MementoList#mementoEntry"/>
                 <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1613,61 +1613,61 @@
     
 
 
-    <!-- https://onerecord.iata.org/Mementos -->
+    <!-- https://onerecord.iata.org/api/Mementos -->
 
 
-    <owl:Class rdf:about="https://onerecord.iata.org/Mementos">
+    <owl:Class rdf:about="https://onerecord.iata.org/api/Mementos">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/Mementos#list"/>
-                <owl:allValuesFrom rdf:resource="https://onerecord.iata.org/MementoList"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/Mementos#list"/>
+                <owl:allValuesFrom rdf:resource="https://onerecord.iata.org/api/MementoList"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/Mementos#list"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/Mementos#list"/>
                 <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/Mementos#list"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/Mementos#list"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/Mementos#firstMemento"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/Mementos#firstMemento"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/Mementos#lastMemento"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/Mementos#lastMemento"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/Mementos#firstMemento"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/Mementos#firstMemento"/>
                 <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/Mementos#lastMemento"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/Mementos#lastMemento"/>
                 <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/Mementos#firstMemento"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/Mementos#firstMemento"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/Mementos#lastMemento"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/Mementos#lastMemento"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1677,61 +1677,61 @@
     
 
 
-    <!-- https://onerecord.iata.org/Notification -->
+    <!-- https://onerecord.iata.org/api/Notification -->
 
 
-    <owl:Class rdf:about="https://onerecord.iata.org/Notification">
+    <owl:Class rdf:about="https://onerecord.iata.org/api/Notification">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/Notification#logisticsObject"/>
-                <owl:allValuesFrom rdf:resource="https://onerecord.iata.org/LogisticsObject"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/Notification#logisticsObject"/>
+                <owl:allValuesFrom rdf:resource="https://onerecord.iata.org/api/LogisticsObject"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/Notification#logisticsObject"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/Notification#logisticsObject"/>
                 <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/Notification#logisticsObject"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/Notification#logisticsObject"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/Notification#eventType"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/Notification#eventType"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/Notification#topic"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/Notification#topic"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/Notification#eventType"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/Notification#eventType"/>
                 <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/Notification#topic"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/Notification#topic"/>
                 <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/Notification#eventType"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/Notification#eventType"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/Notification#topic"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/Notification#topic"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1741,61 +1741,61 @@
     
 
 
-    <!-- https://onerecord.iata.org/Operation -->
+    <!-- https://onerecord.iata.org/api/Operation -->
 
 
-    <owl:Class rdf:about="https://onerecord.iata.org/Operation">
+    <owl:Class rdf:about="https://onerecord.iata.org/api/Operation">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/Operation#o"/>
-                <owl:allValuesFrom rdf:resource="https://onerecord.iata.org/OperationObject"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/Operation#o"/>
+                <owl:allValuesFrom rdf:resource="https://onerecord.iata.org/api/OperationObject"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/Operation#o"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/Operation#o"/>
                 <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/Operation#o"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/Operation#o"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/Operation#op"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/Operation#op"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/Operation#p"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/Operation#p"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/Operation#op"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/Operation#op"/>
                 <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/Operation#p"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/Operation#p"/>
                 <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/Operation#op"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/Operation#op"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/Operation#p"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/Operation#p"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1805,43 +1805,43 @@
     
 
 
-    <!-- https://onerecord.iata.org/OperationObject -->
+    <!-- https://onerecord.iata.org/api/OperationObject -->
 
 
-    <owl:Class rdf:about="https://onerecord.iata.org/OperationObject">
+    <owl:Class rdf:about="https://onerecord.iata.org/api/OperationObject">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/OperationObject#datatype"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/OperationObject#datatype"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/OperationObject#value"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/OperationObject#value"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/OperationObject#datatype"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/OperationObject#datatype"/>
                 <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/OperationObject#value"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/OperationObject#value"/>
                 <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/OperationObject#datatype"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/OperationObject#datatype"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/OperationObject#value"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/OperationObject#value"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1851,85 +1851,85 @@
     
 
 
-    <!-- https://onerecord.iata.org/PatchRequest -->
+    <!-- https://onerecord.iata.org/api/PatchRequest -->
 
 
-    <owl:Class rdf:about="https://onerecord.iata.org/PatchRequest">
+    <owl:Class rdf:about="https://onerecord.iata.org/api/PatchRequest">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/PatchRequest#logisticsObjectRef"/>
-                <owl:allValuesFrom rdf:resource="https://onerecord.iata.org/LogisticsObjectRef"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/PatchRequest#logisticsObjectRef"/>
+                <owl:allValuesFrom rdf:resource="https://onerecord.iata.org/api/LogisticsObjectRef"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/PatchRequest#operations"/>
-                <owl:allValuesFrom rdf:resource="https://onerecord.iata.org/Operation"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/PatchRequest#operations"/>
+                <owl:allValuesFrom rdf:resource="https://onerecord.iata.org/api/Operation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/PatchRequest#logisticsObjectRef"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/PatchRequest#logisticsObjectRef"/>
                 <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/PatchRequest#operations"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/PatchRequest#operations"/>
                 <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/PatchRequest#logisticsObjectRef"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/PatchRequest#logisticsObjectRef"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/PatchRequest#description"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/PatchRequest#description"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/PatchRequest#requestorCompanyIdentifier"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/PatchRequest#requestorCompanyIdentifier"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/PatchRequest#revision"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/PatchRequest#revision"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/PatchRequest#requestorCompanyIdentifier"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/PatchRequest#requestorCompanyIdentifier"/>
                 <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/PatchRequest#revision"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/PatchRequest#revision"/>
                 <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/PatchRequest#description"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/PatchRequest#description"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/PatchRequest#requestorCompanyIdentifier"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/PatchRequest#requestorCompanyIdentifier"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/PatchRequest#revision"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/PatchRequest#revision"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1939,139 +1939,139 @@
     
 
 
-    <!-- https://onerecord.iata.org/Subscription -->
+    <!-- https://onerecord.iata.org/api/Subscription -->
 
 
-    <owl:Class rdf:about="https://onerecord.iata.org/Subscription">
+    <owl:Class rdf:about="https://onerecord.iata.org/api/Subscription">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/Subscription#errors"/>
-                <owl:allValuesFrom rdf:resource="https://onerecord.iata.org/Error"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/Subscription#errors"/>
+                <owl:allValuesFrom rdf:resource="https://onerecord.iata.org/api/Error"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/Subscription#cacheFor"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/Subscription#cacheFor"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/Subscription#callbackUrl"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/Subscription#callbackUrl"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/Subscription#contentTypes"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/Subscription#contentTypes"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/Subscription#myCompanyIdentifier"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/Subscription#myCompanyIdentifier"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/Subscription#secret"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/Subscription#secret"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/Subscription#sendLogisticsObjectBody"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/Subscription#sendLogisticsObjectBody"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/Subscription#subscribeToStatusUpdates"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/Subscription#subscribeToStatusUpdates"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/Subscription#subscribedTo"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/Subscription#subscribedTo"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/Subscription#topic"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/Subscription#topic"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/Subscription#callbackUrl"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/Subscription#callbackUrl"/>
                 <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/Subscription#myCompanyIdentifier"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/Subscription#myCompanyIdentifier"/>
                 <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/Subscription#subscribedTo"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/Subscription#subscribedTo"/>
                 <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/Subscription#topic"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/Subscription#topic"/>
                 <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/Subscription#cacheFor"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/Subscription#cacheFor"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/Subscription#callbackUrl"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/Subscription#callbackUrl"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/Subscription#myCompanyIdentifier"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/Subscription#myCompanyIdentifier"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/Subscription#secret"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/Subscription#secret"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/Subscription#sendLogisticsObjectBody"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/Subscription#sendLogisticsObjectBody"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/Subscription#subscribeToStatusUpdates"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/Subscription#subscribeToStatusUpdates"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/Subscription#subscribedTo"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/Subscription#subscribedTo"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/Subscription#topic"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/Subscription#topic"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2081,61 +2081,75 @@
     
 
 
-    <!-- https://onerecord.iata.org/Timemap -->
+    <!-- https://onerecord.iata.org/api/Timemap -->
 
 
-    <owl:Class rdf:about="https://onerecord.iata.org/Timemap">
+    <owl:Class rdf:about="https://onerecord.iata.org/api/Timemap">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/Timemap#mementos"/>
-                <owl:allValuesFrom rdf:resource="https://onerecord.iata.org/Mementos"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/Timemap#mementos"/>
+                <owl:allValuesFrom rdf:resource="https://onerecord.iata.org/api/Mementos"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/Timemap#mementos"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/Timemap#mementos"/>
                 <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/Timemap#mementos"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/Timemap#mementos"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/Timemap#original"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/Timemap#original"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/Timemap#timegate"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/Timemap#timegate"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/Timemap#original"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/Timemap#original"/>
                 <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/Timemap#original"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/Timemap#original"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://onerecord.iata.org/Timemap#timegate"/>
+                <owl:onProperty rdf:resource="https://onerecord.iata.org/api/Timemap#timegate"/>
                 <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Timemap of a Logistics Object containing mementos and timegate URI</rdfs:comment>
         <rdfs:label xml:lang="en">Timemap</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- https://onerecord.iata.org/cargo/Branch -->
+
+
+    <owl:Class rdf:about="https://onerecord.iata.org/cargo/Branch"/>
+    
+
+
+    <!-- https://onerecord.iata.org/cargo/Company -->
+
+
+    <owl:Class rdf:about="https://onerecord.iata.org/cargo/Company"/>
     
 
 
@@ -2148,19 +2162,19 @@
      -->
 
 
-    <rdf:Description rdf:about="https://onerecord.iata.org/AuditTrail#logisticsObjectRef">
+    <rdf:Description rdf:about="https://onerecord.iata.org/api/AuditTrail#logisticsObjectRef">
         <rdfs:comment xml:lang="en">Logistics Object Reference for which the audit trail applies</rdfs:comment>
         <rdfs:label xml:lang="en">auditTrail:logisticsObjectRef</rdfs:label>
     </rdf:Description>
-    <rdf:Description rdf:about="https://onerecord.iata.org/MementoEntry#memento">
+    <rdf:Description rdf:about="https://onerecord.iata.org/api/MementoEntry#memento">
         <rdfs:comment xml:lang="en">Link to the memento</rdfs:comment>
         <rdfs:label xml:lang="en">mementoEntry:memento</rdfs:label>
     </rdf:Description>
-    <rdf:Description rdf:about="https://onerecord.iata.org/Notification#logisticsObject">
+    <rdf:Description rdf:about="https://onerecord.iata.org/api/Notification#logisticsObject">
         <rdfs:comment xml:lang="en">Logistics Object for which the notification is sent</rdfs:comment>
         <rdfs:label xml:lang="en">notification:logisticsObject</rdfs:label>
     </rdf:Description>
-    <rdf:Description rdf:about="https://onerecord.iata.org/PatchRequest#logisticsObjectRef">
+    <rdf:Description rdf:about="https://onerecord.iata.org/api/PatchRequest#logisticsObjectRef">
         <rdfs:comment xml:lang="en">Reference of the Logistics Object to which the change request is applied to</rdfs:comment>
         <rdfs:label xml:lang="en">patchRequest:logisticsObjectRef</rdfs:label>
     </rdf:Description>

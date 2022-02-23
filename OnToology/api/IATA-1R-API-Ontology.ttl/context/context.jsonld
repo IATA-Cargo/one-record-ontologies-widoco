@@ -1,288 +1,288 @@
 {
   "@context" : {
     "OperationObject" : {
-      "@id" : "https://onerecord.iata.org/OperationObject"
+      "@id" : "https://onerecord.iata.org/api/OperationObject"
     },
     "message" : {
-      "@id" : "https://onerecord.iata.org/Details#message",
+      "@id" : "https://onerecord.iata.org/api/Details#message",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "resource" : {
-      "@id" : "https://onerecord.iata.org/Details#resource",
+      "@id" : "https://onerecord.iata.org/api/Details#resource",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "lastMemento" : {
-      "@id" : "https://onerecord.iata.org/Mementos#lastMemento",
+      "@id" : "https://onerecord.iata.org/api/Mementos#lastMemento",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "versionInfo" : {
       "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
     },
     "created" : {
-      "@id" : "https://onerecord.iata.org/Memento#created",
+      "@id" : "https://onerecord.iata.org/api/Memento#created",
       "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
     },
     "logisticsObjectId" : {
-      "@id" : "https://onerecord.iata.org/LogisticsObjectRef#logisticsObjectId",
+      "@id" : "https://onerecord.iata.org/api/LogisticsObjectRef#logisticsObjectId",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "Mementos" : {
-      "@id" : "https://onerecord.iata.org/Mementos"
+      "@id" : "https://onerecord.iata.org/api/Mementos"
     },
     "LogisticsObjectRef" : {
-      "@id" : "https://onerecord.iata.org/LogisticsObjectRef"
+      "@id" : "https://onerecord.iata.org/api/LogisticsObjectRef"
     },
     "MementoList" : {
-      "@id" : "https://onerecord.iata.org/MementoList"
+      "@id" : "https://onerecord.iata.org/api/MementoList"
     },
     "CompanyInformation" : {
-      "@id" : "https://onerecord.iata.org/CompanyInformation"
+      "@id" : "https://onerecord.iata.org/api/CompanyInformation"
     },
     "list" : {
-      "@id" : "https://onerecord.iata.org/Mementos#list",
+      "@id" : "https://onerecord.iata.org/api/Mementos#list",
       "@type" : "@id"
     },
     "loInitialSnapshot" : {
-      "@id" : "https://onerecord.iata.org/AuditTrail#loInitialSnapshot",
+      "@id" : "https://onerecord.iata.org/api/AuditTrail#loInitialSnapshot",
       "@type" : "@id"
     },
     "requestorCompanyIdentifier" : {
-      "@id" : "https://onerecord.iata.org/PatchRequest#requestorCompanyIdentifier",
+      "@id" : "https://onerecord.iata.org/api/PatchRequest#requestorCompanyIdentifier",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "requestingParty" : {
-      "@id" : "https://onerecord.iata.org/ChangeRequest#requestingParty",
+      "@id" : "https://onerecord.iata.org/api/ChangeRequest#requestingParty",
       "@type" : "@id"
     },
     "firstMemento" : {
-      "@id" : "https://onerecord.iata.org/Mementos#firstMemento",
+      "@id" : "https://onerecord.iata.org/api/Mementos#firstMemento",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "targetLogisticsObjects" : {
-      "@id" : "https://onerecord.iata.org/DelegationRequest#targetLogisticsObjects",
+      "@id" : "https://onerecord.iata.org/api/DelegationRequest#targetLogisticsObjects",
       "@type" : "@id"
     },
     "companyId" : {
-      "@id" : "https://onerecord.iata.org/CompanyInformation#companyId",
+      "@id" : "https://onerecord.iata.org/api/ChangeRequest#companyId",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "Branch" : {
-      "@id" : "https://onerecord.iata.org/Branch"
+      "@id" : "https://onerecord.iata.org/cargo/Branch"
     },
     "Thing" : {
       "@id" : "http://www.w3.org/2002/07/owl#Thing"
     },
     "company" : {
-      "@id" : "https://onerecord.iata.org/CompanyInformation#company",
+      "@id" : "https://onerecord.iata.org/api/CompanyInformation#company",
       "@type" : "@id"
     },
     "Details" : {
-      "@id" : "https://onerecord.iata.org/Details"
+      "@id" : "https://onerecord.iata.org/api/Details"
     },
     "serverEndpoint" : {
-      "@id" : "https://onerecord.iata.org/CompanyInformation#serverEndpoint",
+      "@id" : "https://onerecord.iata.org/api/CompanyInformation#serverEndpoint",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "logisticsObjectType" : {
-      "@id" : "https://onerecord.iata.org/LogisticsObjectRef#logisticsObjectType",
+      "@id" : "https://onerecord.iata.org/api/LogisticsObjectRef#logisticsObjectType",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "PatchRequest" : {
-      "@id" : "https://onerecord.iata.org/PatchRequest"
+      "@id" : "https://onerecord.iata.org/api/PatchRequest"
     },
     "memento" : {
-      "@id" : "https://onerecord.iata.org/MementoEntry#memento"
+      "@id" : "https://onerecord.iata.org/api/MementoEntry#memento"
     },
     "sendLogisticsObjectBody" : {
-      "@id" : "https://onerecord.iata.org/Subscription#sendLogisticsObjectBody",
+      "@id" : "https://onerecord.iata.org/api/Subscription#sendLogisticsObjectBody",
       "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
     },
     "original" : {
-      "@id" : "https://onerecord.iata.org/Memento#original",
+      "@id" : "https://onerecord.iata.org/api/Timemap#original",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "p" : {
-      "@id" : "https://onerecord.iata.org/Operation#p",
+      "@id" : "https://onerecord.iata.org/api/Operation#p",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "label" : {
-      "@id" : "https://onerecord.iata.org/MementoEntry#label",
+      "@id" : "https://onerecord.iata.org/api/Memento#label",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "Timemap" : {
-      "@id" : "https://onerecord.iata.org/Timemap"
+      "@id" : "https://onerecord.iata.org/api/Timemap"
     },
     "logisticsObject" : {
-      "@id" : "https://onerecord.iata.org/Notification#logisticsObject"
+      "@id" : "https://onerecord.iata.org/api/Notification#logisticsObject"
     },
     "AuditTrail" : {
-      "@id" : "https://onerecord.iata.org/AuditTrail"
+      "@id" : "https://onerecord.iata.org/api/AuditTrail"
     },
     "supportedContentTypes" : {
-      "@id" : "https://onerecord.iata.org/CompanyInformation#supportedContentTypes",
+      "@id" : "https://onerecord.iata.org/api/CompanyInformation#supportedContentTypes",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "attribute" : {
-      "@id" : "https://onerecord.iata.org/Details#attribute",
+      "@id" : "https://onerecord.iata.org/api/Details#attribute",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "eventType" : {
-      "@id" : "https://onerecord.iata.org/Notification#eventType"
+      "@id" : "https://onerecord.iata.org/api/Notification#eventType"
     },
     "Operation" : {
-      "@id" : "https://onerecord.iata.org/Operation"
+      "@id" : "https://onerecord.iata.org/api/Operation"
     },
     "timestamp" : {
-      "@id" : "https://onerecord.iata.org/ChangeRequest#timestamp",
+      "@id" : "https://onerecord.iata.org/api/ChangeRequest#timestamp",
       "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
     },
     "createdBy" : {
-      "@id" : "https://onerecord.iata.org/Memento#createdBy",
+      "@id" : "https://onerecord.iata.org/api/Memento#createdBy",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "revision" : {
-      "@id" : "https://onerecord.iata.org/PatchRequest#revision",
+      "@id" : "https://onerecord.iata.org/api/PatchRequest#revision",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "errors" : {
-      "@id" : "https://onerecord.iata.org/Subscription#errors",
+      "@id" : "https://onerecord.iata.org/api/CompanyInformation#errors",
       "@type" : "@id"
     },
     "contentTypes" : {
-      "@id" : "https://onerecord.iata.org/Subscription#contentTypes",
+      "@id" : "https://onerecord.iata.org/api/Subscription#contentTypes",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "changeRequests" : {
-      "@id" : "https://onerecord.iata.org/AuditTrail#changeRequests",
+      "@id" : "https://onerecord.iata.org/api/AuditTrail#changeRequests",
       "@type" : "@id"
     },
     "patchRequest" : {
-      "@id" : "https://onerecord.iata.org/ChangeRequest#patchRequest",
+      "@id" : "https://onerecord.iata.org/api/ChangeRequest#patchRequest",
       "@type" : "@id"
     },
     "value" : {
-      "@id" : "https://onerecord.iata.org/OperationObject#value",
+      "@id" : "https://onerecord.iata.org/api/OperationObject#value",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "timegate" : {
-      "@id" : "https://onerecord.iata.org/Timemap#timegate",
+      "@id" : "https://onerecord.iata.org/api/Timemap#timegate",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "DelegationRequest" : {
-      "@id" : "https://onerecord.iata.org/DelegationRequest"
+      "@id" : "https://onerecord.iata.org/api/DelegationRequest"
     },
     "logisticsObjectRef" : {
-      "@id" : "https://onerecord.iata.org/AuditTrail#logisticsObjectRef"
+      "@id" : "https://onerecord.iata.org/api/PatchRequest#logisticsObjectRef"
     },
     "status" : {
-      "@id" : "https://onerecord.iata.org/ChangeRequest#status"
+      "@id" : "https://onerecord.iata.org/api/ChangeRequest#status"
     },
     "Company" : {
-      "@id" : "https://onerecord.iata.org/Company"
+      "@id" : "https://onerecord.iata.org/cargo/Company"
     },
     "action" : {
-      "@id" : "https://onerecord.iata.org/DelegationRequest#action"
+      "@id" : "https://onerecord.iata.org/api/DelegationRequest#action"
     },
     "datetime" : {
-      "@id" : "https://onerecord.iata.org/MementoEntry#datetime",
+      "@id" : "https://onerecord.iata.org/api/MementoEntry#datetime",
       "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
     },
     "targetCompanies" : {
-      "@id" : "https://onerecord.iata.org/DelegationRequest#targetCompanies",
+      "@id" : "https://onerecord.iata.org/api/DelegationRequest#targetCompanies",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "title" : {
-      "@id" : "https://onerecord.iata.org/Error#title",
+      "@id" : "https://onerecord.iata.org/api/Error#title",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "mementos" : {
-      "@id" : "https://onerecord.iata.org/Timemap#mementos",
+      "@id" : "https://onerecord.iata.org/api/Timemap#mementos",
       "@type" : "@id"
     },
     "MementoEntry" : {
-      "@id" : "https://onerecord.iata.org/MementoEntry"
+      "@id" : "https://onerecord.iata.org/api/MementoEntry"
     },
     "secret" : {
-      "@id" : "https://onerecord.iata.org/Subscription#secret",
+      "@id" : "https://onerecord.iata.org/api/Subscription#secret",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "details" : {
-      "@id" : "https://onerecord.iata.org/Error#details",
+      "@id" : "https://onerecord.iata.org/api/Error#details",
       "@type" : "@id"
     },
     "datatype" : {
-      "@id" : "https://onerecord.iata.org/OperationObject#datatype",
+      "@id" : "https://onerecord.iata.org/api/OperationObject#datatype",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "mementoEntry" : {
-      "@id" : "https://onerecord.iata.org/MementoList#mementoEntry",
+      "@id" : "https://onerecord.iata.org/api/MementoList#mementoEntry",
       "@type" : "@id"
     },
     "Subscription" : {
-      "@id" : "https://onerecord.iata.org/Subscription"
+      "@id" : "https://onerecord.iata.org/api/Subscription"
     },
     "subscribedTo" : {
-      "@id" : "https://onerecord.iata.org/Subscription#subscribedTo",
+      "@id" : "https://onerecord.iata.org/api/Subscription#subscribedTo",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "cacheFor" : {
-      "@id" : "https://onerecord.iata.org/Subscription#cacheFor",
+      "@id" : "https://onerecord.iata.org/api/Subscription#cacheFor",
       "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
     },
     "Error" : {
-      "@id" : "https://onerecord.iata.org/Error"
+      "@id" : "https://onerecord.iata.org/api/Error"
     },
     "op" : {
-      "@id" : "https://onerecord.iata.org/Operation#op"
+      "@id" : "https://onerecord.iata.org/api/Operation#op"
     },
     "myCompanyIdentifier" : {
-      "@id" : "https://onerecord.iata.org/Subscription#myCompanyIdentifier",
+      "@id" : "https://onerecord.iata.org/api/Subscription#myCompanyIdentifier",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "comment" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
     },
     "Notification" : {
-      "@id" : "https://onerecord.iata.org/Notification"
+      "@id" : "https://onerecord.iata.org/api/Notification"
     },
     "ChangeRequest" : {
-      "@id" : "https://onerecord.iata.org/ChangeRequest"
+      "@id" : "https://onerecord.iata.org/api/ChangeRequest"
     },
     "Memento" : {
-      "@id" : "https://onerecord.iata.org/Memento"
+      "@id" : "https://onerecord.iata.org/api/Memento"
     },
     "LogisticsObject" : {
-      "@id" : "https://onerecord.iata.org/LogisticsObject"
+      "@id" : "https://onerecord.iata.org/api/LogisticsObject"
     },
     "code" : {
-      "@id" : "https://onerecord.iata.org/Details#code",
+      "@id" : "https://onerecord.iata.org/api/Details#code",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "subscribeToStatusUpdates" : {
-      "@id" : "https://onerecord.iata.org/Subscription#subscribeToStatusUpdates",
+      "@id" : "https://onerecord.iata.org/api/Subscription#subscribeToStatusUpdates",
       "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
     },
     "supportedLogisticsObjects" : {
-      "@id" : "https://onerecord.iata.org/CompanyInformation#supportedLogisticsObjects",
+      "@id" : "https://onerecord.iata.org/api/CompanyInformation#supportedLogisticsObjects",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "o" : {
-      "@id" : "https://onerecord.iata.org/Operation#o",
+      "@id" : "https://onerecord.iata.org/api/Operation#o",
       "@type" : "@id"
     },
     "description" : {
-      "@id" : "https://onerecord.iata.org/PatchRequest#description",
+      "@id" : "https://onerecord.iata.org/api/PatchRequest#description",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "topic" : {
-      "@id" : "https://onerecord.iata.org/Notification#topic",
+      "@id" : "https://onerecord.iata.org/api/Notification#topic",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "operations" : {
-      "@id" : "https://onerecord.iata.org/DelegationRequest#operations"
+      "@id" : "https://onerecord.iata.org/api/DelegationRequest#operations"
     },
     "callbackUrl" : {
-      "@id" : "https://onerecord.iata.org/Subscription#callbackUrl",
+      "@id" : "https://onerecord.iata.org/api/Subscription#callbackUrl",
       "@type" : "http://www.w3.org/2001/XMLSchema#string"
     }
   }

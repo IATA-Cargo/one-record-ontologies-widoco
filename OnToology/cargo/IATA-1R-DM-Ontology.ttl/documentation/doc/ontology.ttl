@@ -7573,6 +7573,7 @@ _:genid910 rdf:type owl:Restriction ;
  ] .
 
 [ owl:maxCardinality "1"^^xsd:nonNegativeInteger
+
  ] .
 
 [ owl:minCardinality "1"^^xsd:nonNegativeInteger

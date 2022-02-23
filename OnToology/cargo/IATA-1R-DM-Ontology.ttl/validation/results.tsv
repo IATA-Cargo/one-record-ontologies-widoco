@@ -46,5 +46,5 @@ https://onerecord.iata.org/Request type Class	Passed
 https://onerecord.iata.org/TransportMeans type Class	Passed
 https://onerecord.iata.org/ItemDg type Class	Passed
 https://onerecord.iata.org/LogisticsObject type Class	Passed
-https://onerecord.iata.org/ConnectedDevice type Class	Passed
+https://onerecord.iata.org/ConnectedDevice type Class	Undefined
 https://onerecord.iata.org/Location type Class	Passed

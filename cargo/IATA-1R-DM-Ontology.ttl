@@ -91,7 +91,7 @@
 
 Version 1.01 includes some bugfixes to allow for the generation of JSON-LD schema, including:
 - Removal of Piece:dgDeclaration property to avoid java error as it is moved to PieceDg:dgDeclaration
-- Change of comment on price:carrierChargeCode to avoid non-unicode characters \"...\"
+- Change of comment on price:carrierChargeCode to avoid non-unicode characters. \"...\"
 
 Version 1.1 includes improvements and bugfixes, details can be found on GitHub
 
